@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    a {
+        font-size: 12px;
+        font-family: $Roboto;
+        &:hover {
+            color: $fill;
+        }
+    }
+    h3{
+        color: $fill;
+    }
+    .iframe__map {
+        width: 300px;
+        height: 150px;
+    }
+    p{
+        color: $secondary;
+    }
+
+    border-top: solid 2px $fill;
+}
+
+.copyright {
+    background-color: $secondary;
+    color: $fill;
+    text-align: center;
+}

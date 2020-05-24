@@ -8,7 +8,8 @@ body {
 }
 
 .pd {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pd-top130 {
@@ -16,7 +17,8 @@ body {
 }
 
 .container {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
@@ -99,7 +101,6 @@ p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  color: #E3E3E3;
 }
 
 a {
@@ -121,6 +122,44 @@ a {
 
 .btn:hover {
   background-color: #EE2E31;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: solid 2px #931621;
+}
+
+footer a {
+  font-size: 12px;
+  font-family: "Roboto";
+}
+
+footer a:hover {
+  color: #931621;
+}
+
+footer h3 {
+  color: #931621;
+}
+
+footer .iframe__map {
+  width: 300px;
+  height: 150px;
+}
+
+footer p {
+  color: #E3E3E3;
+}
+
+.copyright {
+  background-color: #E3E3E3;
+  color: #931621;
+  text-align: center;
 }
 
 .header__background {
@@ -156,5 +195,4 @@ a {
 .header__background i {
   color: #931621;
 }
-
 /*# sourceMappingURL=main.css.map */
