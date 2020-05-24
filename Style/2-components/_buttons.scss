@@ -4,11 +4,12 @@
     font-style: $Roboto;
     padding: 2px 30px;
     border-radius: 5px;
+    &:hover{
+        background-color:$red;
+    }
+    
 }
 
-.btn:hover{
-    background-color:$red;
-}
 
 // .btn:hover {
 //     opacity: 0.7;
