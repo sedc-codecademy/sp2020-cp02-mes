@@ -101,6 +101,7 @@ p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
+  color: #E3E3E3;
 }
 
 a {
@@ -131,7 +132,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: solid 2px #931621;
 }
 
 footer a {
@@ -152,14 +152,17 @@ footer .iframe__map {
   height: 150px;
 }
 
-footer p {
-  color: #E3E3E3;
-}
-
 .copyright {
   background-color: #E3E3E3;
-  color: #931621;
+  color: #11151C;
   text-align: center;
+  font-family: "Fjalla One";
+  font-weight: 100;
+  padding: 10px 0;
+}
+
+.copyright .copyright__color {
+  color: #EE2E31;
 }
 
 .header__background {
