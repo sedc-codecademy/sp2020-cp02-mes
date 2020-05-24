@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+body {
+  background-color: #11151C;
+  font-family: '$Roboto';
+}
+
+.pd {
+  padding: 30px 0;
+}
+
+.pd-top130 {
+  padding-top: 130px;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.background {
+  background: url("../../Photos/123456.jpg") center center/cover;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Fjalla One";
+  font-weight: 500;
+  font-size: 34px;
+  color: #E3E3E3;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Fjalla One";
+  font-weight: 500;
+  font-size: 30px;
+  color: #E3E3E3;
+  line-height: 1.38;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Fjalla One";
+  font-weight: 500;
+  font-size: 26px;
+  color: #E3E3E3;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Fjalla One";
+  font-weight: 500;
+  font-size: 24px;
+  color: #E3E3E3;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Fjalla One";
+  font-weight: 500;
+  font-size: 22px;
+  color: #E3E3E3;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: "Fjalla One";
+  font-weight: 500;
+  font-size: 20px;
+  color: #E3E3E3;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: #E3E3E3;
+}
+
+a {
+  font-family: "Fjalla One";
+  font-weight: 400;
+  font-size: 18px;
+  color: #E3E3E3;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #931621;
+  font-size: 16px;
+  font-style: "Roboto";
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #EE2E31;
+}
+
+.header__background {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  background-color: #11151C;
+  width: 100%;
+  height: 100px;
+}
+
+.header__background img {
+  width: 90px;
+}
+
+.header__background li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.header__background li :hover {
+  color: #931621;
+}
+
+.header__background i {
+  color: #931621;
+}
+
+/*# sourceMappingURL=main.css.map */

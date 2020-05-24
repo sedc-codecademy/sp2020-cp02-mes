@@ -1,0 +1,28 @@
+
+h1{
+    @include h(34px,1.2)
+}
+h2{
+    @include h(30px,1.38)
+}
+h3{
+    @include h(26px,1.25)
+}
+h4{
+    @include h(24px,1)
+}
+h5{
+    @include h(22px,1)
+}
+h6{
+    @include h(20px,1)
+}
+
+p{
+    @include p
+}
+
+a{
+    @include a
+}
+

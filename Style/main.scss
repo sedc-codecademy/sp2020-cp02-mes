@@ -1,0 +1,41 @@
+//0-HELPERS
+@import '0-helpers/functions';
+@import '0-helpers/mixin';
+@import '0-helpers/variables';
+
+//1-BASE
+@import '1-base/general';
+@import '1-base/resets';
+@import '1-base/typography';
+
+//2-COMPONENTS
+@import '2-components/buttons';
+@import '2-components/search';
+
+//3-LAYOUT
+@import '3-layout/cards';
+@import '3-layout/footer';
+@import '3-layout/header';
+@import '3-layout/navbar-news';
+@import '3-layout/sidebar-news';
+@import '3-layout/sliders';
+
+//4-PAGES
+@import '4-pages/0-home';
+@import '4-pages/1-about';
+@import '4-pages/2-news';
+@import '4-pages/3-gallery';
+@import '4-pages/4-getinvolved';
+@import '4-pages/5-competitions';
+@import '4-pages/6-store';
+@import '4-pages/login';
+@import '4-pages/register';
+
+//5-ADMIN
+@import '5-admin/admin';
+@import '5-admin/visitor';
+
+//6-VENDOR 
+@import '6-vendor/bootstrap';
+@import '6-vendor/jquery';
+
