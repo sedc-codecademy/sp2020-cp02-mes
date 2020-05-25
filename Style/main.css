@@ -361,8 +361,7 @@ i {
           justify-content: center;
   margin-top: 100px;
 }
-<<<<<<< HEAD
-=======
+
 
 .videos-container {
   display: -webkit-box;
@@ -395,6 +394,7 @@ i {
   margin-top: 3%;
 }
 
+
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,7 +408,7 @@ i {
 }
 
 .slider .slider1 {
-  width: 100px;
+  width: 200px;
   height: 100px;
   background-color: #931621;
 }
@@ -436,5 +436,5 @@ i {
   height: 100px;
   background-color: #931621;
 }
->>>>>>> 2181b46861592fd404ec82c84b48a872d34c5702
+
 /*# sourceMappingURL=main.css.map */
