@@ -12,8 +12,9 @@
 @mixin p {
     font-family: $Roboto;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: $secondary;
+    opacity: 0.9;
 }
 
 //Mixin for anchor tags
