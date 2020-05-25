@@ -1,40 +1,62 @@
-// WHAT IS ESPORT?
+//*** WHAT IS ESPORT? ***
 h1 {
     text-align: center;
+    padding-bottom: 30px;
 }
-
 
 // eSport Cards
 
 i {
     color: $secondary;
     font-size: 30px;
+    padding-right: 10px;
 }
 .whatIs__mainDiv {
-
+    display: flex;
+    margin-bottom: 30px;
+    // flex-direction: column; //za responsive
     h5{
         color: $fill;
         text-transform: capitalize;
+        display: inline-block;
+        padding-top: 50px;
+        padding-bottom: 10px;
     }
     p{
         font-style: italic;
         font-size: 14px;
+        padding-left:50px;
+        
     }
 
     .whatIs__subDiv1{
         width: 50%;
-        float: left;
-        padding-right: 30px;
+        // // float: left;
+        padding-right: 10px;
     }
     .whatIs__subDiv2{
         width: 50%;
-        float: right;
-        padding-left: 30px;
+        // float: right;
+        padding-left: px;
         text-align: center;
-        align-items: center;
+        // align-items: center;
     }
     iframe {
         width: 100%;
-        height: 350px;
+        height: 80%;
     }
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;  
+}
+
+//*** OUR MISSION ***
+
+.page3{
+    background-color: $fill;
+    width: 100%;
+    height: 800px;
 }
