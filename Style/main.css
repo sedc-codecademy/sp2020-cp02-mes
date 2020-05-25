@@ -437,20 +437,4 @@ i {
       align-content: center;
   margin-top: 3%;
 }
-
-.videos_slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.videos_slider .videos_slider1 {
-  background-image: url("./img/74381.JPG");
-  background-size: 100px contain;
-}
 /*# sourceMappingURL=main.css.map */
