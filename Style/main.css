@@ -211,6 +211,57 @@ footer .iframe__map {
   color: #931621;
 }
 
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slider1 {
+  width: 200px;
+  height: 100px;
+  background-color: #931621;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.slider .slider2 {
+  width: 300px;
+  height: 150px;
+  background-color: #E3E3E3;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.slider .slider3 {
+  width: 400px;
+  height: 200px;
+  background-color: grey;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.slider .slider4 {
+  width: 300px;
+  height: 150px;
+  background-color: #E3E3E3;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.slider .slider5 {
+  width: 200px;
+  height: 100px;
+  background-color: #931621;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
 h1 {
   text-align: center;
   padding-bottom: 30px;
