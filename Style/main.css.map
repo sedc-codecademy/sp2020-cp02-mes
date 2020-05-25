@@ -17,7 +17,7 @@
         "3-layout/_navbar-news.scss",
         "3-layout/_sidebar-news.scss",
         "3-layout/_sliders.scss",
-        "4-pages/_0_-home.scss",
+        "4-pages/_0-home.scss",
         "4-pages/_1_about.scss",
         "4-pages/_2_news.scss",
         "4-pages/_3_0-gallery.scss",
