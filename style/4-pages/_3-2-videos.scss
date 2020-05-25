@@ -1,12 +1,10 @@
-.container{
-    height: 100vh;
-}
-.top-container {
+
+.videos-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     .bounding_box {
-        height: 40px;
+        height: 50px;
         width: 70%;
         background-image: url("../../img/606641.jpg");
         background-repeat: no-repeat;
@@ -29,36 +27,37 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 150px;
 
     .slider1 {
-        width: 200px;
+        width: 100px;
         height: 100px;
         background-color: $fill;
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        
 
     }
     .slider2 {
         width: 300px;
         height: 150px;
         background-color: $secondary;
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        
     }
     .slider3 {
         width: 400px;
         height: 200px;
         background-color: grey;
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        
     }
     .slider4 {
         width: 300px;
         height: 150px;
         background-color: $secondary;
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        
     }
     .slider5 {
         width: 200px;
         height: 100px;
         background-color: $fill;
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        
     }
 }

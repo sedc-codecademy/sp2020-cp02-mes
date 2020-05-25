@@ -320,11 +320,7 @@ i {
   margin-top: 100px;
 }
 
-.container {
-  height: 100vh;
-}
-
-.top-container {
+.videos-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,8 +331,8 @@ i {
       flex-wrap: wrap;
 }
 
-.top-container .bounding_box {
-  height: 40px;
+.videos-container .bounding_box {
+  height: 50px;
   width: 70%;
   background-image: url("../../img/606641.jpg");
   background-repeat: no-repeat;
@@ -364,45 +360,36 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 150px;
 }
 
 .slider .slider1 {
-  width: 200px;
+  width: 100px;
   height: 100px;
   background-color: #931621;
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 .slider .slider2 {
   width: 300px;
   height: 150px;
   background-color: #E3E3E3;
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 .slider .slider3 {
   width: 400px;
   height: 200px;
   background-color: grey;
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 .slider .slider4 {
   width: 300px;
   height: 150px;
   background-color: #E3E3E3;
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 .slider .slider5 {
   width: 200px;
   height: 100px;
   background-color: #931621;
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 /*# sourceMappingURL=main.css.map */
