@@ -1,0 +1,25 @@
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .bounding_box {
+        height: 50px;
+        width: 70%;
+        background-image: url("../../img/606641.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+}
+
+.main_videos{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 3%;
+}
+
+//videos slider
+
