@@ -136,3 +136,29 @@ i {
 
 
 // *** OUR MISSION ***
+
+.ourMission__main-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourMission_sub-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h5{
+        padding: 20px 0;
+    }
+    i{
+        padding-top: 50px;
+        font-size: 50px;
+        color: $fill;
+    }
+    p{
+        opacity: 0.8;
+        font-style: italic;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
