@@ -810,18 +810,20 @@ i {
 
 .videos-container {
   position: relative;
+  width: 95vw;
 }
 
 .videos-container .videos-title {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: 1.5rem;
 }
 
-.videos-container .bounding_box {
-  height: 100px;
-  width: 100%;
+.videos-container .videos_bounding_box {
+  height: 6rem;
   background-image: url("../../img/606641.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   -webkit-clip-path: polygon(20% 0, 100% 0, 100% 50%, 0 50%);
           clip-path: polygon(20% 0, 100% 0, 100% 50%, 0 50%);
@@ -836,7 +838,7 @@ i {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 3%;
+  margin-top: 0%;
 }
 
 .videos_slider_wrapper {
