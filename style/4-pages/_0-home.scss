@@ -162,3 +162,35 @@ i {
         padding: 0 20px;
     }
 }
+
+//Members******
+
+//JOIN NOW***************
+
+.join_now{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/img/background/pic1.jpg) ;
+    padding: 60px 0;
+ 
+    
+    h3{
+        text-transform: none;        
+    }
+}
+
+//E-STORE ***************
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 90px;
+     a{
+        margin: 0;
+    }
+    
+}
+
+//ENDORSED BY
