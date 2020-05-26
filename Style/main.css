@@ -558,6 +558,10 @@ i {
           align-items: center;
 }
 
+.pd-bottom30 {
+  padding-bottom: 30;
+}
+
 .structure-section {
   display: -webkit-box;
   display: -ms-flexbox;
