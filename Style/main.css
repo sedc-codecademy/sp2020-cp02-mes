@@ -839,52 +839,68 @@ i {
   margin-top: 3%;
 }
 
-.videos-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.videos_slider_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100%)[3];
+      grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.videos-slider .videos_slider1 {
-  height: 100px;
-  width: 200px;
-  margin: auto;
-  background-color: #931621;
+.videos_slider_wrapper section {
+  width: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
 }
 
-.videos-slider .videos_slider2 {
-  height: 100px;
-  width: 200px;
-  margin: auto;
-  background: #E3E3E3;
+.videos_slider_wrapper section .videos_slider_item {
+  padding: 0 2px;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
 }
 
-.videos-slider .videos_slider3 {
-  height: 100px;
-  width: 200px;
-  margin: auto;
-  background: #931621;
+.videos_slider_wrapper section .videos_slider_item:hover {
+  margin: 0 40px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-.videos-slider .videos_slider4 {
-  height: 100px;
-  width: 200px;
-  margin: auto;
-  background: #E3E3E3;
+.videos_slider_wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
 }
 
-.videos-slider .videos_slider5 {
-  height: 100px;
-  width: 200px;
-  margin: auto;
-  background: #931621;
+.videos_slider_wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+.videos_slider_wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
