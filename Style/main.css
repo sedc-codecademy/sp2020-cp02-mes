@@ -261,7 +261,7 @@ nav .btn__desktop__login {
   opacity: 1;
 }
 
-nav i {
+nav .search__desktop {
   font-size: 20px;
   color: #931621;
 }
@@ -285,8 +285,9 @@ nav .nav-links li a {
   font-size: 18px;
 }
 
-nav .nav-links li i {
+nav .nav-links li .search__mobile {
   opacity: 0;
+  font-size: 18px;
   color: #931621;
 }
 
@@ -328,7 +329,7 @@ nav a:hover {
   nav .nav-links .btn__mobile__login {
     opacity: 1;
   }
-  nav .nav-links li i {
+  nav .nav-links li .search__mobile {
     opacity: 1;
     color: #931621;
   }
@@ -339,7 +340,7 @@ nav a:hover {
   nav .logo a {
     font-size: 14px;
   }
-  i {
+  .search__desktop {
     opacity: 0;
   }
   .nav-links {
@@ -615,7 +616,7 @@ i {
   opacity: 0.8;
   font-style: italic;
   font-size: 14px;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 .join_now {

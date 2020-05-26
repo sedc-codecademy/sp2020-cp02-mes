@@ -17,7 +17,7 @@ nav {
         margin-top: 0px;
         opacity: 1;
     }
-    i{
+    .search__desktop{
         font-size: 20px;
         color: $fill;
             // position: relative;
@@ -36,8 +36,9 @@ nav {
             a{
                 font-size: 18px;
             }
-            i{
+            .search__mobile{
                 opacity: 0;
+                font-size: 18px;
                 color: $fill;
             }
         }
@@ -81,7 +82,7 @@ nav {
                 opacity: 1;
             }
             li{
-                i{
+                .search__mobile{
                    opacity: 1;
                     color: $fill;
                 }
@@ -97,7 +98,7 @@ nav {
     
     }
    
-    i{
+    .search__desktop{
         opacity: 0;
     }
     .nav-links {
