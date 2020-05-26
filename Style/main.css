@@ -1,10 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome / 5.13.0/css/all.min.css");
 body {
   background-color: #11151C;
   font-family: '$Roboto';
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #11151C;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #931621;
+  /* color of the scroll thumb */
+  border-radius: 50px;
+  /* roundness of the scroll thumb */
+  border: 0.1 px solid #E3E3E3;
+  /* creates padding around scroll thumb */
 }
 
 .pd {
@@ -511,13 +530,10 @@ i {
   height: 80%;
 }
 
-.btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.findOurMore-btn {
+  display: inline-block;
+  position: relative;
+  left: 250px;
   margin-top: 100px;
 }
 

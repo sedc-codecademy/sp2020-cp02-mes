@@ -1,32 +1,43 @@
-//***GENERAL***
+// ***GENERAL***
 body {
     background-color: $primary;
     font-family: '$Roboto';
+    &::-webkit-scrollbar {
+        width: 10px; /* width of the entire scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+        background: $primary; /* color of the tracking area */
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $fill; /* color of the scroll thumb */
+        border-radius: 50px; /* roundness of the scroll thumb */
+        border: 0.1 px solid $secondary; /* creates padding around scroll thumb */
+    }
 }
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'); // FONT AWESOME ICONS
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome / 5.13.0/css/all.min.css'); // FONT AWESOME ICONS
 
-//***SECTION PADDING***
-.pd{
-    padding-top: 30px ; //20 small;40meduim; 60px large; za razlika od sekcija vo sekcija(pr. povemgju prv i vtor page)
-    padding-bottom: 30px ; //namerno se zapishani top i bottom za da ne se sudiraat so .pd-top130 podole
+// ***SECTION PADDING***
+.pd {
+    padding-top: 30px; // 20 small;40meduim; 60px large; za razlika od sekcija vo sekcija(pr. povemgju prv i vtor page)
+    padding-bottom: 30px; // namerno se zapishani top i bottom za da ne se sudiraat so .pd-top130 podole
 }
-.pd-top130{
-  padding-top: 130px; //samo na prvata sekcija na page-ot za da se skokne headerot!
+.pd-top130 {
+    padding-top: 130px; // samo na prvata sekcija na page-ot za da se skokne headerot!
 }
 
 .container {
-    padding-left: 20px; //0 40
+    padding-left: 20px; // 0 40
     padding-right: 20px;
-    max-width: 1440px; //1440
+    max-width: 1440px; // 1440
     margin: 0 auto;
     width: 100%;
 }
 
-//***h padding*** 
+// ***h padding***
 
 .padding-bt-20 {
-    padding-bottom: 20px; //padding koj kje go koristime na sekoj h (naslov) shto sakame samo da go odvoime samo od dolnata strana;
+    padding-bottom: 20px; // padding koj kje go koristime na sekoj h (naslov) shto sakame samo da go odvoime samo od dolnata strana;
 }
 
 .padding-bt-30 {
@@ -36,7 +47,7 @@ body {
 // BACKGROUND IMG
 
 .background {
-    background: url('../../Photos/123456.jpg') center center / cover ;
+    background: url('../../Photos/123456.jpg') center center / cover;
 }
 
 // strelki za levo/desno
