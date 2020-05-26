@@ -51,7 +51,7 @@
             <i class="fas fa-search search__desktop"></i>
         </nav>
     </header>
-    <section class="pd-top130 pd container flex-center">
+    <section class="pd-top130 pd container flex-center ">
         <div class="pd-bottom30">
             <h1 class="">about us</h1>
         </div>
@@ -76,21 +76,22 @@
                 earum autem commodi illo?</p>
         </div>
     </section>
+    
     <!-- STRUCTURE SECTION -->
-    <section class="pd container structure-section">
-        <div class="pd-bottom30 flex-center">
+    <section class="pd container">
+        <div class="pd__bottom30 flex-center">
             <h1>structure</h1>
         </div>
-        <div class="">
-            <div class="flex-center pd-bottom30">
+        <div class="structure__inside verticaly__align ">
+            <div class=" ">
                 <a href="#" class="btn">president</a>
             </div>
-            <div class="flex-space-between pd-bottom30">
-                <a href="#" class="btn ">general secretar</a>
-                <a href="#" class="btn ">vice president</a>
-                <a href="#" class="btn ">tournament manager</a>
+            <div class="flex-space-between structure__middleDiv pd__bottom50">
+                <a href="#" class="btn">general secretar</a>
+                <a href="#" class="btn">vice president</a>
+                <a href="#" class="btn">tournament manager</a>
             </div>
-            <div class="flex-center">
+            <div class="">
                 <a href="#" class="btn">board members</a>
             </div>
         </div>
@@ -122,21 +123,21 @@
         <div>
             <h1>international organizations</h1>
         </div>
-        <div class="pd flex-space-between">
-            <div class="org-cards">
-                <img src="" alt="cannot upload image">
+        <div class="pd flex-space-between  slider  organizations__cardsWrapper">
+            <div class="org-cards ">
+                <img src="/img/About.Images/iesfImg.jpg" alt="cannot upload image" class="slider2">
                 <h6>org one</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Debitis dolores dignissimos accusamus
                     tempore et minus!</br></p>
             </div>
-            <div class="org-cards">
-                <img src="" alt="cannot upload image">
+            <div class="org-cards  ">
+                <img src="/img/About.Images/iesfImg.jpg" alt="cannot upload image" class="slider2">
                 <h6>org two</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Debitis dolores dignissimos accusamus
                     tempore et minus!</br></p>
             </div>
-            <div class="org-cards">
-                <img src="" alt="cannot upload image">
+            <div class="org-cards  ">
+                <img src="/img/About.Images/iesfImg.jpg" alt="cannot upload image" class="slider2">
                 <h6>org three</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Debitis dolores dignissimos accusamus
                     tempore et minus!</br></p>
@@ -155,21 +156,11 @@
             <input type="radio" name="slider" id="s3" checked>
             <input type="radio" name="slider" id="s4">
             <input type="radio" name="slider" id="s5">
-            <label for="s1" id="slide1">
-                <img src="/img/fact sheet/1.png" alt="">
-            </label>
-            <label for="s2" id="slide2">
-                <img src="/img/fact sheet/2.png" alt="">
-            </label>
-            <label for="s3" id="slide3">
-                <img src="/img/fact sheet/3.png" alt="">
-            </label>
-            <label for="s4" id="slide4">
-                <img src="/img/fact sheet/4.png" alt="">
-            </label>
-            <label for="s5" id="slide5">
-                <img src="/img/fact sheet/5.png" alt="">
-            </label>
+            <label for="s1" id="slide1"></label>
+            <label for="s2" id="slide2"></label>
+            <label for="s3" id="slide3"></label>
+            <label for="s4" id="slide4"></label>
+            <label for="s5" id="slide5"></label>
         </section>
 
         <div>
@@ -208,7 +199,7 @@
         </div>
     </section>
     <!-- PAST PARTNERS SECTION -->
-    <section class="pd container ">
+    <section class="pd container pd__bottom50">
         <div class="flex-center">
             <h1>past partners</h1>
         </div>
@@ -245,4 +236,65 @@
     <script src="/js/home.js"></script>
 </body>
 
+<footer>
+    <div class="footer__main-div">
+        <div class="footer__sub-div">
+            <ul>
+                <h3>Find Us</h3>
+
+                <li>
+                    <i class="fab fa-facebook-square"></i>
+                    <a href="https://www.facebook.com/MacedonianESF/">Facebook</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="#">Instagram</a>
+                </li>
+
+                <li>
+                    <i class="fab fa-youtube"></i>
+                    <a href="https://www.youtube.com/channel/UCyc59ZppqS0IMiLUlniwJSA/about">Youtube</a>
+                </li>
+                <li>
+                    <i class="fab fa-twitch"></i>
+                    <a
+                        href="https://www.twitch.tv/mesfofficial?fbclid=IwAR1-0OimJ-ByGUdMWzoEShTJ8EvF9_YHYwsdB4_9LkJcttMW2Fag__lkzk0">Twitch</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__sub-div">
+            <ul>
+                <h3>Contact us</h3>
+
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="">contact@mesf.mk </a>
+                </li>
+
+                <li>
+                    <i class="fas fa-phone-square-alt"></i>
+                    <a href="">+38970800559</a> <br>
+                    <a href="" class="second_number">+38972606018</a></li>
+            </ul>
+        </div>
+        <div class="footer__sub-div">
+            <ul>
+                <h3>Macedonian eSport Federation</h3>
+
+                <li><iframe class="iframe__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.125612096241!2d21.404198415081392!3d41.997579679212876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135414408a3b55d1%3A0xbf02773800748ec7!2sAtinska%201%2C%20Skopje%201000!5e0!3m2!1sen!2smk!4v1590338626521!5m2!1sen!2smk"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe></li>
+                <li>
+                    <p>Atinska br.1-3/1 Skopje, Macedonia </p>
+                </li>
+        </div>
+    </div>
+    </section>
+    <div class="copyright">
+        <span> &copy; Copyright 2020 <span class="copyright__color">Code Academy</span> </span>
+    </div>
+</footer>
 </html>
