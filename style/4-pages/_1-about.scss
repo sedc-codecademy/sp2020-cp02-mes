@@ -1,0 +1,33 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+// STRUCTURE 
+
+.structure-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+        
+}
+
+
+.verticaly-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.org-cards {
+    width: 16.66%;
+    overflow: none;
+}
