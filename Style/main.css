@@ -155,28 +155,69 @@ a {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #931621;
+  -webkit-box-shadow: 0 0 10px #EE2E31;
+          box-shadow: 0 0 10px #EE2E31;
+}
+
+footer .footer__main-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 20px;
 }
 
-footer a {
-  font-size: 12px;
-  font-family: "Roboto";
+footer .footer__main-div .footer__sub-div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100%;
 }
 
-footer a:hover {
+footer .footer__main-div .footer__sub-div ul li {
+  margin: 20px 0;
+}
+
+footer .footer__main-div .footer__sub-div ul li p {
+  font-style: italic;
+  font-weight: 200;
+}
+
+footer .footer__main-div .footer__sub-div ul li .second_number {
+  padding-left: 36px;
+}
+
+footer .footer__main-div .footer__sub-div i {
+  font-size: 25px;
+}
+
+footer .footer__main-div a {
+  font-size: 16px;
+  font-family: "Fjalla One";
+  letter-spacing: 1px;
+}
+
+footer .footer__main-div a:hover {
   color: #931621;
 }
 
-footer h3 {
+footer .footer__main-div h3 {
+  text-transform: unset;
   color: #931621;
+  padding-bottom: 10px;
 }
 
-footer .iframe__map {
+footer .footer__main-div .iframe__map {
   width: 300px;
   height: 150px;
 }
@@ -187,7 +228,7 @@ footer .iframe__map {
   text-align: center;
   font-family: "Fjalla One";
   font-weight: 100;
-  padding: 10px 0;
+  padding: 5px;
 }
 
 .copyright .copyright__color {
@@ -611,6 +652,10 @@ i {
   margin: 0;
 }
 
+.margin-bottom60 {
+  margin-bottom: 60px;
+}
+
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,8 +743,10 @@ i {
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
-#s1:checked ~ #slide4, #s2:checked ~ #slide5,
-#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
 #s5:checked ~ #slide3 {
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
           box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
@@ -707,8 +754,10 @@ i {
           transform: translate3d(-30%, 0, -200px);
 }
 
-#s1:checked ~ #slide5, #s2:checked ~ #slide1,
-#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
 #s5:checked ~ #slide4 {
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -716,8 +765,10 @@ i {
           transform: translate3d(-15%, 0, -100px);
 }
 
-#s1:checked ~ #slide1, #s2:checked ~ #slide2,
-#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
 #s5:checked ~ #slide5 {
   -webkit-box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
@@ -725,8 +776,10 @@ i {
           transform: translate3d(0, 0, 0);
 }
 
-#s1:checked ~ #slide2, #s2:checked ~ #slide3,
-#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
 #s5:checked ~ #slide1 {
   -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -734,8 +787,10 @@ i {
           transform: translate3d(15%, 0, -100px);
 }
 
-#s1:checked ~ #slide3, #s2:checked ~ #slide4,
-#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
 #s5:checked ~ #slide2 {
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
           box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
@@ -761,6 +816,15 @@ i {
 
 #slide5 {
   background: #1a1a1a;
+}
+
+.pastPartners__slider .slider1 {
+  background-color: #E3E3E3;
+}
+
+.pastPartners__slider .slider1:hover {
+  background-color: #b0b0b0;
+  margin: 0 2px;
 }
 
 .slider__photos {
