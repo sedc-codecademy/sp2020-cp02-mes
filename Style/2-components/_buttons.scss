@@ -5,7 +5,8 @@
     padding: 2px 30px;
     border-radius: 5px;
     &:hover{
-        background-color:$red;
+        background-color:lighten($fill, 15%);
+        color: $secondary;
     }
     
 }
