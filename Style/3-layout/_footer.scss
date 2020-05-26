@@ -15,19 +15,25 @@ footer {
             height: 100%;
             ul{
                 li{
+                    margin: 20px 0;
                     p{
                         font-style: italic;
                         font-weight: 200;
                     }
+                    .second_number{
+                        padding-left: 36px;
+                    }
                 }
             }
             i{
-                font-size: 20px;
+                font-size: 25px;
             }
         }
         a {
-            font-size: 14px;
+            font-size: 16px;
             font-family: $FjallaOne;
+            letter-spacing: 1px;
+           
 
             &:hover {
                 color: $fill;
@@ -37,7 +43,7 @@ footer {
         h3 {
             text-transform: unset;
             color: $fill;
-            padding: 20px 0;
+            padding: 20px ;
         }
         .iframe__map {
             width: 300px;
@@ -52,7 +58,7 @@ footer {
     text-align: center;
     font-family: $FjallaOne;
     font-weight: 100;
-    padding: 10px 0;
+    padding: 5px;
     .copyright__color {
         color: $red;
     }
