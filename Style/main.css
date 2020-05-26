@@ -67,7 +67,7 @@ ul, ol {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 h1 {
@@ -188,38 +188,41 @@ footer .footer__main-div .footer__sub-div ul li {
   margin: 20px 0;
 }
 
-footer .footer__main-div .footer__sub-div ul li p {
+footer .footer__main-div .footer__sub-div ul p {
   font-style: italic;
   font-weight: 200;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
 }
 
-footer .footer__main-div .footer__sub-div ul li .second_number {
+footer .footer__main-div .footer__sub-div ul .second_number {
   padding-left: 36px;
 }
 
-footer .footer__main-div .footer__sub-div i {
+footer .footer__main-div i {
   font-size: 25px;
 }
 
-footer .footer__main-div a {
+footer a {
   font-size: 16px;
   font-family: "Fjalla One";
   letter-spacing: 1px;
 }
 
-footer .footer__main-div a:hover {
+footer a:hover {
   color: #931621;
 }
 
-footer .footer__main-div h3 {
+footer h3 {
   text-transform: unset;
   color: #931621;
   padding-bottom: 10px;
 }
 
-footer .footer__main-div .iframe__map {
-  width: 300px;
-  height: 150px;
+footer .iframe__map {
+  width: 100%;
+  height: 100%;
 }
 
 .copyright {
@@ -469,7 +472,7 @@ img {
 }
 
 .carousel-inner {
-  max-height: 550px;
+  max-height: 565px;
   width: 100%;
 }
 
@@ -742,6 +745,11 @@ i {
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+#slider label img {
+  width: 100%;
+  height: 100%;
 }
 
 #s1:checked ~ #slide4,
