@@ -1,17 +1,20 @@
 .videos-container {
     position: relative;
+    width: 95vw;
+    
     .videos-title {
         position: absolute;
         top: 0;
         left: 0;
+        font-size: 1.5rem;
     }
 
-    .bounding_box {
-        height: 100px;
-        width: 100%;
+    .videos_bounding_box {
+        height: 6rem;
         background-image: url("../../img/606641.jpg");
+        background-size: cover;
         background-repeat: no-repeat;
-        
+
         clip-path: polygon(20% 0, 100% 0, 100% 50%, 0 50%);
     }
 }
@@ -20,8 +23,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-
-    margin-top: 3%;
+    margin-top: 0%;
 }
 
 //videos slider
