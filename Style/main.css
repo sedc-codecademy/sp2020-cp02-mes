@@ -724,7 +724,7 @@ i {
 }
 
 #slider {
-  height: 35vw;
+  height: 32vw;
   position: relative;
   -webkit-perspective: 1000px;
           perspective: 1000px;
