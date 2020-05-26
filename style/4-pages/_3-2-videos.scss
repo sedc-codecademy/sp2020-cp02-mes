@@ -26,41 +26,63 @@
 
 //videos slider
 
-.videos-slider {
-    display: flex;
-    flex-wrap: wrap;
+$itemGrow: 1.2;
+$duration: 250ms;
 
-    align-items: center;
-    justify-content: center;
-    
-    .videos_slider1 {
-        height: 100px;
-        width: 200px;
-        margin: auto;
-        background-color: $fill;
+
+  
+  .videos_slider_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    overflow:hidden;
+    scroll-behavior: smooth;
+  
+    section {
+      width: 100%;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      margin: 20px 0;
+      
+      .videos_slider_item {
+        padding: 0 2px;
+        transition: $duration all;
+        
+        &:hover { 
+          margin: 0 40px;
+          transform: scale(1.2);
+        }
+        
+      }
+      
+      a {
+        position: absolute;
+        color: #fff;
+        text-decoration: none;
+        font-size: 6em;
+        background:rgb(0,0,0);
+        width: 80px;
+        padding: 20px;
+        text-align: center;
+        z-index: 1;
+        
+        &:nth-of-type(1) {
+          top:0; bottom:0; left:0;
+          background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        }
+        &:nth-of-type(2) {
+          top:0; bottom:0; right: 0;
+          background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        }
+        
+      }
+      
     }
-    .videos_slider2{
-        height: 100px;
-        width: 200px;
-        margin: auto;
-        background: $secondary;
+  }
+  
+  // Remove the arrow for Mobile
+  @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+      display:none;
     }
-    .videos_slider3{
-        height: 100px;
-        width: 200px;
-        margin: auto;
-        background: $fill;
-    }
-    .videos_slider4{
-        height: 100px;
-        width: 200px;
-        margin: auto;
-        background: $secondary;
-    }
-    .videos_slider5{
-        height: 100px;
-        width: 200px;
-        margin: auto;
-        background: $fill;
-    }
-}
+  }
