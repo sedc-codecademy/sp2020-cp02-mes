@@ -155,7 +155,7 @@ a {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   border-top: 2px solid #931621;
@@ -214,7 +214,7 @@ footer .footer__main-div a:hover {
 footer .footer__main-div h3 {
   text-transform: unset;
   color: #931621;
-  padding: 20px;
+  padding-bottom: 10px;
 }
 
 footer .footer__main-div .iframe__map {
@@ -650,6 +650,10 @@ i {
 
 .store-btn a {
   margin: 0;
+}
+
+.margin-bottom60 {
+  margin-bottom: 60px;
 }
 
 .flex-center {
