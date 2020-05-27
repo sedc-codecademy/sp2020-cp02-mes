@@ -1,0 +1,21 @@
+.volunteer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.goFoundMe__main-div {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        font-size: 24px;
+        // text-decoration: underline;
+        padding: 0 5px;
+    }
+    h5{
+        text-transform: none;
+        letter-spacing: 3px;
+    }
+}
