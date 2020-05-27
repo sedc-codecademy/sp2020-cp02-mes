@@ -626,6 +626,27 @@ i {
   padding: 0 60px;
 }
 
+.becomeAMember__main-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.becomeAMember__main-div .becomeAMember__sub-div1 {
+  background-color: black;
+  margin-right: 15px;
+}
+
+.becomeAMember__main-div .becomeAMember__sub-div2 {
+  margin-left: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+}
+
 .join_now {
   background-image: url("/img/background/pic1.jpg");
   padding: 60px 0;

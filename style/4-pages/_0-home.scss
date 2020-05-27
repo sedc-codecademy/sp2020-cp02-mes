@@ -165,12 +165,31 @@ i {
 
 // Members******
 
+
+// Become a member****
+
+.becomeAMember__main-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    .becomeAMember__sub-div1 {
+        background-color: darken($primary, 10%);
+        margin-right:15px;
+    }
+    .becomeAMember__sub-div2 {
+        margin-left: 15px;
+        padding-bottom: 15px;
+        background-color: darken($primary, 10%);
+    }
+}
+
+
 // JOIN NOW***************
 
 .join_now {
 
     background-image: url('/img/background/pic1.jpg');
-    padding: 60px 0; //za da izlgeda pogolema celata sekcija
+    padding: 60px 0; // za da izlgeda pogolema celata sekcija
 
     .joinNow__main-div {
         display: flex;
@@ -197,4 +216,3 @@ i {
 }
 
 // ENDORSED BY
-
