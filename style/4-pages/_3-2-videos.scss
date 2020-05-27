@@ -83,8 +83,56 @@ $duration: 250ms;
   }
   
   // Remove the arrow for Mobile
-  @media only screen and (max-width: 600px) {
-    a.arrow__btn {
-      display:none;
+
+
+  //timeline
+  .videos_timeline {
+    display: flex;
+    justify-content: space-evenly;
+    //  align-content: center;
+  
+    list-style: none;
+    width: 100%;
+    //  margin-top: 70px;
+    padding: 0;
+    li {
+      position: relative;
+      color: $secondary;
+      // text-align: center;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 3px;
+        background-color: #fff;
+        left: -400%;
+        top: -50%;
+      }
+      &:first-child::after {
+        content: none;
+      }
+      &:hover {
+        color: $fill;
+        cursor: pointer;
+      }
     }
   }
+  
+  @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+      display: none;
+    }
+  
+    .videos_timeline {
+      li {
+        &::after {
+          width: 40px;
+          left: -25%;
+        }
+        &:first-child::after {
+          content: "";
+        }
+      }
+    }
+  }
+  
