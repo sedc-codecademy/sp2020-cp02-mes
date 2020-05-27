@@ -4,6 +4,7 @@ footer {
     width: 100%;
     border-top: 2px solid $fill;
     box-shadow: 0 0 10px $red;
+    padding-top: 20px;
     .footer__main-div {
         display: flex;
         justify-content: space-between;
@@ -21,9 +22,6 @@ footer {
                 p {
                     font-style: italic;
                     font-weight: 200;
-                    position: absolute;
-                    right: 20px;
-                    bottom: 30px;
 
                 }
                 .second_number {
@@ -50,6 +48,7 @@ footer {
         text-transform: unset;
         color: $fill;
         padding-bottom: 10px;
+        padding-left: 30px;
     }
     .iframe__map {
         width: 100%;
@@ -64,7 +63,7 @@ footer {
     text-align: center;
     font-family: $FjallaOne;
     font-weight: 100;
-    padding: 5px;
+    // max-width: 1440px;
     .copyright__color {
         color: $red;
     }

@@ -161,6 +161,7 @@ footer {
   border-top: 2px solid #931621;
   -webkit-box-shadow: 0 0 10px #EE2E31;
           box-shadow: 0 0 10px #EE2E31;
+  padding-top: 20px;
 }
 
 footer .footer__main-div {
@@ -191,9 +192,6 @@ footer .footer__main-div .footer__sub-div ul li {
 footer .footer__main-div .footer__sub-div ul p {
   font-style: italic;
   font-weight: 200;
-  position: absolute;
-  right: 20px;
-  bottom: 30px;
 }
 
 footer .footer__main-div .footer__sub-div ul .second_number {
@@ -218,6 +216,7 @@ footer h3 {
   text-transform: unset;
   color: #931621;
   padding-bottom: 10px;
+  padding-left: 30px;
 }
 
 footer .iframe__map {
@@ -231,7 +230,6 @@ footer .iframe__map {
   text-align: center;
   font-family: "Fjalla One";
   font-weight: 100;
-  padding: 5px;
 }
 
 .copyright .copyright__color {
@@ -241,16 +239,6 @@ footer .iframe__map {
 nav {
   z-index: 100;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 20px;
   height: 100px;
   background-color: #11151C;
   width: 100%;
@@ -259,22 +247,35 @@ nav {
           box-shadow: 0 0 10px #EE2E31;
 }
 
-nav .btn__desktop__login {
-  margin-top: 0px;
+nav .header__main-div {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .header__main-div .btn__desktop__login {
+  margin-top: 0;
   opacity: 1;
 }
 
-nav .search__desktop {
+nav .header__main-div .search__desktop {
   font-size: 20px;
   color: #931621;
 }
 
-nav img {
+nav .header__main-div img {
   width: 90px;
   height: 90px;
 }
 
-nav .nav-links {
+nav .header__main-div .nav-links {
   margin-left: -80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,23 +288,23 @@ nav .nav-links {
   width: 50%;
 }
 
-nav .nav-links li a {
+nav .header__main-div .nav-links li a {
   font-size: 18px;
 }
 
-nav .nav-links li .search__mobile {
+nav .header__main-div .nav-links li .search__mobile {
   opacity: 0;
   font-size: 18px;
   color: #931621;
 }
 
-nav .btn__mobile__login {
+nav .header__main-div .btn__mobile__login {
   display: inline-block;
   margin-top: 0;
   opacity: 0;
 }
 
-nav a:hover {
+nav .header__main-div a:hover {
   color: #931621;
 }
 
@@ -384,7 +385,7 @@ nav a:hover {
 
 @media only screen and (min-width: 961px) {
   nav ul {
-    margin-left: 0px;
+    margin-left: 0;
   }
   nav .nav-links {
     width: 70%;
@@ -626,6 +627,11 @@ i {
 }
 
 .join_now {
+  background-image: url("/img/background/pic1.jpg");
+  padding: 60px 0;
+}
+
+.join_now .joinNow__main-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -634,8 +640,6 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/background/pic1.jpg);
-  padding: 60px 0;
 }
 
 .join_now h3 {
@@ -659,8 +663,12 @@ i {
   margin: 0;
 }
 
-.margin-bottom60 {
-  margin-bottom: 60px;
+.pd__bottom30 {
+  padding-bottom: 30px;
+}
+
+.pd__bottom50 {
+  padding: 50px;
 }
 
 .flex-center {
@@ -688,22 +696,20 @@ i {
           align-items: center;
 }
 
-.pd-bottom30 {
-  padding-bottom: 30;
-}
-
-.structure-section {
+.structure__inside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
 }
 
-.verticaly-align {
+.structure__inside .structure__middleDiv {
+  margin-left: 25px;
+}
+
+.verticaly__align {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,12 +728,16 @@ i {
   overflow: none;
 }
 
+.organizations__cardsWrapper {
+  margin-left: -100px;
+}
+
 [type=radio] {
   display: none;
 }
 
 #slider {
-  height: 32vw;
+  height: 35vw;
   position: relative;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -748,11 +758,6 @@ i {
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-}
-
-#slider label img {
-  width: 100%;
-  height: 100%;
 }
 
 #s1:checked ~ #slide4,

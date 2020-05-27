@@ -1,62 +1,58 @@
 nav {
     z-index: 100;
     position: fixed;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    padding: 0 20px;
     height: 100px;
     background-color: $primary;
     width: 100%;
     border-bottom: 1px solid $fill;
     box-shadow: 0 0 10px $red;
-    
-    @include mobile{
-        
-    }
-    // ul{
-    //     margin-left:-1000px;
-    // }
-    .btn__desktop__login{   
-        margin-top: 0px;
-        opacity: 1;
-    }
-    .search__desktop{
-        font-size: 20px;
-        color: $fill;
+    .header__main-div {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn__desktop__login {
+            margin-top: 0;
+            opacity: 1;
+        }
+        .search__desktop {
+            font-size: 20px;
+            color: $fill;
             // position: relative;
             // right: 200px;
-    }
-    img {
-        width: 90px;
-        height: 90px;
-    }
-    .nav-links {
-        margin-left: -80px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 50%;
-        li{
-            a{
-                font-size: 18px;
-            }
-            .search__mobile{
-                opacity: 0;
-                font-size: 18px;
-                color: $fill;
+        }
+        img {
+            width: 90px;
+            height: 90px;
+        }
+        .nav-links {
+            margin-left: -80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            li {
+                a {
+                    font-size: 18px;
+                }
+                .search__mobile {
+                    opacity: 0;
+                    font-size: 18px;
+                    color: $fill;
+                }
             }
         }
-    }
-    .btn__mobile__login {
-        display: inline-block;
-        margin-top: 0;
-        opacity: 0;
-    }
-    a:hover {
-        color: $fill;
+        .btn__mobile__login {
+            display: inline-block;
+            margin-top: 0;
+            opacity: 0;
+        }
+        a:hover {
+            color: $fill;
+        }
     }
 }
+
 
 .burger {
     z-index: 11;
@@ -78,17 +74,17 @@ nav {
 
 
     nav {
-        .btn__desktop__login{
+        .btn__desktop__login {
             display: none;
         }
         .nav-links {
             width: 100%;
-            .btn__mobile__login{
+            .btn__mobile__login {
                 opacity: 1;
             }
-            li{
-                .search__mobile{
-                   opacity: 1;
+            li {
+                .search__mobile {
+                    opacity: 1;
                     color: $fill;
                 }
             }
@@ -100,16 +96,16 @@ nav {
                 font-size: 14px;
             }
         }
-    
+
     }
-   
-    .search__desktop{
+
+    .search__desktop {
         opacity: 0;
     }
     .nav-links {
         position: absolute;
         right: 0;
-        height:80vh;
+        height: 80vh;
         top: 100px;
         background-color: $primary;
         display: flex;
@@ -132,12 +128,12 @@ nav {
 @media only screen and(min-width: 961px) {
 
     nav {
-        ul{
-            margin-left:0px;
+        ul {
+            margin-left: 0;
         }
         .nav-links {
             width: 70%;
-            
+
 
         }
     }
@@ -149,9 +145,9 @@ nav {
 
 @media only screen and(max-width: 1340px) {
     nav {
-        ul{
-            margin-left:-200px;
-        }
+        ul {
+            margin-left: -200px;
+        };
         // .nav-links {
         //     width: 60%;
         // }
@@ -187,6 +183,3 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
 }
-
-
-

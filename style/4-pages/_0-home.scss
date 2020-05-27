@@ -137,7 +137,7 @@ i {
 
 // *** OUR MISSION ***
 
-.ourMission__main-div{
+.ourMission__main-div {
     display: flex;
     justify-content: space-between;
 }
@@ -147,15 +147,15 @@ i {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    h5{
+    h5 {
         padding: 20px 0;
     }
-    i{
+    i {
         padding-top: 50px;
         font-size: 50px;
         color: $fill;
     }
-    p{
+    p {
         opacity: 0.8;
         font-style: italic;
         font-size: 14px;
@@ -163,38 +163,38 @@ i {
     }
 }
 
-//Members******
+// Members******
 
-//JOIN NOW***************
+// JOIN NOW***************
 
-.join_now{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(/img/background/pic1.jpg) ;
-    padding: 60px 0;
- 
-    
-    h3{
-        text-transform: none;        
+.join_now {
+
+    background-image: url('/img/background/pic1.jpg');
+    padding: 60px 0; //za da izlgeda pogolema celata sekcija
+
+    .joinNow__main-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h3 {
+        text-transform: none;
     }
 }
 
-//E-STORE ***************
+// E-STORE ***************
 
 .store-btn {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     margin-top: 90px;
-     a{
+    a {
         margin: 0;
     }
-    
+
 }
 
-//ENDORSED BY
+// ENDORSED BY
 
-.margin-bottom60{
-    margin-bottom: 60px;
-}
