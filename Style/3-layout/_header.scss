@@ -2,7 +2,7 @@ nav {
     z-index: 100;
     position: fixed;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
     padding: 0 20px;
     height: 100px;
@@ -10,6 +10,10 @@ nav {
     width: 100%;
     border-bottom: 1px solid $fill;
     box-shadow: 0 0 10px $red;
+    
+    @include mobile{
+        
+    }
     // ul{
     //     margin-left:-1000px;
     // }
@@ -31,6 +35,7 @@ nav {
         margin-left: -80px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         width: 50%;
         li{
             a{
@@ -104,7 +109,7 @@ nav {
     .nav-links {
         position: absolute;
         right: 0;
-        height: 80vh;
+        height:80vh;
         top: 100px;
         background-color: $primary;
         display: flex;
@@ -182,3 +187,6 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
 }
+
+
+
