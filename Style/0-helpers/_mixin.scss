@@ -25,6 +25,9 @@
     color: $secondary;
     text-transform: uppercase;
     cursor: pointer;
+    &:hover{
+        color: $fill;
+    }
 }
 
 //Mixin for media query

@@ -36,23 +36,22 @@ nav {
                 }
                 .search__mobile {
                     display: none;
-                    font-size: 18px;
-                    color: $fill;
+
                 }
             }
         }
         .btn__mobile__login {
             display: none;
-        }
-        a:hover {
-            color: $fill;
-        }
+        };
+        // a:hover {
+        //     color: $fill;
+        // }
     }
 }
 
 
 .burger {
-    z-index: 11;
+    // z-index: 11;
     display: none;
     cursor: pointer;
     div {
@@ -71,14 +70,13 @@ nav {
 
 
     nav {
-       
 
         .header__main-div {
 
             .btn__desktop__login {
                 display: none;
             }
-           
+
         }
         .nav-links {
             width: 100%;
@@ -87,6 +85,7 @@ nav {
             }
             .search__mobile {
                 display: flex;
+                font-size: 18px;
                 color: $fill;
             }
 

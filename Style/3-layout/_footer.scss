@@ -4,7 +4,7 @@ footer {
     width: 100%;
     border-top: 2px solid $fill;
     box-shadow: 0 0 10px $red;
-    padding-top: 20px;
+    // padding-top: 20px;
     .footer__main-div {
         display: flex;
         justify-content: space-between;
@@ -47,8 +47,7 @@ footer {
     h3 {
         text-transform: unset;
         color: $fill;
-        padding-bottom: 10px;
-        padding-left: 30px;
+        padding: 20px 30px 10px 0;
     }
     .iframe__map {
         width: 100%;
