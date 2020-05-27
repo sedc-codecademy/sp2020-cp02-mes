@@ -12,8 +12,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         .btn__desktop__login {
-            margin-top: 0;
-            opacity: 1;
+            display: inline;
         }
         .search__desktop {
             font-size: 20px;
@@ -26,26 +25,24 @@ nav {
             height: 90px;
         }
         .nav-links {
-            margin-left: -80px;
+            // margin-left: 0;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            width: 50%;
+            // width: 50%;
             li {
                 a {
                     font-size: 18px;
                 }
                 .search__mobile {
-                    opacity: 0;
+                    display: none;
                     font-size: 18px;
                     color: $fill;
                 }
             }
         }
         .btn__mobile__login {
-            display: inline-block;
-            margin-top: 0;
-            opacity: 0;
+            display: none;
         }
         a:hover {
             color: $fill;
@@ -74,20 +71,25 @@ nav {
 
 
     nav {
-        .btn__desktop__login {
-            display: none;
+       
+
+        .header__main-div {
+
+            .btn__desktop__login {
+                display: none;
+            }
+           
         }
         .nav-links {
             width: 100%;
             .btn__mobile__login {
-                opacity: 1;
+                display: flex;
             }
-            li {
-                .search__mobile {
-                    opacity: 1;
-                    color: $fill;
-                }
+            .search__mobile {
+                display: flex;
+                color: $fill;
             }
+
         }
         .logo {
             position: absolute;
@@ -100,13 +102,14 @@ nav {
     }
 
     .search__desktop {
-        opacity: 0;
+        display: none;
     }
     .nav-links {
+
         position: absolute;
         right: 0;
-        height: 80vh;
-        top: 100px;
+        height: 100vh;
+        top: 0;
         background-color: $primary;
         display: flex;
         flex-direction: column;
@@ -124,6 +127,7 @@ nav {
         right: 30px;
     }
 }
+
 
 @media only screen and(min-width: 961px) {
 
@@ -154,7 +158,7 @@ nav {
     }
     a {
         letter-spacing: 0;
-        padding: 10px;
+        // padding: 10px;
     }
 }
 
