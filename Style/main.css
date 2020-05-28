@@ -623,36 +623,6 @@ nav .header__main-div .btn__mobile__login {
   height: 10px;
 }
 
-.carousel-caption {
-  font-size: 19px;
-  font-style: italic;
-  font-weight: bold;
-  display: none;
-}
-
-.carousel-control {
-  text-shadow: 0;
-}
-
-.carousel-control.left {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))) !important;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%) !important;
-}
-
-.carousel-control.right {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))) !important;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%) !important;
-}
-
-img {
-  width: 100%;
-}
-
-.carousel-inner {
-  max-height: 565px;
-  width: 100%;
-}
-
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -851,7 +821,10 @@ i {
 }
 
 .join_now {
-  background-image: url("/img/background/pic1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(17, 21, 28, 0.9)), color-stop(50%, rgba(147, 22, 33, 0.3)), color-stop(90%, rgba(17, 21, 28, 0.9))), url("/img/background/pic1.jpg");
+  background-image: linear-gradient(rgba(17, 21, 28, 0.9) 10%, rgba(147, 22, 33, 0.3) 50%, rgba(17, 21, 28, 0.9) 90%), url("/img/background/pic1.jpg");
+  background-position: center;
+  background-size: cover;
   padding: 60px 0;
 }
 
@@ -864,6 +837,15 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.join_now .joinNow__main-div .join_now-btn {
+  border: 0.1px solid #11151C;
+}
+
+.join_now .joinNow__main-div .join_now-btn:hover {
+  -webkit-box-shadow: 0 0 5px #E3E3E3;
+          box-shadow: 0 0 5px #E3E3E3;
 }
 
 .join_now h3 {
