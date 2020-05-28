@@ -28,9 +28,17 @@ const navSlide = () =>{
 
 navSlide();
 
-
-
 //***Home slider***
+
+setInterval(function(){
+
+    const checkedElement = document.querySelector(".carousel > input:checked")
+    const checkedElementId = checkedElement.getAttribute("id")
+    const elementOrdinal = parseInt(checkedElementId[checkedElementId.length - 1]) % 5 //kolku slideri, tolku modul %
+    document.getElementById("carousel-" + ((elementOrdinal + 1))).checked = true
+
+}, 5000)
+
 
 
 //************************************************************//
