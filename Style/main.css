@@ -1053,6 +1053,81 @@ i {
   margin: 0 2px;
 }
 
+.gallery__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 100px;
+}
+
+.gallery__main .photos__main {
+  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  width: 50%;
+  height: 65vh;
+  position: relative;
+}
+
+.gallery__main .photos__main:hover {
+  border-bottom: 1px solid #931621;
+}
+
+.gallery__main .photos__main:hover h2 {
+  color: #931621;
+  font-size: 35px;
+}
+
+.gallery__main .photos__main img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__main .photos__main h2 {
+  color: #E3E3E3;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.gallery__main .videos__main {
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  width: 50%;
+  height: 65vh;
+  margin-top: 100px;
+  position: relative;
+}
+
+.gallery__main .videos__main:hover {
+  border-top: 1px solid #931621;
+}
+
+.gallery__main .videos__main:hover h2 {
+  color: #931621;
+  font-size: 35px;
+}
+
+.gallery__main .videos__main img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__main .videos__main h2 {
+  color: #E3E3E3;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.pd-top45 {
+  padding-top: 45px;
+}
+
 .slider__photos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1190,9 +1265,52 @@ i {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
 
+.videos_timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.videos_timeline li {
+  position: relative;
+  color: #E3E3E3;
+}
+
+.videos_timeline li::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: #fff;
+  left: -400%;
+  top: -50%;
+}
+
+.videos_timeline li:first-child::after {
+  content: none;
+}
+
+.videos_timeline li:hover {
+  color: #931621;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   a.arrow__btn {
     display: none;
+  }
+  .videos_timeline li::after {
+    width: 40px;
+    left: -25%;
+  }
+  .videos_timeline li:first-child::after {
+    content: "";
   }
 }
 
