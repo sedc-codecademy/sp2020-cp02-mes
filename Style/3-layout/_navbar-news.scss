@@ -1,0 +1,25 @@
+.sub__nav_news{
+    background-color: darken($primary, 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    .news-feed{
+        margin: 1em;
+        padding: 1em;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        li{
+            margin: 1em;
+            padding: 1em;
+        }
+    }
+}
