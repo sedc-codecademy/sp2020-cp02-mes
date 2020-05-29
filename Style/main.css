@@ -962,19 +962,6 @@ i {
           align-items: center;
 }
 
-.structure__inside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-}
-
-.structure__inside .structure__middleDiv {
-  margin-left: 25px;
-}
-
 .verticaly__align {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,13 +976,145 @@ i {
   text-align: center;
 }
 
-.org-cards {
-  width: 16.66%;
-  overflow: none;
+.org-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.org-chart ul {
+  padding-top: 20px;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.org-chart ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0;
+}
+
+.org-chart li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.org-chart li::before, .org-chart li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+
+.org-chart li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
+.org-chart li:only-child::after, .org-chart li:only-child::before {
+  display: none;
+}
+
+.org-chart li:only-child {
+  padding-top: 0;
+}
+
+.org-chart li:first-child::before, .org-chart li:last-child::after {
+  border: 0 none;
+}
+
+.org-chart li:last-child::before {
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 0 0;
+}
+
+.org-chart li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.org-chart li .user {
+  text-decoration: none;
+  color: #666;
+  font-family: "Roboto";
+  display: inline-block;
+  padding: 20px 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #E3E3E3;
+  min-width: 180px;
+  border-radius: 2px;
+  border: 1.5px solid #931621;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.org-chart li .user:hover {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.org-chart li .user:hover + ul li::after,
+.org-chart li .user:hover + ul li::before,
+.org-chart li .user:hover + ul::before,
+.org-chart li .user:hover + ul ul::before {
+  border-color: #94a0b4;
+}
+
+.org-chart li .user > div, .org-chart li .user > a {
+  font-size: 12px;
+}
+
+.org-chart li .user img {
+  margin: 0 auto;
+  max-width: 60px;
+  max-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 3%;
+}
+
+.org-chart li .user .name {
+  font-size: 16px;
+  margin: 15px 0 0;
+  font-weight: 300;
+}
+
+.org-chart li .user .role {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.org-chart li .user .manager {
+  font-size: 12px;
+  color: #b21e04;
 }
 
 .organizations__cardsWrapper {
   margin-left: -100px;
+}
+
+.org-cards {
+  width: 16.66%;
+  overflow: none;
 }
 
 [type=radio] {
