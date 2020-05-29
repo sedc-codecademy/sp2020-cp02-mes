@@ -239,7 +239,7 @@ footer .iframe__map {
   color: #EE2E31;
 }
 
-nav {
+.main__nav {
   z-index: 100;
   position: fixed;
   height: 100px;
@@ -250,7 +250,7 @@ nav {
           box-shadow: 0 0 10px #EE2E31;
 }
 
-nav .header__main-div {
+.main__nav .header__main-div {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,21 +263,21 @@ nav .header__main-div {
           align-items: center;
 }
 
-nav .header__main-div .btn__desktop__login {
+.main__nav .header__main-div .btn__desktop__login {
   display: inline;
 }
 
-nav .header__main-div .search__desktop {
+.main__nav .header__main-div .search__desktop {
   font-size: 20px;
   color: #931621;
 }
 
-nav .header__main-div img {
+.main__nav .header__main-div img {
   width: 90px;
   height: 90px;
 }
 
-nav .header__main-div .nav-links {
+.main__nav .header__main-div .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,15 +288,15 @@ nav .header__main-div .nav-links {
           align-items: center;
 }
 
-nav .header__main-div .nav-links li a {
+.main__nav .header__main-div .nav-links li a {
   font-size: 18px;
 }
 
-nav .header__main-div .nav-links li .search__mobile {
+.main__nav .header__main-div .nav-links li .search__mobile {
   display: none;
 }
 
-nav .header__main-div .btn__mobile__login {
+.main__nav .header__main-div .btn__mobile__login {
   display: none;
 }
 
@@ -318,29 +318,29 @@ nav .header__main-div .btn__mobile__login {
   body {
     overflow-x: hidden;
   }
-  nav .header__main-div .btn__desktop__login {
+  .main__nav .header__main-div .btn__desktop__login {
     display: none;
   }
-  nav .nav-links {
+  .main__nav .nav-links {
     width: 100%;
   }
-  nav .nav-links .btn__mobile__login {
+  .main__nav .nav-links .btn__mobile__login {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  nav .nav-links .search__mobile {
+  .main__nav .nav-links .search__mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 18px;
     color: #931621;
   }
-  nav .logo {
+  .main__nav .logo {
     position: absolute;
     left: 30px;
   }
-  nav .logo a {
+  .main__nav .logo a {
     font-size: 14px;
   }
   .search__desktop {
@@ -380,10 +380,10 @@ nav .header__main-div .btn__mobile__login {
 }
 
 @media only screen and (min-width: 961px) {
-  nav ul {
+  .main__nav ul {
     margin-left: 0;
   }
-  nav .nav-links {
+  .main__nav .nav-links {
     width: 70%;
   }
   a {
@@ -536,7 +536,7 @@ nav .header__main-div .btn__mobile__login {
   padding: 0;
   list-style-type: none;
   width: 100%;
-  height: 75vh;
+  height: 85vh;
   position: relative;
 }
 
@@ -621,6 +621,12 @@ nav .header__main-div .btn__mobile__login {
   margin: 0 .125%;
   width: 10px;
   height: 10px;
+}
+
+.firstSectiion {
+  padding: 110px 0 0 0;
+  max-width: 100vw;
+  margin: 0 auto;
 }
 
 .slider {
