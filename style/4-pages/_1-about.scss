@@ -27,110 +27,115 @@
 }
 
 // MANAGEMENT STRUCTURE
-.org-chart {
-	display:flex;
-	justify-content:center;
-	ul {
-		padding-top: 20px;
-		position: relative;
-		transition: all 0.5s;
-		ul::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 50%;
-			border-left: 1px solid #ccc;
-			width: 0;
-		}
+
+	.tree ul {
+	    padding-top: 20px;
+	    position: relative;
+	    transition: all 0.5s;
 	}
-	li {
+	.tree li {	
+	    float: left;
+	    text-align: center;
+	    list-style-type: none;
+	    position: relative;
+	    padding: 20px 5px 0 5px;
+	    transition: all 0.5s;
+	}
+	.tree li::before, .tree li::after {
+	    content:'';
+	    position: absolute;
+	    top: 0;
+	    right: 50%;
+	    border-top: 1px solid #ccc;
+	    width: 50%;
+	    height: 20px;
+	}
+	.tree li:after {
+	    right: auto;
+	    left: 50%;
+	    border-left: 1px solid #ccc;
+	}
+	.tree li:only-child::after, .tree li:only-child::before {
+	    display: none;
+	}
+	.tree li:only-child {
+	    padding-top: 0;
+	}
+	.tree li:first-child::before, .tree li:last-child::after {
+	    border: 0 none;
+	}
+	.tree li:last-child::before {
+	    border-right: 1px solid #ccc;
+	    border-radius: 0 5px 0 0;
+
+	}
+	.tree li:first-child::after {
+	    border-radius: 5px 0 0 0;
+
+	}
+	.tree ul ul::before {
+	    content:'';
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    border-left: 1px solid #ccc;
+	    width: 0;
+	    height: 20px;
+	    margin-left: -1px;
+	}
+	.tree li a img {
 		float: left;
-		text-align: center;
-		list-style-type: none;
-		position: relative;
-		padding: 20px 10px;
+		width: 60px;
+		height: 60px;
+		border-radius: 2px;
+	} 
+
+	.tree li a {	
+		
+		text-decoration: none;
+		color: #666;
+        font-family: $Roboto;				
+		background:$secondary;
+	    border: 1px solid $fill;
+	    padding: 5px 10px;
+	    text-decoration: none;
+	    font-size: 14px;
+	    display: inline-block;
+	    border-radius: 5%;
 		transition: all 0.5s;
-		&::before,&::after {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 50%;
-			border-top: 1px solid #ccc;
-			width: 50%;
-			height: 20px;
-		}
-		&::after {
-			right: auto;
-			left: 50%;
-			border-left: 1px solid #ccc;
-		}
-		&:only-child::after, &:only-child::before {
-			display:none;
-		}
-		&:only-child {
-			padding-top:0;
-		}
-		&:first-child::before, &:last-child::after {
-			border: 0 none;
-		}
-		&:last-child::before {
-			border-right: 1px solid #ccc;
-			border-radius: 0 5px 0 0;
-		}
-		&:first-child::after {
-			border-radius: 5px 0 0 0;
-		}
-		.user {
-			text-decoration: none;
-			color: #666;
-            font-family: $Roboto;
-			display: inline-block;
-			padding:20px 10px;
-			transition: all 0.5s;
-			background:$secondary;
-			min-width:180px;
-            border-radius:2px;
-            border:1.5px solid  $fill;
-            
-			@include shadow(1);
-			&:hover {
-                transition:all 0.15s;
-			 	transform:translateY(-5px);
-				+ ul li::after,
-				+ ul li::before,
-				+ ul::before,
-				+ ul ul::before {
-					border-color:  #94a0b4;
-				}
-			}
-			> div, > a {
-				font-size:12px;
-			}
-			img {
-				margin:0 auto;
-				max-width:60px;
-				max-width:60px;
-				width:60px;
-				height:60px;
-				border-radius:3%;
-			}
-			.name {
-				font-size:16px;
-				margin:15px 0 0;
-				font-weight:300;
-			}
-			.role {
-				font-weight:600;
-				margin-bottom:10px;
-				margin-top:5px;
-			}
-			.manager {
-				font-size:12px;
-			  color:#b21e04;
-			}
+		width: 100%;
+		height: 100%;
+		
+		.structure__memberPosition {
+			font-size: 12px;
 		}
 	}
-}
+
+	.li__divWrapper {
+		width: 250px;
+		height: 75px;
+	}
+
+    // HOVER EFFECTS DONT DELETE !
+	// .tree li a:hover, .tree li a:hover+ul li a {
+	//     background: #c8e4f8;
+	//     color: #000;
+	//     border: 1px solid #94a0b4;
+	// }
+	// .tree li a:hover+ul li::after, .tree li a:hover+ul li::before, .tree li a:hover+ul::before, .tree li a:hover+ul ul::before {
+	//     border-color: #94a0b4;
+	// }
+	
+	li a.just-line {
+	    display: none;
+	}
+	a.just-line + ul {
+	    padding-top: 74px;
+	}
+	a.just-line + ul:before {
+	    height: 74px;
+	}
+	
 
 
 // INTERNATIONAL ORGANIZATIONS
