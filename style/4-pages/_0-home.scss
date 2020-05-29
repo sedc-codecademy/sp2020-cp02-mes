@@ -3,12 +3,20 @@
 
 .firstSectiion{
     padding: 110px 0 0 0;
-    max-width: 100vw;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 
 // ***LATEST NEWS***
+
+.section_background{
+    background-image: linear-gradient(rgba($primary, 0.9) 0%, rgba($primary,0.9) 50% ,rgba($primary,1) 90% ),url(/img/background/section-background.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .slider {
     display: flex;
     justify-content: space-around;
@@ -108,6 +116,13 @@ i {
 
 
 // *** OUR MISSION ***
+
+.our_mission{
+    background-image: linear-gradient(rgba($primary,0.9) 10%, rgba($primary,0.98) 50% ,rgba($primary,1) 75% ),url(/img/background/backgroundPhoto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .ourMission__main-div {
     display: flex;

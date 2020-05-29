@@ -6,15 +6,12 @@
 
     .photos__main {
         clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-        // background: linear-gradient(90deg, rgba(227,227,227,1) 0% , rgba(17,21,28,1) 100% );
-        // background-image: url('/img/606641.jpg ');
-        // background-size: cover;
-        // background-position: left;
         width: 50%;
         height: 65vh;
         position: relative;
         &:hover {
             border-bottom: 1px solid $fill;
+            border-top: 1px solid $fill;
             h2 {
                 color: $fill;
                 font-size: 35px;
@@ -36,17 +33,14 @@
 
     }
     .videos__main {
-        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-        // background: linear-gradient(90deg, rgba(17,21,28,1) 0%, rgba(227,227,227,1) 100%);
-        // background: url('/img/606641.jpg') ;
-        // background-size: cover;
-        // background-position: right;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);   
         width: 50%;
         height: 65vh;
         margin-top: 100px;
         position: relative;
         &:hover {
             border-top: 1px solid $fill;
+            border-bottom: 1px solid $fill;
             h2 {
                 color: $fill;
                 font-size: 35px;
@@ -72,4 +66,12 @@
 
 .pd-top45 {
     padding-top: 45px;
+}
+
+
+.news_background{
+    background-image: linear-gradient(rgba($primary, 0.6) 0%, rgba($primary,0.7) 50% ,rgba($primary,1) 90% ),url(/img/606641.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
