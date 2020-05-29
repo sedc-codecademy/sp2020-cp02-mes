@@ -1325,6 +1325,7 @@ a.just-line + ul:before {
   width: 50%;
   height: 65vh;
   position: relative;
+  cursor: pointer;
 }
 
 .gallery__main .photos__main:hover {
@@ -1356,6 +1357,7 @@ a.just-line + ul:before {
   height: 65vh;
   margin-top: 100px;
   position: relative;
+  cursor: pointer;
 }
 
 .gallery__main .videos__main:hover {

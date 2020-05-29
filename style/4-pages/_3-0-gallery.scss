@@ -3,12 +3,13 @@
     justify-content: space-around;
     align-items: center;
     padding: 60px 100px;
-
+    
     .photos__main {
         clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
         width: 50%;
         height: 65vh;
         position: relative;
+        cursor: pointer;
         &:hover {
             border-bottom: 1px solid $fill;
             border-top: 1px solid $fill;
@@ -38,6 +39,7 @@
         height: 65vh;
         margin-top: 100px;
         position: relative;
+        cursor: pointer;
         &:hover {
             border-top: 1px solid $fill;
             border-bottom: 1px solid $fill;
