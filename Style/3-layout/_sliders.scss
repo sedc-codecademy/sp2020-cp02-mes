@@ -207,3 +207,110 @@
   }
   
   @include carousel(5);
+
+   // Gallery slider
+   $itemGrow: 1.2;
+   $duration: 250ms;
+ 
+   .gallerySlider {
+     display: grid;
+     grid-template-columns: repeat(3,100%);
+     overflow:hidden;
+     scroll-behavior: smooth;
+   
+     section {
+       width: 100%;
+       position: relative;
+       display: grid;
+       grid-template-columns: repeat(5, auto);
+       margin: 20px 0;
+       
+       .gallerySlider__item{
+         padding: 0 2px;
+         transition: $duration all;
+         
+         &:hover { 
+           margin: 0 40px;
+           transform: scale(1.2);
+         }
+         img{
+             width: 250px;
+             height: 200px;
+         }
+       }
+       
+       a {
+         position: absolute;
+         color: #fff;
+         text-decoration: none;
+         font-size: 6em;
+         width: 80px;
+         padding: 20px;
+         text-align: center;
+         z-index: 1;
+         
+         &:nth-of-type(1) {
+           top:0; bottom:0; left:0;
+         }
+         &:nth-of-type(2) {
+           top:0; bottom:0; right: 0;
+         }
+         
+       }
+       
+     }
+   }
+   
+   // Remove the arrow for Mobile
+ 
+ 
+   //timeline
+   .gallery_timeline {
+     display: flex;
+     justify-content: space-evenly;
+     //  align-content: center;
+   
+     list-style: none;
+     width: 100%;
+     //  margin-top: 70px;
+     padding: 0;
+     li {
+       position: relative;
+       color: $secondary;
+       // text-align: center;
+       &::after {
+         content: "";
+         position: absolute;
+         width: 160px;
+         height: 3px;
+         background-color: #fff;
+         left: -400%;
+         top: -50%;
+       }
+       &:first-child::after {
+         content: none;
+       }
+       &:hover {
+         color: $fill;
+         cursor: pointer;
+       }
+     }
+   }
+   
+   @media only screen and (max-width: 600px) {
+     a.arrow__btn {
+       display: none;
+     }
+   
+     .gallery_timeline {
+       li {
+         &::after {
+           width: 40px;
+           left: -25%;
+         }
+         &:first-child::after {
+           content: "";
+         }
+       }
+     }
+   }
