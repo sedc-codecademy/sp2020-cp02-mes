@@ -32,3 +32,40 @@
         }
     }
 }
+
+.container-news2{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    margin: 0;
+    width: 75%;
+    display: none;
+    
+    .news2-title{
+        display: flex;
+        img{
+            width: 300px;
+            height: 250px;
+        }
+
+        .title-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 30px;
+        }
+    }
+
+    .slider_news2{
+        width: 200px;
+        height: 150px;
+        background-color: #931621;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+
+    }
+    .news2-text{
+        padding-top: 30px;
+        flex-wrap: wrap;
+    }
+   
+}
