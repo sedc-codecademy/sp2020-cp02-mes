@@ -189,7 +189,7 @@ footer .footer__main-div .footer__sub-div {
 }
 
 footer .footer__main-div .footer__sub-div ul li {
-  margin: 20px 0;
+  margin: 5px 0;
 }
 
 footer .footer__main-div .footer__sub-div ul p {
@@ -202,7 +202,7 @@ footer .footer__main-div .footer__sub-div ul .second_number {
 }
 
 footer .footer__main-div i {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 footer a {
@@ -218,7 +218,7 @@ footer a:hover {
 footer h3 {
   text-transform: unset;
   color: #931621;
-  padding: 20px 30px 10px 0;
+  padding: 5px 30px 10px 0;
 }
 
 footer .iframe__map {
