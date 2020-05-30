@@ -77,3 +77,28 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.galleryContainer{
+    display: flex;
+    justify-content: center;
+    td{
+        text-align: center;
+        padding: 10px;
+        img{
+            width: 200px;
+            height: 150px;
+        }
+    }
+}
+
+.galleryModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+}
