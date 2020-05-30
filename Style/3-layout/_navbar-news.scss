@@ -1,3 +1,4 @@
+
 .sub__nav_news{
     background-color: darken($primary, 10%);
     display: flex;
@@ -7,10 +8,12 @@
     height: 80px;
     padding: 0;
     margin: 0;
-    .news-feed{
-        margin: 1em;
-        padding: 1em;
+
+    .news-feed1{
+        margin: 16px;
+        padding: 16px;
     }
+  
 
     ul{
         display: flex;

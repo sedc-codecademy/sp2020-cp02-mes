@@ -1,0 +1,22 @@
+.fix-sidebar-news{
+    background-color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    max-height: 600px;
+
+    .sidebar-news-title{
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    }
+    .sidebar-news-article{
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+        h5{
+            color: $fill;
+            padding-bottom: 5px;
+        }
+    }
+}
