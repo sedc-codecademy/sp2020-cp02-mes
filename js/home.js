@@ -42,3 +42,35 @@ setInterval(function(){
 
 
 //************************************************************//
+
+var latestNews = [
+    "img/news1",
+    'img/news2',
+    'img/news3',
+    'img/news4',
+    'img/news5',
+    'img/news6',
+    'img/news7'
+]
+
+document.getElementById("news3").setAttribute("alt", latestNews[2])
+
+var newArray = []
+
+// function moveRight() {
+//     const firstElement = latestNews.shift();
+
+//     latestNews.push(firstElement)
+
+//     document.getElementById("news3").setAttribute("alt", latestNews[2])
+
+// }
+
+function moveLeft() {
+
+    const firstElement = latestNews.shift();
+    latestNews.push(firstElement)
+
+    document.getElementById("news3").setAttribute("alt", latestNews[2])
+
+}
