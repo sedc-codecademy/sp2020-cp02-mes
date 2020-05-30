@@ -1,6 +1,11 @@
 .container-news{
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    .news-feed{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
 }
 
 .article{
@@ -9,7 +14,7 @@
 
     .slider_news{
         width: 200px;
-        height: 100px;
+        height: 150px;
         background-color: #931621;
         clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
     }
@@ -17,12 +22,13 @@
     .article-right{
         display: flex;
         flex-direction: column;
-        padding: 0 1em;
+        padding-left: 30px;
+        height: 150px;
+        justify-content: space-between;
 
         .btn-div{
             display: flex;
             justify-content: flex-end;
-            padding-right: 1em;
         }
     }
 }
