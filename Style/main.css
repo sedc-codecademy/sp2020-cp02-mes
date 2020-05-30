@@ -1444,7 +1444,7 @@ a.just-line + ul:before {
 }
 
 .videos-container .videos_bounding_box {
-  height: 19rem;
+  height: 15rem;
   width: 100%;
   background-image: url("../../img/606641.jpg");
   background-position: center;
