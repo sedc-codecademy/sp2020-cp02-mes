@@ -14,8 +14,8 @@
 
     .slider_news{
         width: 200px;
-        height: 150px;
-        background-color: #931621;
+        height: 100px;
+        background-color: $fill;
         clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
     }
 
@@ -59,7 +59,7 @@
     .slider_news2{
         width: 200px;
         height: 150px;
-        background-color: #931621;
+        background-color: $fill;
         clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 
     }

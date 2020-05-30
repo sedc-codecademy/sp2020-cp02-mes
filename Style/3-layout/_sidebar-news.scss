@@ -1,5 +1,5 @@
 .fix-sidebar-news{
-    background-color: grey;
+    background-color: darken($primary, 10%);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -8,11 +8,11 @@
     max-height: 600px;
 
     .sidebar-news-title{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid $secondary;
         padding-bottom: 5px;
     }
     .sidebar-news-article{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid darken($secondary, 30%);
         padding-bottom: 5px;
         h5{
             color: $fill;

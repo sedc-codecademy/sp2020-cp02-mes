@@ -484,7 +484,7 @@ footer .iframe__map {
 }
 
 .fix-sidebar-news {
-  background-color: grey;
+  background-color: black;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,12 +501,12 @@ footer .iframe__map {
 }
 
 .fix-sidebar-news .sidebar-news-title {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #E3E3E3;
   padding-bottom: 5px;
 }
 
 .fix-sidebar-news .sidebar-news-article {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #979797;
   padding-bottom: 5px;
 }
 
@@ -1361,7 +1361,7 @@ a.just-line + ul:before {
 
 .article .slider_news {
   width: 200px;
-  height: 150px;
+  height: 100px;
   background-color: #931621;
   -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
           clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
