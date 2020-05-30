@@ -2,3 +2,27 @@
     display: flex;
     width: 100%;
 }
+
+.article{
+    display: flex;
+    padding: 30px 0 0 0;
+
+    .slider_news{
+        width: 200px;
+        height: 100px;
+        background-color: #931621;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    }
+
+    .article-right{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+
+        .btn-div{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 1em;
+        }
+    }
+}
