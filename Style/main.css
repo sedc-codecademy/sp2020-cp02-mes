@@ -497,6 +497,22 @@ footer .iframe__map {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 20%;
+  max-height: 600px;
+}
+
+.fix-sidebar-news .sidebar-news-title {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.fix-sidebar-news .sidebar-news-article {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.fix-sidebar-news .sidebar-news-article h5 {
+  color: #931621;
+  padding-bottom: 5px;
 }
 
 .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
