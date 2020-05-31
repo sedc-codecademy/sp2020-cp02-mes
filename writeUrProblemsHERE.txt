@@ -2,3 +2,15 @@ Ne znam kako da________________, dali moze nekoj da mi pomogne? $Name $date.now
 
 
 *pozicioniranje na ikonite vo centar vo section BECOME A MEMBER? Darko ; 27.may
+
+*naslov pod slider na latest news
+
+
+***Search (modal) Darko F. Vasil
+
+***Login form 1.mail/nametag 2.password 3button za log in Stefan i Darko P.
+
+***register form 1.email 2.name 3.fullname 4.gender 5.password 6.confirm password 7.button za register Elena i Daniel
+
+***COMPETITION PAGE! Goran i Edin <all>
+

@@ -53,7 +53,7 @@ var latestNews = [
 ]
 
 function initializeNewsSlider() {
-    const newsBoxes = document.querySelectorAll(".news-slider > img")
+    const newsBoxes = document.querySelectorAll(".news-slider > img ")
     var i;
     for(i = 0; i < newsBoxes.length; i ++) {
         newsBoxes[i].setAttribute("src", latestNews[i])
