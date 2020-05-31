@@ -8,10 +8,13 @@
 .videos_line_container {
   flex-direction: column;
   // position: fixed;   ///dodadeno
+  position: sticky;
+  top: 130px;
+ 
   
   justify-content: space-evenly;
   border-left: 5px solid $secondary;
-  height: 76vh;
+  height: 90vh;
   border-radius: 5px;
   margin-left: 3%;
   ul {
