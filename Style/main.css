@@ -2094,12 +2094,12 @@ a.just-line + ul:before {
           flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: 130px;
+  top: 200px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-left: 5px solid #E3E3E3;
-  height: 90vh;
+  height: 65vh;
   border-radius: 5px;
   margin-left: 3%;
 }
