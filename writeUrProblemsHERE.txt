@@ -6,7 +6,7 @@ Ne znam kako da________________, dali moze nekoj da mi pomogne? $Name $date.now
 *naslov pod slider na latest news
 
 
-***Search (modal) Darko F. Vasil
+***Search (modal) Darko F. Vasil <v1.0 DONE>
 
 ***Login form 1.mail/nametag 2.password 3button za log in Stefan i Darko P.
 
@@ -14,3 +14,4 @@ Ne znam kako da________________, dali moze nekoj da mi pomogne? $Name $date.now
 
 ***COMPETITION PAGE! Goran i Edin <all>
 
+***FORGET PASSWORD!
