@@ -1,65 +1,129 @@
-//CSS
+// DESKTOP
 
-// form{
-//     position: absolute;
-//     top: 4%;
-//     right: 18%;
-//     transform: translate(-50%,);
-//     transition: all 1s;
-//     width: 50px;
-//     height: 50px;
-//     background: white;
-//     box-sizing: border-box;
-//     border-radius: 25px;
-//     border: 4px solid white;
-//     padding: 5px;
-// }
+.search-form_desktop {
+    position: flex;
+    // top: 4%;
+    // right: 18%;
+    transform: translate(10%, );
+    transition: all 0.5s ease;
+    width: 50px;
+    height: 50px;
+    background: $primary;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid $primary;
+    padding: 5px;
 
-// input{
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;;
-//     height: 42.5px;
-//     line-height: 30px;
-//     outline: 0;
-//     border: 1px solid black;
-//     display: none;
-//     font-size: 1em;
-//     border-radius: 20px;
-//     padding: 0 20px;
-// }
+    .search-input_desktop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 42.5px;
+        // text-align: center;
+        line-height: 30px;
+        outline: 0;
+        border: 1px solid $primary;
+        display: none;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
 
-// .fa{
-//     box-sizing: border-box;
-//     padding: 10px;
-//     width: 42.5px;
-//     height: 42.5px;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     border-radius: 50%;
-//     color: #07051a;
-//     text-align: center;
-//     font-size: 1.2em;
-//     transition: all 1s;
-// }
+    .fa-search {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: $fill;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 0.5s;
+    }
 
-// form:hover{
-//     width:70%;
-//     cursor: pointer;
-// }
+    &:hover {
+        width: 25%;
+        cursor: pointer;
+    }
 
-// form:hover input{
-//     display: block;
-// }
+    &:hover .search-input_desktop {
+        display: flex;
+    }
 
-// form:hover .fa{
-//     background: #07051a;
-//     color: white;
-// }
-//HTML
-// <form>
-// <input type="search" placeholder="Пребарување">
-// <i class="fa fa-search"></i>
-// </form>
+    &:hover .fa-search {
+        background: $secondary;
+        border: 1px solid $fill;
+        box-shadow: 0 0 10px $red;
+        color: $fill;
+    }
+}
+
+
+// MOBILE
+
+.search-form_mobile {
+    position: flex;
+    // top: 4%;
+    // right: 18%;
+    transform: translate(50%, );
+    transition: all 0.5s ease;
+    // width: 50px;
+    // height: 50px;
+    background: $primary;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 1px solid $primary;
+    // padding: 5px;
+
+    .search-input_mobile {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 30px;
+        border: 1px solid $fill;
+        box-shadow: 0 0 5px $red;
+        display: inline-block;
+        font-size: 14px;
+        color: $primary;
+        border-radius: 20px;
+        padding: 0 40px;
+        margin-top: 10px;
+        background-color: darken($secondary, 20%);
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+
+    .fa-search {
+        padding: 18px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: $fill;
+        text-align: center;
+        font-size: 14px;
+        // transition: all 0.5s;
+    };
+
+    // &:hover {
+    //     width: 25%;
+    //     cursor: pointer;
+    //     .search-input_mobile {
+    //         display: block;
+    //     }
+    // .fa-search {
+    //     background: $secondary;
+    //     border: 1px solid $fill;
+    //     box-shadow: 0 0 10px $red;
+    //     color: $fill;
+    // }
+}
+
+

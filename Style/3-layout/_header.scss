@@ -14,11 +14,8 @@
         .btn__desktop__login {
             display: inline;
         }
-        .search__desktop {
-            font-size: 20px;
-            color: $fill;
-            // position: relative;
-            // right: 200px;
+        .search-form_mobile{
+            display: none;
         }
         img {
             width: 90px;
@@ -81,17 +78,18 @@
             }
 
         }
+        .search-form_desktop{
+            display: none;
+        }
         .nav-links {
             width: 100%;
             .btn__mobile__login {
                 display: flex;
             }
-            .search__mobile {
-                display: flex;
-                font-size: 18px;
-                color: $fill;
+            .search-form_mobile{
+                display: inline;
             }
-
+            
         }
         .logo {
             position: absolute;
