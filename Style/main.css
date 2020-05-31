@@ -300,6 +300,10 @@ footer .iframe__map {
   display: none;
 }
 
+.active {
+  color: #931621;
+}
+
 .burger {
   display: none;
   cursor: pointer;
