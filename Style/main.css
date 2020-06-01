@@ -1870,45 +1870,10 @@ a.just-line + ul:before {
 .article .article-right .subtitle {
   font-size: 18px;
   color: #E3E3E3;
-  font-family: 'Fjalla One';
+  font-family: "Fjalla One";
+  font-weight: 500;
 }
 
-/*.container-news2{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 20px;
-    margin: 0;
-    width: 100%;
-    
-    
-    .news2-title{
-        display: flex;
-        img{
-            width: 300px;
-            height: 250px;
-        }
-
-        .title-right{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 30px;
-        }
-    }
-
-    .slider_news2{
-        width: 200px;
-        height: 150px;
-        background-color: $fill;
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-
-    }
-    .news2-text{
-        padding-top: 30px;
-        flex-wrap: wrap;
-    }
-   
-}*/
 .container-calendar {
   width: 100%;
 }
@@ -2219,7 +2184,7 @@ a.just-line + ul:before {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-left: 5px solid #E3E3E3;
-  height: 65vh;
+  height: 70vh;
   border-radius: 5px;
   margin-left: 3%;
 }
