@@ -1867,6 +1867,12 @@ a.just-line + ul:before {
           justify-content: flex-end;
 }
 
+.article .article-right .subtitle {
+  font-size: 18px;
+  color: #E3E3E3;
+  font-family: 'Fjalla One';
+}
+
 /*.container-news2{
     display: flex;
     flex-direction: column;

@@ -32,6 +32,12 @@
             display: flex;
             justify-content: flex-end;
         }
+        .subtitle{
+            font-size: 18px;
+            color: $secondary;
+            font-family : $Fjalla One;
+            font-weight: 500;
+        }
     }
 }
 
