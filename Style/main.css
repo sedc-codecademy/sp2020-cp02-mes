@@ -1955,6 +1955,10 @@ a.just-line + ul:before {
   padding-top: 100px;
 }
 
+.isInactive {
+  display: none;
+}
+
 .gallery__main {
   display: -webkit-box;
   display: -ms-flexbox;

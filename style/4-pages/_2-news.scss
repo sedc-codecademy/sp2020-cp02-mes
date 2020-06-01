@@ -73,6 +73,7 @@
 }*/
 .container-calendar{
     width: 100%;
+    
 
     
     .calendar-news{
@@ -105,4 +106,10 @@
         justify-content: center;
         padding-top: 100px;
     }
+}
+
+// NEWS
+
+.isInactive{
+    display: none;
 }
