@@ -1,31 +1,78 @@
-.topPic__container {
+.topPicContainer {
     display: flex;
     position: relative;
-   
+    height: 10rem;
     
-    .topPic__title{
+    &__title{
       position: absolute;
       align-self: flex-end;
       margin-left: 90%;
 
     }
-    .topPic__picture{
+    &__pic{
         width: 100%;
-        height: 10rem;
         background-color: $fill;
         clip-path: polygon(0 57%, 100% 57%, 78% 100%, 0% 100%); 
         background-color: $fill;
     }
 }
 
-.slider__previewPicture{
+.photosWrapper{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    img{
-        width: 60%;
-        height: 500px;
-        background-color: $secondary;
+   flex-direction: row;
+}
+
+.photosContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10%;
+
+    &__items{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    &__thumbnail{
+        width: 19%;
+        min-width: 17%;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: 0;
     }
 }
+
+.photos_line_container {
+    flex-direction: column;
+    // position: fixed;   ///dodadeno
+    position: sticky;
+    top: 200px;
+   
+    
+    justify-content: space-evenly;
+    border-left: 5px solid $secondary;
+    height: 65vh;
+    border-radius: 5px;
+    margin-left: 3%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-evenly;
+      li {
+        padding: 5px;
+        a {
+          color: $secondary;
+          &:hover {
+            color: $fill;
+            cursor: pointer;
+          }
+        }
+      }
+      .isOdd{
+        margin-left: -110%;
+      }
+    }
+  }

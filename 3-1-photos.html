@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photos</title>
     <link rel="icon" type="image/png" href="./img/e-sport Macedonia - LOGO.png" />
+    <link rel="stylesheet" type="text/css" href="fresco-2.3.0/dist/css/fresco.css"/>
     <link rel="stylesheet" href="./Style/main.css">
 </head>
 
@@ -65,138 +66,78 @@
         </nav>
     </header>
 
-    <section name:Photos preview class="pd-top130 pd container">
-        <div class="topPic__container">
-            <img src="" alt="" class="topPic__picture">
-            <h3 class="topPic__title">Photos</h3>
-        </div>
-        <section class="pd ">
-            <ul class="gallery_timeline">
-                <li class="active">2005</li>
-                <li class="active">2006</li>
-                <li class="active">2007</li>
-                <li class="active">2008</li>
-                <li class="active">2009</li>
-                <li class="active">2010</li>
-                <li class="active">2011</li>
-                <li class="active">2012</li>
-                <li class="active">2013</li>
-                <li class="active">2014</li>
-            </ul>
-          </section>
+    <section name:Photos preview class="pd-top130 pd container"> 
+        <!-- <div class="topPicContainer">
+            <img src="" alt="" class="topPicContainer__pic">
+            <h3 class="topPicContainer__title">Photos</h3>
+        </div> -->
+        <div class="photosWrapper pd">
+            <div class="photos_line_container">
+                <ul class="photos_timeline_list">
+                    <li class="photos_item year_selected"><a href="#" class="">2020</a></li>
+                    <li class="photos_item1 isOdd"><a href="#" class="">2019</a></li>
+                    <li class="photos_item2"><a href="#" class="">2018</a></li>
+                    <li class="photos_item3 isOdd"><a href="#" class="">2017</a></li>
+                    <li class="photos_item4"><a href="#" class="">2016</a></li>
+                    <li class="photos_item5 isOdd"><a href="#" class="">2015</a></li>
+                    <li class="photos_item6"><a href="#" class="">2014</a></li>
+                    <li class="photos_item7 isOdd"><a href="#" class="">2013</a></li>
+                    <li class="photos_item8"><a href="#" class="">2012</a></li>
+                    <li class="photos_item9 isOdd"><a href="#" class="">2011</a></li>
+                    <li class="photos_item10"><a href="#" class="">2010</a></li>
+                    <li class="photos_item11 isOdd"><a href="#" class="">2009</a></li>
+                    <li class="photos_item12 "><a href="#" class="">2008</a></li>
+                    <li class="photos_item13 isOdd"><a href="#" class="">2007</a></li>
+                    <li class="photos_item14"><a href="#" class="">2006</a></li>
+                    <li class="photos_item15 isOdd"><a href="#" class="">2005</a></li>
+                </ul>
+            </div>
 
-          <div class="galleryContainer">
-            <table>
-                <tr>
-                    <td>
-                        <img src="./img/587508.png"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./img/587508.png"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                    <td>
-                        <img src="./img/606641.jpg"  onclick="openModal();">
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="modal" class="galleryModal pd">
-            <div class="slider__container">
-                <div class="slider__previewPicture">
-                    <img src="" alt="">
-                </div>
-                <div class="gallerySlider">
-                    <section id="gallerySlider__sec1">
-                        <a href="#gallerySlider__sec2" class="arrow__btn">‹</a>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <a href="#gallerySlider__sec2" class="arrow__btn">›</a>
-                    </section>
-                    <section id="gallerySlider__sec2">
-                        <a href="#gallerySlider__sec1" class="arrow__btn">‹</a>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <a href="#gallerySlider__sec3" class="arrow__btn">›</a>
-                    </section>
-                    <section id="gallerySlider__sec3">
-                        <a href="#gallerySlider__sec2" class="arrow__btn">‹</a>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <div class="gallerySlider__item">
-                            <img src="./img/587508.png"/>
-                        </div>
-                        <a href="#gallerySlider__sec1" class="arrow__btn">›</a>
-                    </section>
+            <div class="photosContainer">
+                <div class="photosContanier__items">
+                    <a href="./img/587508.png"
+                    class="fresco"
+                    data-fresco-group="example">
+                    <img src="./img/587508.png" alt="" class="photosContainer__thumbnail">
+                    </a>
+                    <a href="./img/animals-birds-dawn-giraffe-417142.jpg"
+                    class="fresco"
+                    data-fresco-group="example">
+                    <img src="./img/animals-birds-dawn-giraffe-417142.jpg" alt="" class="photosContainer__thumbnail">
+                    </a>
+                    <a href="./img/606641.jpg"
+                    class="fresco"
+                    data-fresco-group="example">
+                    <img src="./img/606641.jpg" alt="" class="photosContainer__thumbnail">
+                    </a>
+                    <a href="./img/587508.png"
+                    class="fresco"
+                    data-fresco-group="example">
+                    <img src="./img/587508.png" alt="" class="photosContainer__thumbnail">
+                    </a>
+                    <a href="./img/587508.png"
+                    class="fresco"
+                    data-fresco-group="example">
+                    <img src="./img/587508.png" alt="" class="photosContainer__thumbnail">
+                    </a>
+                    <a href="./img/animals-birds-dawn-giraffe-417142.jpg"
+                    class="fresco"
+                    data-fresco-group="example">
+                    <img src="./img/animals-birds-dawn-giraffe-417142.jpg" alt="" class="photosContainer__thumbnail">
+                    </a>
+                    <a href="./img/606641.jpg"
+                    class="fresco"
+                    data-fresco-group="example">
+                    <img src="./img/606641.jpg" alt="" class="photosContainer__thumbnail">
+                    </a>
                 </div>
             </div>
         </div>
+        
     </section>
+
+    
+    
     <footer>
         <div class="container">
             <div class="footer__main-div">
@@ -261,19 +202,9 @@
         </div>
 
     </footer>
-
-    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./fresco-2.3.0/dist/js/fresco.min.js"></script>
     <script src="/js/home.js"></script>
-
-    <script>
-        function openModal() {
-          document.getElementById("modal").style.display = "block";
-        }
-        
-        function closeModal() {
-          document.getElementById("modal").style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
