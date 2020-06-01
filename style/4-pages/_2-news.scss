@@ -1,13 +1,14 @@
 .container-news{
     display: flex;
     justify-content: space-between;
+    
     .news-feed{
         display: flex;
         flex-direction: column;
         width: 75%;
+        flex-wrap: wrap;
     }
 }
-
 .article{
     display: flex;
     padding: 30px 0 0 0;
@@ -30,42 +31,52 @@
             display: flex;
             justify-content: flex-end;
         }
+        .subtitle{
+            font-size: 18px;
+            color: $secondary;
+            font-family : $Fjalla One;
+            font-weight: 500;
+        }
     }
 }
-
-.container-news2{
-    display: flex;
-    flex-direction: column;
-    padding: 30px 20px;
-    margin: 0;
-    width: 75%;
-    display: none;
+.container-calendar{
+    width: 100%;
     
-    .news2-title{
+
+    
+    .calendar-news{
+        width: 100%;
+        height: 592px;
+    }
+}
+.container-pressKit{
+    display: flex;
+    width: 100%;
+    height: 592px;
+    flex-direction: column;
+
+    
+    .pressKit-title{
         display: flex;
-        img{
-            width: 300px;
-            height: 250px;
-        }
 
-        .title-right{
+        .title-div{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 30px;
+            align-items: center;
+            padding-left: 200px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
         }
     }
-
-    .slider_news2{
-        width: 200px;
-        height: 150px;
-        background-color: $fill;
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-
+    .download-btn{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
     }
-    .news2-text{
-        padding-top: 30px;
-        flex-wrap: wrap;
-    }
-   
+}
+// NEWS
+
+.isInactive{
+    display: none;
 }
