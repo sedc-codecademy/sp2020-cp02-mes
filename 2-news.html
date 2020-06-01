@@ -7,6 +7,7 @@
     <title>News</title>
     <link rel="icon" type="image/png" href="./img/e-sport Macedonia - LOGO.png" />
     <link rel="stylesheet" href="./Style/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -70,12 +71,12 @@
             <nav class="sub__nav_news">
                 <div class="news-feed1"><h5>NEWS FEED</h5></div>
                 <ul>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Press Kit</a></li>
+                    <li id="news1"><a href="#">News</a></li>
+                    <li><a id="calendar1" href="#">Calendar</a></li> 
+                    <li id="pressKit1"><a href="#">Press Kit</a></li>
                 </ul>
             </nav>
-            <div class="articles-news">
+            <div class="pd container articles-news">
                 <div class="article">
                     <div><img src="./img/News/gamer-geek.jpg" alt="" class="slider_news"></div>
                     <div class="article-right">
@@ -114,6 +115,33 @@
                 </div>
                 
             </div>
+            <!--<div class="pd container container-news2">
+                <div class="news2-title">
+                    <img src="./img/News/gamer-geek.jpg" alt="" class="slider_news2">
+                    <div class="title-right">
+                        <p>22 May 2020</p>
+                        <h5>Title</h5>
+                        <h4>Lorem Lorem Lorem Lorem</h4>
+                    </div>
+                </div>
+                <div class="news2-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, unde! Minus temporibus perferendis, accusantium incidunt repellat soluta, qui fugiat praesentium sapiente fugit culpa quibusdam expedita eos. Illum, beatae saepe placeat aliquid nobis recusandae voluptas pariatur expedita voluptates, maiores sunt exercitationem aut quaerat veritatis. Quidem ab temporibus at esse magnam debitis perspiciatis ipsa consequuntur odit asperiores labore beatae, ullam fuga impedit, et voluptatum. Nobis consectetur ab odio ducimus. Nulla, vel illo in nesciunt rem at ipsum eos placeat dicta officiis iste harum quo autem exercitationem corrupti reiciendis excepturi magnam itaque? Praesentium, ipsum? Eligendi possimus, amet velit sit consectetur recusandae ab itaque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, unde! Minus temporibus perferendis, accusantium incidunt repellat soluta, qui fugiat praesentium sapiente fugit culpa quibusdam expedita eos. Illum, beatae saepe placeat aliquid nobis recusandae voluptas pariatur expedita voluptates, maiores sunt exercitationem aut quaerat veritatis. Quidem ab temporibus at esse magnam debitis perspiciatis ipsa consequuntur odit asperiores labore beatae, ullam fuga impedit, et voluptatum. Nobis consectetur ab odio ducimus. Nulla, vel illo in nesciunt rem at ipsum eos placeat dicta officiis iste harum quo autem exercitationem corrupti reiciendis excepturi magnam itaque? Praesentium, ipsum? Eligendi possimus, amet velit sit consectetur recusandae ab itaque.
+                    </p>
+                </div>
+            </div>-->
+            <div class="pd container container-calendar">
+                <iframe src="https://www.esportscalendar.com/" frameborder="0" allowfullscreen class="calendar-news"></iframe>
+            </div>
+            <div class="pd container container-pressKit">
+                <div class="pressKit-title">
+                    <div><img src="./img/News/logoSoTekst.png" alt=""></div>
+                    <div class="title-div"><h5>Lorem Lorem</h5></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae unde odio consequatur adipisci, dolor itaque nam est sequi mollitia quod quae iusto neque cumque, facere totam commodi velit reiciendis obcaecati debitis deleniti beatae. Sed dolorum recusandae numquam sunt voluptates ad accusamus impedit iure fugit beatae, odit vel cupiditate magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae unde odio consequatur adipisci, dolor itaque nam est sequi mollitia quod quae iusto neque cumque, facere totam commodi velit reiciendis obcaecati debitis deleniti beatae. Sed dolorum recusandae numquam sunt voluptates ad accusamus impedit iure fugit beatae, odit vel cupiditate magni?</p>
+                <div class="download-btn"><a href="#" class="btn">Download</a></div>
+            </div>
         </div>
         <div class="_sidebar-news fix-sidebar-news">
             <div class="sidebar-news-title"><h5>LATEST NEWS</h5></div>
@@ -140,22 +168,7 @@
             
         </div>
     </section>
-    <section class="pd container container-news2" id="news3">
-        <div class="news2-title">
-            <img src="./img/News/gamer-geek.jpg" alt="" class="slider_news2">
-            <div class="title-right">
-                <p>22 May 2020</p>
-                <h5>Title</h5>
-                <h4>Lorem Lorem Lorem Lorem</h4>
-            </div>
-        </div>
-        <div class="news2-text">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, unde! Minus temporibus perferendis, accusantium incidunt repellat soluta, qui fugiat praesentium sapiente fugit culpa quibusdam expedita eos. Illum, beatae saepe placeat aliquid nobis recusandae voluptas pariatur expedita voluptates, maiores sunt exercitationem aut quaerat veritatis. Quidem ab temporibus at esse magnam debitis perspiciatis ipsa consequuntur odit asperiores labore beatae, ullam fuga impedit, et voluptatum. Nobis consectetur ab odio ducimus. Nulla, vel illo in nesciunt rem at ipsum eos placeat dicta officiis iste harum quo autem exercitationem corrupti reiciendis excepturi magnam itaque? Praesentium, ipsum? Eligendi possimus, amet velit sit consectetur recusandae ab itaque.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, unde! Minus temporibus perferendis, accusantium incidunt repellat soluta, qui fugiat praesentium sapiente fugit culpa quibusdam expedita eos. Illum, beatae saepe placeat aliquid nobis recusandae voluptas pariatur expedita voluptates, maiores sunt exercitationem aut quaerat veritatis. Quidem ab temporibus at esse magnam debitis perspiciatis ipsa consequuntur odit asperiores labore beatae, ullam fuga impedit, et voluptatum. Nobis consectetur ab odio ducimus. Nulla, vel illo in nesciunt rem at ipsum eos placeat dicta officiis iste harum quo autem exercitationem corrupti reiciendis excepturi magnam itaque? Praesentium, ipsum? Eligendi possimus, amet velit sit consectetur recusandae ab itaque.
-            </p>
-        </div>
-    </section>
+    
 
     <footer>
         <div class="container">
