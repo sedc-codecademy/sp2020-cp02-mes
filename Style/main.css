@@ -2433,14 +2433,19 @@ a.just-line + ul:before {
 }
 
 table, th, td {
-  border: 1px solid black;
   border-collapse: collapse;
   opacity: 0.95;
+}
+
+table h5, th h5, td h5 {
+  color: #11151C;
 }
 
 table th, table td, th th, th td, td th, td td {
   padding: 10px;
   text-align: center;
+  color: #E3E3E3;
+  font-size: 18px;
 }
 
 table th, th th, td th {
@@ -2448,16 +2453,11 @@ table th, th th, td th {
   color: #11151C;
 }
 
-table tr:nth-child(even), th tr:nth-child(even), td tr:nth-child(even) {
-  background-color: #E3E3E3;
-}
-
-table tr:nth-child(odd), th tr:nth-child(odd), td tr:nth-child(odd) {
-  background-color: white;
-}
-
 table #header, th #header, td #header {
   background-color: #E3E3E3;
+  color: #11151C;
+  font-size: 18px;
+  padding: 10px;
 }
 
 table {
