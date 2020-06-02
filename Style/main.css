@@ -2442,45 +2442,92 @@ a.just-line + ul:before {
   letter-spacing: 3px;
 }
 
-table, th, td {
+.mac-league-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mac-league-container .league-choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+
+.mac-league-container .league-choose nav ul li {
+  padding: 10px 0px;
+}
+
+.mac-league-container .league-choose h5 {
+  padding-bottom: 20px;
+}
+
+.mac-league-container .tablediv {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mac-league-container .tablediv .csgo-table table {
+  width: 100%;
+}
+
+.mac-league-container .tablediv .pes-table table {
+  width: 100%;
+}
+
+.mac-league-container .tablediv .lol-table table {
+  width: 100%;
+}
+
+.mac-league-container .tablediv .dota2-table table {
+  width: 100%;
+}
+
+.mac-league-container .tablediv table, .mac-league-container .tablediv th, .mac-league-container .tablediv td {
+  font-family: "Fjalla One";
   border-collapse: collapse;
   opacity: 0.95;
 }
 
-table h5, th h5, td h5 {
+.mac-league-container .tablediv table img, .mac-league-container .tablediv th img, .mac-league-container .tablediv td img {
+  width: 40px;
+  height: 40px;
+}
+
+.mac-league-container .tablediv table h5, .mac-league-container .tablediv th h5, .mac-league-container .tablediv td h5 {
   color: #11151C;
 }
 
-table th, table td, th th, th td, td th, td td {
+.mac-league-container .tablediv table th, .mac-league-container .tablediv table td, .mac-league-container .tablediv th th, .mac-league-container .tablediv th td, .mac-league-container .tablediv td th, .mac-league-container .tablediv td td {
   padding: 10px;
   text-align: center;
   color: #E3E3E3;
   font-size: 18px;
 }
 
-table th, th th, td th {
+.mac-league-container .tablediv table th, .mac-league-container .tablediv th th, .mac-league-container .tablediv td th {
   background-color: #931621;
   color: #11151C;
 }
 
-table #header, th #header, td #header {
+.mac-league-container .tablediv table #header, .mac-league-container .tablediv th #header, .mac-league-container .tablediv td #header {
   background-color: #E3E3E3;
   color: #11151C;
   font-size: 18px;
   padding: 10px;
 }
 
-table {
-  width: 65%;
-}
-
-.tablediv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.tableIsInactive {
+  display: none;
 }
 
 .login__form {
