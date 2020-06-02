@@ -1,3 +1,11 @@
+//***LOADER***
+
+window.addEventListener("load", function(){
+    const load = document.querySelector(".loader");
+
+    loader.className += " hidden";
+})
+
 //***HEADER***
 
 const navSlide = () =>{
