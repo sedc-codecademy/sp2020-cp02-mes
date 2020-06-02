@@ -2201,12 +2201,11 @@ a.just-line + ul:before {
 
 .photosContainer__thumbnail {
   width: 19%;
+  height: 18%;
   min-width: 17%;
   margin-bottom: 20px;
   padding: 0 10px;
   cursor: pointer;
-  text-decoration: none;
-  outline: 0;
 }
 
 .photos_line_container {
