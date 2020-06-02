@@ -2431,4 +2431,45 @@ a.just-line + ul:before {
   text-transform: none;
   letter-spacing: 3px;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  opacity: 0.95;
+}
+
+table th, table td, th th, th td, td th, td td {
+  padding: 10px;
+  text-align: center;
+}
+
+table th, th th, td th {
+  background-color: #931621;
+  color: #11151C;
+}
+
+table tr:nth-child(even), th tr:nth-child(even), td tr:nth-child(even) {
+  background-color: #E3E3E3;
+}
+
+table tr:nth-child(odd), th tr:nth-child(odd), td tr:nth-child(odd) {
+  background-color: white;
+}
+
+table #header, th #header, td #header {
+  background-color: #E3E3E3;
+}
+
+table {
+  width: 65%;
+}
+
+.tablediv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=main.css.map */
