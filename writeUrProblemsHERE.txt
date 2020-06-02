@@ -8,7 +8,7 @@ Ne znam kako da________________, dali moze nekoj da mi pomogne? $Name $date.now
 
 ***Search (modal) Darko F. Vasil <v1.0 DONE>
 
-***Login form 1.mail/nametag 2.password 3button za log in Stefan i Darko P.
+***Login form 1.mail/nametag 2.password 3button za log in Stefan i Darko P. <1.0 DONEEEE> /sega e temna varijanta, kako predlog, ako vi se svigja povekje svetlata, ke se promeni !!!!/
 
 ***register form 1.email 2.name 3.fullname 4.gender 5.password 6.confirm password 7.button za register Elena i Daniel
 
