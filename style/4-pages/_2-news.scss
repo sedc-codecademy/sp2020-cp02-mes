@@ -75,8 +75,39 @@
         padding-top: 100px;
     }
 }
+.container-openNews{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+        .openNews-img{
+            width: 300px;
+            height: 200px;
+            background-color: $fill;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        }
+        .openNews-titleDiv{
+            display: flex;
+            .openNews-title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 150px;
+                h5{
+                    padding: 5px 0;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        .openNews-p{
+            padding-top: 30px;
+        }
+}
 // NEWS
 
 .isInactive{
     display: none;
+
+    
 }
