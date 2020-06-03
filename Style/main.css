@@ -2539,70 +2539,97 @@ a.just-line + ul:before {
   display: none;
 }
 
-.login__form {
-  width: 350px;
-  height: auto;
+.signupSection {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #11151C;
-  border-radius: 1%;
-}
-
-.login__form p {
-  padding-bottom: 2%;
-  color: #E3E3E3;
-  font-family: "Roboto";
-}
-
-.login__form i {
-  color: #E3E3E3;
-  font-size: large;
-}
-
-.login__form .login__exit-button {
+  width: 800px;
+  height: 450px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  color: #E3E3E3;
 }
 
-.login__form ::-webkit-input-placeholder {
-  font-family: "Fjalla One";
-  color: #931621;
-  text-transform: uppercase;
-  padding-left: 5%;
+.signupSection .info {
+  width: 45%;
+  background-color: #11151C;
+  padding: 30px 0;
+  border-right: 1px solid #931621;
+  -webkit-box-shadow: 0px 0px 10px 5px #931621;
+          box-shadow: 0px 0px 10px 5px #931621;
 }
 
-.login__form :-ms-input-placeholder {
-  font-family: "Fjalla One";
-  color: #931621;
-  text-transform: uppercase;
-  padding-left: 5%;
-}
-
-.login__form ::-ms-input-placeholder {
-  font-family: "Fjalla One";
-  color: #931621;
-  text-transform: uppercase;
-  padding-left: 5%;
-}
-
-.login__form ::placeholder {
-  font-family: "Fjalla One";
-  color: #931621;
-  text-transform: uppercase;
-  padding-left: 5%;
-}
-
-.login__form .login__input {
-  height: 40px;
+.signupSection .info img {
   width: 200px;
-  border: 0.5px solid #E3E3E3;
-  border-radius: 3%;
+}
+
+.signupSection .info h2 {
+  padding-top: 30px;
+  font-weight: 300;
+}
+
+.signupSection .info p {
+  font-size: 18px;
+  font-family: "Fjalla One";
+  padding-top: 20px;
+}
+
+.signupSection .info .icon {
+  font-size: 8em;
+  padding: 20px 0;
+  color: #11151C;
+}
+
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: #E3E3E3;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.signupForm h2 {
+  font-weight: 300;
+  color: #931621;
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #931621;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #cacaca;
+  color: #11151C;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#join-btn {
+  border: 1px solid #931621;
+  background: #979797;
+  font-size: 18px;
+  color: #E3E3E3;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#join-btn:hover {
+  background: #931621;
+  padding: 10px 80px;
 }
 /*# sourceMappingURL=main.css.map */
