@@ -1,31 +1,76 @@
-table, th, td{
-    
-    border-collapse: collapse;
-    opacity: 0.95;
-    h5{
-        color: $primary;
-    }
-    th, td{
-        padding: 10px;
-        text-align: center;
-        color: $secondary;
-        font-size: 18px;
-    }
-    th{
-        background-color: $fill;
-        color: $primary;
-    }
-    #header{
-        background-color: $secondary;
-        color: $primary;
-        font-size: 18px;
-        padding: 10px;
-    }
-}
-table{
-    width: 65%;
-}
-.tablediv{
+.mac-league-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    .league-choose{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        
+        nav ul li{
+           padding: 10px 0px; 
+        }
+        h5{
+            padding-bottom: 20px;
+        }
+    }
+    .tablediv{
+       width: 100%;
+       flex-wrap: wrap;
+       .csgo-table{
+           table{
+               width: 100%;
+           }
+       }
+       .pes-table{
+        table{
+            width: 100%;
+        }
+       }
+       .lol-table{
+        table{
+            width: 100%;
+        }
+       }
+       .dota2-table{
+        table{
+            width: 100%;
+        }
+       }
+        table, th, td{
+            font-family: $FjallaOne;
+            border-collapse: collapse;
+            opacity: 0.95;
+            
+           
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            h5{
+                color: $primary;
+            }
+            th, td{
+                padding: 10px;
+                text-align: center;
+                color: $secondary;
+                font-size: 18px;
+            }
+            th{
+                background-color: $fill;
+                color: $primary;
+            }
+            #header{
+                background-color: $secondary;
+                color: $primary;
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+       
+    }
+}
+
+
+.tableIsInactive{
+    display: none;
 }

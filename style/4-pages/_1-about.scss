@@ -26,6 +26,20 @@
     text-align: center;
 }
 
+// ABOUT US
+
+.about__section-wrapper {
+	img {
+		width: 500px;
+		height: 400px;
+		border: 1px solid $fill;
+	}
+
+	div {
+		width: 33%;
+	}
+}
+
 // MANAGEMENT STRUCTURE
 
 	.tree ul {
@@ -46,14 +60,14 @@
 	    position: absolute;
 	    top: 0;
 	    right: 50%;
-	    border-top: 1px solid #ccc;
+	    border-top: 1px solid $fill;
 	    width: 50%;
 	    height: 20px;
 	}
 	.tree li:after {
 	    right: auto;
 	    left: 50%;
-	    border-left: 1px solid #ccc;
+	    border-left: 1px solid $fill;
 	}
 	.tree li:only-child::after, .tree li:only-child::before {
 	    display: none;
@@ -65,7 +79,7 @@
 	    border: 0 none;
 	}
 	.tree li:last-child::before {
-	    border-right: 1px solid #ccc;
+	    border-right: 1px solid $fill;
 	    border-radius: 0 5px 0 0;
 
 	}
@@ -78,15 +92,15 @@
 	    position: absolute;
 	    top: 0;
 	    left: 50%;
-	    border-left: 1px solid #ccc;
+	    border-left: 1px solid $fill;
 	    width: 0;
 	    height: 20px;
 	    margin-left: -1px;
 	}
 	.tree li a img {
 		float: left;
-		width: 60px;
-		height: 60px;
+		width: 45px;
+		height: 45px;
 		border-radius: 2px;
 	} 
 
@@ -112,8 +126,8 @@
 	}
 
 	.li__divWrapper {
-		width: 250px;
-		height: 75px;
+		width: 230px;
+		height: 60px;
 	}
 
     // HOVER EFFECTS DONT DELETE !
