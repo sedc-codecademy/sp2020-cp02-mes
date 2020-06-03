@@ -6,6 +6,10 @@
     justify-content: space-between;
     width: 20%;
     max-height: 600px;
+    border: 1px solid $fill;
+    box-shadow: 0 0 10px $red;
+    position: sticky;
+    top: 130px;
 
     .sidebar-news-title{
         border-bottom: 2px solid $secondary;
