@@ -52,12 +52,15 @@ setInterval(function(){
 //************************************************************//
 
 var latestNews = [
+    './img/74381.JPG',
+    './img/587508.png',
     './img/606641.jpg',
-    './img/606641.jpg',
-    './img/606641.jpg',
-    './img/606641.jpg',
-    './img/606641.jpg',
-    './img/606641.jpg'
+    './img/74381.JPG',
+    './img/74381.JPG',
+    './img/74381.JPG',
+    './img/74381.JPG',
+    './img/74381.JPG',
+      
 ]
 
 function initializeNewsSlider() {
