@@ -1,3 +1,10 @@
+
+$bodyBgc: #0288D1;
+$white: #fff;
+$btnPaddingScalePlus: 1.2;
+$btnPaddingScaleMinus: .95;
+
+
 .mac-league-container{
     display: flex;
     justify-content: space-between;
@@ -74,3 +81,154 @@
 .tableIsInactive{
     display: none;
 }
+
+.national-competitions{
+   h5{
+       padding-bottom: 30px;
+   }
+}
+// LIVE BTN
+
+.btnl{
+    width: 120px;
+    height: 45px;
+    display: block;
+    font-weight: 700;
+    position: relative;
+    padding: 13px 25px;
+    background-color: rgba($white,.9);
+    text-decoration: none;
+    color: #333;
+    border-radius: 50px;
+    border: 1px solid white;
+    box-shadow: 0px 2px 0px darken($bodyBgc,10%);
+    transition: all .2s;
+    z-index: 1;
+    outline: none;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    &:hover{
+      transform: translateY(-5px) 
+        // scale(1.05,1.05)
+      ;
+      padding: calc(13px * #{$btnPaddingScalePlus}) calc(25px * #{$btnPaddingScalePlus});
+      padding-right: calc(22px * $btnPaddingScalePlus);
+      background-color: rgba(#fff,1);
+      border: none;
+      box-shadow: 0px 5px 10px darken($bodyBgc,7%);
+    }
+    &:hover > span:before{
+      animation: none;
+    }
+    &:active{
+        transform: translateY(0px) 
+        // scale(.95,.95)
+        ;
+      padding: calc(13px * #{$btnPaddingScaleMinus}) calc(25px * #{$btnPaddingScaleMinus});
+        box-shadow: inset 0px 2px 1px darken($bodyBgc,10%);
+    }
+  }
+.btn_transparent{
+    border: 0px;
+    border-radius: 0px;
+    padding: 13px 25px;
+    background-color: rgba($white,0);
+    color: $white;
+    box-shadow: none;
+    &:hover{
+      box-shadow: none;
+      background-color: inherit;
+    }
+  }
+.btn_live{
+    padding-right: 22px; 
+    }
+  
+span.live-icon{
+      display: inline-block;
+      top: calc(50% - 5px);
+      background-color: red;
+      width: 10px;
+      height: 10px;
+      margin-left: 20px;
+      border: 1px solid rgba(black, .1);
+      border-radius: 50%;
+      z-index: 1;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: rgba(red,.6);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        animation: live 2s ease-in-out -1s infinite;
+        z-index: -1;
+      }
+    }
+  @keyframes live {
+    0% {
+      transform: scale(1,1);
+    }
+    100% {
+      transform: scale(3.5,3.5);
+      background-color: rgba(red,0);
+    }
+  }
+  
+  small{
+    position: absolute;
+    font-size: 0.9em;
+    color: rgba(white, .5);
+    bottom: 2rem;
+    b{
+    font-weight: bold;
+    color: rgba(white,.8);
+    z-index: -1;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .btnl {
+      width: 250px;
+    }
+    span.live-icon{
+      position: absolute;
+      right: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+    .btnl{
+      width: 100%;
+    }
+  }
+
+.match-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    #vs{
+        display: flex;
+        width: 150px;
+        justify-content: center;
+        
+    }
+    p{
+        padding: 5px;
+        margin: 5px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        
+    }
+    div{
+        display: flex;
+        border: 1px solid $fill;
+        width: 240px;
+    }
+}  
