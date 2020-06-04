@@ -10,12 +10,7 @@
 
 // ***LATEST NEWS***
 
-.section_background{
-    background-image: linear-gradient(rgba($primary, 0.9) 0%, rgba($primary,0.9) 50% ,rgba($primary,1) 90% ),url(/img/background/section-background.PNG);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .slider {
     display: flex;
@@ -152,6 +147,49 @@ i {
 
 // Members******
 
+.members_background{
+    background-image: linear-gradient(rgba($primary, 0.5) 0%, rgba($primary,0.9) 50% ,rgba($primary,1) 90% ),url(/img/background/section-background.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        text-align: center;
+        .member-left2 {
+            width: 50%;
+            
+        }
+        .member-left1 {
+            width: 70%;
+            
+        }
+        .member-mid {
+            width: 90%;
+            
+        }
+        .member-right1 {
+            width: 70%;
+            
+        }
+        .member-right2 {
+            width: 50%;
+            
+        }
+        h5{
+           color:darken($secondary, 20%);
+        }
+       &:hover {
+           h5{
+               color:$fill;
+           }
+       }
+    }
+}
 
 // Become a member****
 
