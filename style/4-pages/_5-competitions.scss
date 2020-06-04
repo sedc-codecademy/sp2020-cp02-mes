@@ -75,21 +75,19 @@ $btnPaddingScaleMinus: .95;
         }
        
     }
-}
-
-
-.tableIsInactive{
+    
+    .tableIsInactive{
     display: none;
+    }
 }
+
 
 .national-competitions{
    h5{
        padding-bottom: 30px;
    }
-}
-// LIVE BTN
-
-.btnl{
+   // LIVE BTN
+   .btnl{
     width: 120px;
     height: 45px;
     display: block;
@@ -232,3 +230,16 @@ span.live-icon{
         width: 240px;
     }
 }  
+}
+.regulations{
+    div{
+        display: flex;
+        flex-direction: column;
+        p{
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+}

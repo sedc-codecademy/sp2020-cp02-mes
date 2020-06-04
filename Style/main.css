@@ -2679,7 +2679,7 @@ a.just-line + ul:before {
   padding: 10px;
 }
 
-.tableIsInactive {
+.mac-league-container .tableIsInactive {
   display: none;
 }
 
@@ -2687,7 +2687,7 @@ a.just-line + ul:before {
   padding-bottom: 30px;
 }
 
-.btnl {
+.national-competitions .btnl {
   width: 120px;
   height: 45px;
   display: block;
@@ -2708,7 +2708,7 @@ a.just-line + ul:before {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-.btnl:hover {
+.national-competitions .btnl:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   padding: calc(13px * 1.2) calc(25px * 1.2);
@@ -2719,12 +2719,12 @@ a.just-line + ul:before {
           box-shadow: 0px 5px 10px #0271ae;
 }
 
-.btnl:hover > span:before {
+.national-competitions .btnl:hover > span:before {
   -webkit-animation: none;
           animation: none;
 }
 
-.btnl:active {
+.national-competitions .btnl:active {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   padding: calc(13px * 0.95) calc(25px * 0.95);
@@ -2732,7 +2732,7 @@ a.just-line + ul:before {
           box-shadow: inset 0px 2px 1px #02679e;
 }
 
-.btn_transparent {
+.national-competitions .btn_transparent {
   border: 0px;
   border-radius: 0px;
   padding: 13px 25px;
@@ -2742,17 +2742,17 @@ a.just-line + ul:before {
           box-shadow: none;
 }
 
-.btn_transparent:hover {
+.national-competitions .btn_transparent:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: inherit;
 }
 
-.btn_live {
+.national-competitions .btn_live {
   padding-right: 22px;
 }
 
-span.live-icon {
+.national-competitions span.live-icon {
   display: inline-block;
   top: calc(50% - 5px);
   background-color: red;
@@ -2764,7 +2764,7 @@ span.live-icon {
   z-index: 1;
 }
 
-span.live-icon:before {
+.national-competitions span.live-icon:before {
   content: '';
   display: block;
   position: absolute;
@@ -2801,36 +2801,36 @@ span.live-icon:before {
   }
 }
 
-small {
+.national-competitions small {
   position: absolute;
   font-size: 0.9em;
   color: rgba(255, 255, 255, 0.5);
   bottom: 2rem;
 }
 
-small b {
+.national-competitions small b {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
   z-index: -1;
 }
 
 @media only screen and (max-width: 500px) {
-  .btnl {
+  .national-competitions .btnl {
     width: 250px;
   }
-  span.live-icon {
+  .national-competitions span.live-icon {
     position: absolute;
     right: 20px;
   }
 }
 
 @media only screen and (max-width: 350px) {
-  .btnl {
+  .national-competitions .btnl {
     width: 100%;
   }
 }
 
-.match-info {
+.national-competitions .match-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2841,7 +2841,7 @@ small b {
   padding-top: 30px;
 }
 
-.match-info #vs {
+.national-competitions .match-info #vs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2851,7 +2851,7 @@ small b {
           justify-content: center;
 }
 
-.match-info p {
+.national-competitions .match-info p {
   padding: 5px;
   margin: 5px;
   width: 200px;
@@ -2863,17 +2863,38 @@ small b {
           justify-content: center;
 }
 
-.match-info img {
+.national-competitions .match-info img {
   width: 40px;
   height: 40px;
 }
 
-.match-info div {
+.national-competitions .match-info div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #931621;
   width: 240px;
+}
+
+.regulations div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.regulations div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  margin: 5px;
 }
 
 .signupSection {
