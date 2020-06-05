@@ -8,6 +8,7 @@ $btnPaddingScaleMinus: .95;
 .mac-league-container{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
     .league-choose{
         display: flex;
         flex-direction: column;
@@ -55,6 +56,7 @@ $btnPaddingScaleMinus: .95;
             }
             h5{
                 color: $primary;
+                padding: 5px;
             }
             th, td{
                 padding: 10px;
@@ -82,9 +84,24 @@ $btnPaddingScaleMinus: .95;
 }
 
 
-.national-competitions{
+.macedonian-league-competitions{
    h5{
        padding-bottom: 30px;
+   }
+   #liveResults{
+       width: 100%;
+       background-color: $secondary;
+       display: flex;
+       justify-content: center;
+       
+       p{
+           padding: 5px;
+           color: $fill;
+           font-size: 16px;
+           font-family: $FjallaOne;
+           font-weight: 700;
+           padding: 10px;
+       }
    }
    // LIVE BTN
    .btnl{
@@ -249,6 +266,7 @@ span.live-icon{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 30px 0;
     table{
         width: 100%;
         .td-elements{
@@ -300,6 +318,7 @@ span.live-icon{
             color: $primary;
             font-size: 18px;
             padding: 10px;
+
             p{
                 color: $fill;
                 font-weight: 700;
@@ -310,7 +329,12 @@ span.live-icon{
     }
 }
 .international-competitions{
-    h5{
+    h5, p{
+        padding-bottom: 30px;
+    }
+}
+.national-competitions{
+    h5, p{
         padding-bottom: 30px;
     }
 }
