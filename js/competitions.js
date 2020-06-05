@@ -42,3 +42,16 @@ dota.addEventListener("click", function(){
     pesContainer.classList.add('tableIsInactive');
     lolContainer.classList.add('tableIsInactive');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
