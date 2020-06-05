@@ -2897,6 +2897,88 @@ a.just-line + ul:before {
   margin: 5px;
 }
 
+.latest-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.latest-results table {
+  width: 100%;
+}
+
+.latest-results table .td-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.latest-results table .td-elements p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  font-size: 14px;
+  width: 30%;
+}
+
+.latest-results table .td-elements:last-child {
+  border-right: 2px solid #931621;
+}
+
+.latest-results table, .latest-results th, .latest-results td {
+  font-family: "Fjalla One";
+  border-collapse: collapse;
+  opacity: 0.95;
+}
+
+.latest-results table img, .latest-results th img, .latest-results td img {
+  width: 35px;
+  height: 35px;
+}
+
+.latest-results table h5, .latest-results th h5, .latest-results td h5 {
+  color: #11151C;
+}
+
+.latest-results table th, .latest-results table td, .latest-results th th, .latest-results th td, .latest-results td th, .latest-results td td {
+  text-align: center;
+  color: #E3E3E3;
+  font-size: 18px;
+}
+
+.latest-results table th, .latest-results th th, .latest-results td th {
+  background-color: #931621;
+  color: #11151C;
+}
+
+.latest-results table #header123, .latest-results th #header123, .latest-results td #header123 {
+  background-color: #E3E3E3;
+  color: #11151C;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.latest-results table #header123 p, .latest-results th #header123 p, .latest-results td #header123 p {
+  color: #931621;
+  font-weight: 700;
+  font-family: "Fjalla One";
+}
+
 .signupSection {
   position: absolute;
   top: 50%;

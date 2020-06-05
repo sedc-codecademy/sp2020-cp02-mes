@@ -171,7 +171,7 @@ span.live-icon{
       transform: scale(3.5,3.5);
       background-color: rgba(red,0);
     }
-  }
+}
   
   small{
     position: absolute;
@@ -183,7 +183,7 @@ span.live-icon{
     color: rgba(white,.8);
     z-index: -1;
     }
-  }
+}
   
   @media only screen and (max-width: 500px) {
     .btnl {
@@ -193,13 +193,13 @@ span.live-icon{
       position: absolute;
       right: 20px;
     }
-  }
+}
   
   @media only screen and (max-width: 350px) {
     .btnl{
       width: 100%;
     }
-  }
+}
 
 .match-info{
     display: flex;
@@ -229,7 +229,7 @@ span.live-icon{
         border: 1px solid $fill;
         width: 240px;
     }
-}  
+} 
 }
 .regulations{
     div{
@@ -243,3 +243,67 @@ span.live-icon{
         }
     }
 }
+
+.latest-results{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    table{
+        width: 100%;
+        .td-elements{
+            display: flex;
+            width: 100%;
+                
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                font-size: 14px;
+                width: 30%;
+            }
+           
+        }
+        .td-elements:last-child{
+            border-right: 2px solid $fill;
+        }
+      
+    }
+    table, th, td{
+        font-family: $FjallaOne;
+        border-collapse: collapse;
+        opacity: 0.95;
+        
+       
+        img{
+            width: 35px;
+            height: 35px;
+        }
+        h5{
+            color: $primary;
+        }
+        th, td{
+            
+            text-align: center;
+            color: $secondary;
+            font-size: 18px;
+        }
+        th{
+            background-color: $fill;
+            color: $primary;
+        }
+        #header123{
+            background-color: $secondary;
+            color: $primary;
+            font-size: 18px;
+            padding: 10px;
+            p{
+                color: $fill;
+                font-weight: 700;
+                font-family: $FjallaOne;
+            }
+        }
+        
+    }
+}
+
