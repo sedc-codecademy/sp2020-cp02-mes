@@ -103,17 +103,18 @@
   }
 }
 
-#overlay {
-  .modal {
-    #close {
-      position: absolute;
-      color: $fill;
-      top: 5px;
-      right: 5px;
-      cursor: pointer;
-    }
-  }
-}
+// #overlay {
+//   .modal {
+//     #close {
+//       position: absolute;
+//       color: $fill;
+//       top: 3px;
+//       right: 3px;
+//       cursor: pointer;
+      
+//     }
+//   }
+// }
 
 #overlay iframe {
   width: 100%;
@@ -122,4 +123,30 @@
 
 .year_selected a{
   color: $fill !important; 
+}
+.close {
+  position: absolute;
+  right: -10px;
+  top: -30px;
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+  
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: $fill;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
