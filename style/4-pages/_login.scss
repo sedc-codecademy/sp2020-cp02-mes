@@ -1,2 +1,44 @@
+.login__form {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $primary;
+    border-radius: 1%;
+    
+
+     p {
+         padding-bottom: 2%;
+         color: $secondary;
+         font-family: $Roboto;
+     }
+
+     i {
+         color:$secondary;
+         font-size: large;
+     }
+     
+    .login__exit-button{
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    ::placeholder{
+        font-family: $FjallaOne;
+        color: $fill;
+        text-transform: uppercase;
+        padding-left: 5%;
+    }
+
+    .login__input{
+        height: 40px;
+        width: 200px;
+        border: .5px solid $secondary;
+        border-radius: 3%;
+    }
+    
+} 
 
 

@@ -3022,6 +3022,73 @@ a.just-line + ul:before {
   padding-bottom: 30px;
 }
 
+.login__form {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #11151C;
+  border-radius: 1%;
+}
+
+.login__form p {
+  padding-bottom: 2%;
+  color: #E3E3E3;
+  font-family: "Roboto";
+}
+
+.login__form i {
+  color: #E3E3E3;
+  font-size: large;
+}
+
+.login__form .login__exit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.login__form ::-webkit-input-placeholder {
+  font-family: "Fjalla One";
+  color: #931621;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+.login__form :-ms-input-placeholder {
+  font-family: "Fjalla One";
+  color: #931621;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+.login__form ::-ms-input-placeholder {
+  font-family: "Fjalla One";
+  color: #931621;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+.login__form ::placeholder {
+  font-family: "Fjalla One";
+  color: #931621;
+  text-transform: uppercase;
+  padding-left: 5%;
+}
+
+.login__form .login__input {
+  height: 40px;
+  width: 200px;
+  border: 0.5px solid #E3E3E3;
+  border-radius: 3%;
+}
+
 .signupSection {
   position: absolute;
   top: 50%;
