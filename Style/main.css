@@ -2188,6 +2188,14 @@ a.just-line + ul:before {
   display: none;
 }
 
+.sub__nav_news li a {
+  color: #931621;
+}
+
+.option_notSelected a {
+  color: #E3E3E3 !important;
+}
+
 .gallery__main {
   display: -webkit-box;
   display: -ms-flexbox;

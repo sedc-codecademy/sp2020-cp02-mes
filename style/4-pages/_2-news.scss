@@ -121,6 +121,18 @@
 }
 .isInactive{
     display: none;
+}
 
-    
+// selektiranje news calendar presskit kopcinja
+
+.sub__nav_news{
+    li{
+        a{
+            color: $fill;
+        }
+    }
+}
+
+.option_notSelected a{
+    color: $secondary !important;
 }

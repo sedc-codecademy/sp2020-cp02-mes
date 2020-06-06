@@ -32,7 +32,13 @@ news.addEventListener("click", function(){
     calendarContainer.classList.add('isInactive');
     pressKitContainer.classList.add('isInactive');
     openNewsContainer.classList.add('isInactive');
-    
+    //za kopcinjata boja koga se aktivni ---
+    if (news.classList.contains('option_notSelected')) {
+        news.classList.remove('option_notSelected');
+    }
+    calendar.classList.add('option_notSelected');
+    pressKit.classList.add('option_notSelected');
+    // do tuka ----
 });
 calendar.addEventListener("click", function(){
     if(calendarContainer.classList.contains('isInactive')){
@@ -41,7 +47,14 @@ calendar.addEventListener("click", function(){
     newsContainer.classList.add('isInactive');
     pressKitContainer.classList.add('isInactive');
     openNewsContainer.classList.add('isInactive');
-   
+
+    //za kopcinjata boja koga se aktivni ---
+    if (calendar.classList.contains('option_notSelected')) {
+        calendar.classList.remove('option_notSelected');
+    }
+    news.classList.add('option_notSelected');
+    pressKit.classList.add('option_notSelected');
+   // ---
 });
 pressKit.addEventListener("click", function(){
     if(pressKitContainer.classList.contains('isInactive')){
@@ -50,7 +63,13 @@ pressKit.addEventListener("click", function(){
     newsContainer.classList.add('isInactive');
     calendarContainer.classList.add('isInactive');
     openNewsContainer.classList.add('isInactive');
-   
+    //za kopcinjata boja koga se aktivni
+    if (pressKit.classList.contains('option_notSelected')) {
+        pressKit.classList.remove('option_notSelected');
+    }
+    news.classList.add('option_notSelected');
+    calendar.classList.add('option_notSelected');
+   // ---
 });
 
 /*
