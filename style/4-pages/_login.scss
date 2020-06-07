@@ -8,7 +8,6 @@
     background: $primary;
     border-radius: 1%;
     
-
      p {
          padding-bottom: 2%;
          color: $secondary;
@@ -19,17 +18,22 @@
          color:$secondary;
          font-size: large;
      }
-     
+
     .login__exit-button{
     display: flex;
     justify-content: flex-end;
     }
 
+    input[type = "email"], [type = "password"]{
+        padding-left: 10px;
+        font-family: $FjallaOne;
+        color: $fill;
+    }
+
     ::placeholder{
         font-family: $FjallaOne;
         color: $fill;
-        text-transform: uppercase;
-        padding-left: 5%;
+        text-transform: uppercase; 
     }
 
     .login__input{
@@ -38,7 +42,6 @@
         border: .5px solid $secondary;
         border-radius: 3%;
     }
-    
 } 
 
 

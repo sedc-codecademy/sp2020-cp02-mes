@@ -1893,6 +1893,31 @@ a.just-line + ul:before {
   height: 74px;
 }
 
+.structure__popUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: auto;
+  background-color: #11151C;
+  border: 1px solid #931621;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.structure__popUp img {
+  width: 70px;
+  height: 70px;
+}
+
 .organizations__cardsWrapper {
   margin-left: -100px;
 }
@@ -3078,32 +3103,34 @@ a.just-line + ul:before {
           justify-content: flex-end;
 }
 
+.login__form input[type="email"], .login__form [type="password"] {
+  padding-left: 10px;
+  font-family: "Fjalla One";
+  color: #931621;
+}
+
 .login__form ::-webkit-input-placeholder {
   font-family: "Fjalla One";
   color: #931621;
   text-transform: uppercase;
-  padding-left: 5%;
 }
 
 .login__form :-ms-input-placeholder {
   font-family: "Fjalla One";
   color: #931621;
   text-transform: uppercase;
-  padding-left: 5%;
 }
 
 .login__form ::-ms-input-placeholder {
   font-family: "Fjalla One";
   color: #931621;
   text-transform: uppercase;
-  padding-left: 5%;
 }
 
 .login__form ::placeholder {
   font-family: "Fjalla One";
   color: #931621;
   text-transform: uppercase;
-  padding-left: 5%;
 }
 
 .login__form .login__input {

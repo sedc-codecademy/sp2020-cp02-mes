@@ -129,16 +129,6 @@
 		width: 230px;
 		height: 60px;
 	}
-
-    // HOVER EFFECTS DONT DELETE !
-	// .tree li a:hover, .tree li a:hover+ul li a {
-	//     background: #c8e4f8;
-	//     color: #000;
-	//     border: 1px solid #94a0b4;
-	// }
-	// .tree li a:hover+ul li::after, .tree li a:hover+ul li::before, .tree li a:hover+ul::before, .tree li a:hover+ul ul::before {
-	//     border-color: #94a0b4;
-	// }
 	
 	li a.just-line {
 	    display: none;
@@ -149,7 +139,22 @@
 	a.just-line + ul:before {
 	    height: 74px;
 	}
-	
+
+	.structure__popUp {
+		display: flex;
+		width: 300px;
+		height: auto;
+		background-color: $primary;
+		border: 1px solid $fill;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+
+		img {
+			width: 70px;
+			height: 70px;
+		}
+	}
 
 
 // INTERNATIONAL ORGANIZATIONS
