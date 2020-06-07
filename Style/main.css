@@ -165,7 +165,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #11151C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,12 +178,12 @@ a:hover {
 }
 
 .loader img {
-  width: 600px;
+  width: 300px;
 }
 
 .hidden {
-  -webkit-animation: fadeOut 2s;
-          animation: fadeOut 2s;
+  -webkit-animation: fadeOut 2.1s;
+          animation: fadeOut 2.1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

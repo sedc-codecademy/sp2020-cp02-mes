@@ -6,18 +6,18 @@
     width: 100%;
     height: 100%;
     // background-color: rgba($primary, 0.7);
-    background-color: black;
+    background-color: $primary;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-        width: 600px;
+        width: 300px;
     }
 }
 
 .hidden{
-    animation: fadeOut 2s;
+    animation: fadeOut 2.1s;
     animation-fill-mode: forwards;
 }
 
