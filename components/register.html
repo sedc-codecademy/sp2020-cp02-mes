@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="../style/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="../style/main.css">
 </head>
+
 <body>
-    <div class="signupSection">
+  <form action="" class="register__form">
+    <a href=""><i class="fas fa-times-circle  register__exit-button"></i></a>
+    <div class="register_container">
+      <h3>Register</h3> <br>
+      <!-- <div class="flex-center">
+        <p>
+          Sign up with social networks
+        </p>
+
+        <div class="flex-space-between padding-bt-30">
+          <a href="">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div> -->
+
+      </div>
+      <div class="flex-center ">
+        <div class="padding-bt-20">
+          <input type="text" placeholder="First name" class="register__input">
+        </div>
+        <div class="padding-bt-20">
+          <input type="text" placeholder="Last name" class="register__input">
+        </div>
+        <div class="padding-bt-20">
+          <input type="date" placeholder="Date of birth" class="register__input" id="birth_date">
+        </div>
+        <div class="padding-bt-20">
+          <input type="email" placeholder="Email" class="register__input">
+        </div>
+        <div class="padding-bt-20">
+          <input type="password" placeholder="Password" class="register__input">
+        </div>
+        <div class="padding-bt-20">
+          <input type="password" placeholder="Confirm password" class="register__input">
+        </div>
+        <div class="select_label">
+          <label for="gameselection">Choose your primary game</label>
+        </div>
+        <div class="padding-bt-20">
+          
+          <select id="gameselection" name="gameselection">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Counter-Strike">Counter-Strike</option>
+            <option value="Dota2">Dota 2</option>
+            <option value="Pes2020">PES 2020</option>
+            <option value="CallOfDuty">Call of Duty</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex-center padding-bt-20">
+        <a href="#" class="btn">Sign Up</a>
+      </div>
+
+    </div>
+  </form>
+
+
+
+
+
+
+  <!-- <div class="signupSection">
         <div class="info">
           <h2>Welcome!</h2>
             <img src="/img/e-sport Macedonia - LOGO.png" alt="logo">
@@ -42,6 +111,8 @@
             </li>
           </ul>
         </form>
-      </div>
+      </div> -->
+
 </body>
+
 </html>
