@@ -140,21 +140,54 @@
 	    height: 74px;
 	}
 
-	.structure__popUp {
-		display: flex;
-		width: 300px;
-		height: auto;
-		background-color: $primary;
-		border: 1px solid $fill;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
+	// .structure__popUp {
+	// 	display: flex;
+	// 	width: 300px;
+	// 	height: auto;
+	// 	background-color: $primary;
+	// 	border: 1px solid $fill;
+	// 	flex-direction: column;
+	// 	justify-content: space-evenly;
+	// 	align-items: center;
 
-		img {
-			width: 70px;
-			height: 70px;
-		}
+	// 	img {
+	// 		width: 70px;
+	// 		height: 70px;
+	// 	}
+	// }
+
+
+	// POPUP TRIALS
+
+	/* Outer div - needs to be relative so we can use absolute positioning */
+	.clickToShowInfo {
+		position: relative;
+		font-size: 10px;
 	}
+	/* When clicking outer div, make inner div visible */
+	.clickToShowInfo:active .info {
+		 visibility: visible;	
+		}
+	/* And hold by staying visible on hover */
+	.info:active {
+		visibility: visible;
+	}
+	/* General settings for popup */
+	.info {
+		position: absolute;
+		right: -.5px;
+		top: -5;
+		visibility: hidden;
+		z-index: 100;
+		background-image: url(../../img/background/section-background.PNG);
+		border: 1px solid $fill;
+		overflow: hidden;
+		padding: 8px;
+		width: 231px;
+		height: 200px;
+		
+	}
+	// POPUP TRIALS END HERE!
 
 
 // INTERNATIONAL ORGANIZATIONS

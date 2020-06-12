@@ -1893,29 +1893,35 @@ a.just-line + ul:before {
   height: 74px;
 }
 
-.structure__popUp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 300px;
-  height: auto;
-  background-color: #11151C;
-  border: 1px solid #931621;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* Outer div - needs to be relative so we can use absolute positioning */
+.clickToShowInfo {
+  position: relative;
+  font-size: 10px;
 }
 
-.structure__popUp img {
-  width: 70px;
-  height: 70px;
+/* When clicking outer div, make inner div visible */
+.clickToShowInfo:active .info {
+  visibility: visible;
+}
+
+/* And hold by staying visible on hover */
+.info:active {
+  visibility: visible;
+}
+
+/* General settings for popup */
+.info {
+  position: absolute;
+  right: -.5px;
+  top: -5;
+  visibility: hidden;
+  z-index: 100;
+  background-image: url(../../img/background/section-background.PNG);
+  border: 1px solid #931621;
+  overflow: hidden;
+  padding: 8px;
+  width: 231px;
+  height: 200px;
 }
 
 .organizations__cardsWrapper {
