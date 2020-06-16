@@ -32,6 +32,29 @@
 
 //Mixin for media query
 
+@mixin laptopL {
+    @media(max-width: 1290px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media(max-width: 1024px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media(max-width: 425px) {
+        @content;
+    }
+}
+// za da gi upotrebite treba samo da iskoristite @include laptopL/laptop/tablet/mobile {}
+
+
 //Mixin for shadow
 @mixin shadow($level: 1) {
 	@if $level == 1 {box-shadow: 0 1px 3px rgba(black,0.12), 0 1px 2px rgba(black,0.24);}
