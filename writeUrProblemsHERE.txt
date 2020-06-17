@@ -1,17 +1,23 @@
-Ne znam kako da________________, dali moze nekoj da mi pomogne? $Name $date.now 
 
+17.06.2020 
 
-*pozicioniranje na ikonite vo centar vo section BECOME A MEMBER? Darko ; 27.may
+1.Responsive na site strani so MIXIN(vidi ./style/0-helpers/_mixin.scss -> MEDIA QUERY)
+    * HOMEPAGE
+    * ABOUT
+    * NEWS
+    * GALLERY(PHOTOS/VIDEOS)
+    * GET INVOLVED
+    * COMPETITIONS
+    * LOGIN/REGISTER
 
-*naslov pod slider na latest news
+2.Login(i ./register) da pagja od gore kade i da si vo bilo koe vreme(zivotot e prekrasen so tebe.mp3) na pejdzot.
 
+3.Za Login & Register da se napravat VALIDATIONS(mail mora da ima @,password mora da ima golema bukva i brojka i sl)
+  vo JS(ako ima nekoj druga idea, neka puca).
 
-***Search (modal) Darko F. Vasil <v1.0 DONE>
-
-***Login form 1.mail/nametag 2.password 3button za log in Stefan i Darko P. <1.0 DONEEEE> /sega e temna varijanta, kako predlog, ako vi se svigja povekje svetlata, ke se promeni !!!!/
-
-***register form 1.email 2.name 3.fullname 4.gender 5.password 6.confirm password 7.button za register Elena i Daniel
-
-***COMPETITION PAGE! Goran i Edin <all>
-
-***FORGET PASSWORD!
+4. Dodate tuka se shto mislite deka fali da se dosredi>>>
+    *
+    *
+    *
+    *
+    *  
