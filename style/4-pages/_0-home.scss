@@ -231,7 +231,7 @@ i {
             font-size: 14px;
         }
         &:hover {
-            a{
+            a {
                 opacity: 1;
             }
             h5 {
@@ -361,3 +361,57 @@ i {
 }
 
 // ENDORSED BY
+
+
+// MEDIA QUERY
+
+@include laptopL {}
+
+@include laptop {
+    .firstSectiion {
+        .new_slider {
+            .carousel {
+                height: 50vh;
+                ul {
+                    li {
+                        img {
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet { .firstSectiion {
+    .new_slider {
+        .carousel {
+            height: 40vh;
+            ul {
+                li {
+                    img {
+                        height: 40vh;
+                    }
+                }
+            }
+        }
+    }
+}}
+
+@include mobile {
+    .firstSectiion {
+        .new_slider {
+            .carousel {
+                height: 30vh;
+                ul {
+                    li {
+                        img {
+                            height: 30vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

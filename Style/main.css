@@ -1726,6 +1726,33 @@ i {
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .firstSectiion .new_slider .carousel {
+    height: 50vh;
+  }
+  .firstSectiion .new_slider .carousel ul li img {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstSectiion .new_slider .carousel {
+    height: 40vh;
+  }
+  .firstSectiion .new_slider .carousel ul li img {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .firstSectiion .new_slider .carousel {
+    height: 30vh;
+  }
+  .firstSectiion .new_slider .carousel ul li img {
+    height: 30vh;
+  }
+}
+
 .pd__bottom30 {
   padding-bottom: 30px;
 }
