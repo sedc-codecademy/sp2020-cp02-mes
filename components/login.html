@@ -63,7 +63,7 @@
         </nav>
     </header>
     
-    <form action="" class="login__form">
+    <form action="/" class="login__form">
         <a href=""><i class="fas fa-times-circle  login__exit-button"></i></a>
         <div class="">
             <div class="flex-center padding-bt-20">
@@ -89,22 +89,30 @@
             </div>
             <div class="flex-center ">
                 <div class="padding-bt-20">
-                    <input type="email" placeholder="Email" class="login__input">
+                    <input type="email" placeholder="Email" class="login__input" id="email">
                 </div>
                 <div class="padding-bt-20">
-                    <input type="password" placeholder="Password" class="login__input">
+                    <input type="password" placeholder="Password" class="login__input" id="password">
                 </div>
             </div>
-            <div class="flex-center padding-bt-20">
-                <a href="" class="btn">Login</a>
+            
+            <div class="errorContainer flex-center ">
+
             </div>
+            <div class="flex-center padding-bt-20">
+               
+                <button href="" type="submit" class="btn">Login</button>
+            </div>
+
             <div class="flex-space-between">
                 <a href="" class="login__aTags">forgot password</a>
                 <a href="../components/register.html" class="login__aTags">register</a>
             </div>
         </div>
+
+       
     </form>
     
-
+    <script src="../js/login.js"></script>
 </body>
 </html>
