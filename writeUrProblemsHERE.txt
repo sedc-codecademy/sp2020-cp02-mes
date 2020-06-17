@@ -1,19 +1,30 @@
-
-17.06.2020 
+*********************************************************************************************************************
+Virtuelen mono sostanok (17.06.2020) 
 
 1.Responsive na site strani so MIXIN(vidi ./style/0-helpers/_mixin.scss -> MEDIA QUERY)
     * HOMEPAGE
-    * ABOUT
-    * NEWS
-    * GALLERY(PHOTOS/VIDEOS)
-    * GET INVOLVED
-    * COMPETITIONS
-    * LOGIN/REGISTER
+    * ABOUT 
+    * NEWS 
+    * GALLERY(PHOTOS/VIDEOS) 
+    * GET INVOLVED !
+    * COMPETITIONS !
+    * LOGIN/REGISTER ! >Kje vidime dali kje ima potreba. Neka stoi na hold.<
+    * HEADER/FOOTER >Darko F.<
+
+    >Sekoj kje si kuca responsive za pejdzot shto go praveshe<
+    >za GET INVOLVED - Elena i Vasil <
+    >za COMPETITIONS - Goran i Edin <
+
+    ^^dokolku i pokraj zapishanoto ne vi e jasno kako se koristat mixinite, slobodno pishete mi(Darko F.)
 
 2.Login(i ./register) da pagja od gore kade i da si vo bilo koe vreme(zivotot e prekrasen so tebe.mp3) na pejdzot.
 
+    >Darko F.i Daniel<
+
 3.Za Login & Register da se napravat VALIDATIONS(mail mora da ima @,password mora da ima golema bukva i brojka i sl)
   vo JS(ako ima nekoj druga idea, neka puca).
+
+    >Stefan i Darko P.<
 
 4. Dodate tuka se shto mislite deka fali da se dosredi>>>
     *
@@ -21,3 +32,7 @@
     *
     *
     *  
+*********************************************************************************************************************
+Vaka sekoj ima po 2 taska. Dokolku imate nekoi zabeleshki za bilo kakva promena, moze da si pisheme vo grupnata poraka na fb.
+DEAD-LINE neka bide 24.06.2020
+*********************************************************************************************************************
