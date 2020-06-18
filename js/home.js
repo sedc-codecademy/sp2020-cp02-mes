@@ -21,6 +21,15 @@ loginClose.addEventListener('click', function(){
     loginWrapper.classList.remove('login_wrapper-active');
     loginWrapper.classList.add('login_wrapper');
 })
+//mobile
+const loginMobile = document.querySelector('.btn__mobile__login');
+
+
+loginMobile.addEventListener('click', function(){
+    loginWrapper.classList.remove('login_wrapper');
+    loginWrapper.classList.add('login_wrapper-active');
+})
+
 
 //***REGISTER***
 
