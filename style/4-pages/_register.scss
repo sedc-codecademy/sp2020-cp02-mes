@@ -1,70 +1,94 @@
 .register__form {
-  width: 350px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: $primary;
-  border-radius: 1%;
-  
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $primary;
+    border-radius: 5px;
+    border: 1px solid $fill;
+    box-shadow: 0 0 10px $red;
+    padding: 30px 10px;
 
-   p {
-       padding-bottom: 2%;
-       color: $secondary;
-       font-family: $Roboto;
-   }
+    p {
+        padding-bottom: 2%;
+        color: $secondary;
+        font-family: $Roboto;
+    }
 
-   i {
-       color:$secondary;
-       font-size: large;
-   }
-   
-  .register__exit-button{
-  display: flex;
-  justify-content: flex-end;
-  }
+    i {
+        color: $secondary;
+        font-size: large;
+    }
 
-  ::placeholder{
-      font-family: $FjallaOne;
-      color: $fill;
-      text-transform: uppercase;
-      padding-left: 5%;
-  }
+    .register__exit-button {
+        display: flex;
+        justify-content: flex-end;
+    }
 
-  .register__input{
-      height: 40px;
-      width: 200px;
-      border: .5px solid $secondary;
-      border-radius: 3%;
-  }
-  
+    ::placeholder {
+        font-family: $FjallaOne;
+        color: $fill;
+        text-transform: uppercase;
+        padding-left: 5%;
+    }
+
+    .register__input {
+        height: 40px;
+        width: 200px;
+        border: 0.5px solid $secondary;
+        border-radius: 3%;
+    }
+
 }
-.register_container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.register_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#birth_date{
-  color: $fill;
-  font-family: $FjallaOne;
+#birth_date {
+    color: $fill;
+    font-family: $FjallaOne;
 }
 
 
-.select_label{
-  padding-bottom: 10px;
-  color: $fill;
-  font-family: $FjallaOne;
+.select_label {
+    padding-bottom: 10px;
+    color: $fill;
+    font-family: $FjallaOne;
 }
 
 #gameselection {
-  border-radius: 5px;
-  color: $fill;
-  font-family: $FjallaOne;
+    border-radius: 5px;
+    color: $fill;
+    font-family: $FjallaOne;
 }
 
+.register_wrapper {
+    display: none;
+}
 
-//Old code
+.register_wrapper-active {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: (rgba($primary,0.8));
+    z-index: 100;
+    position: fixed;
+    animation: RegisterOpen 1s linear;
+}
+
+@keyframes RegisterOpen {
+  from{
+      transform: translateY(-150%);
+  }
+  to{
+      transform: translateY(0);
+  }
+}
+
+// Old code
 // .signupSection {
 //     position: absolute;
 //     top: 50%;
@@ -102,12 +126,12 @@
 //           padding: 20px 0;
 //           color:$primary;
 //         }
-//   }
-  
+// }
 
-//   }
-  
-//   .signupForm {
+
+// }
+
+// .signupForm {
 //     width: 70%;
 //     padding: 30px 0;
 //     background: $secondary;
@@ -116,9 +140,9 @@
 //       font-weight: 300;
 //       color:$fill   ;
 //     }
-//   }
-  
-//   .inputFields {
+// }
+
+// .inputFields {
 //     margin: 15px 0;
 //     font-size: 16px;
 //     padding: 10px;
@@ -130,14 +154,14 @@
 //     background: darken($secondary, 10%);
 //     color: $primary;
 //     outline: none;
-//   }
-  
-//   .noBullet {
+// }
+
+// .noBullet {
 //     list-style-type: none;
 //     padding: 0;
-//   }
-  
-//   #join-btn {
+// }
+
+// #join-btn {
 //     border: 1px solid $fill;
 //     background: darken($secondary, 30%);
 //     font-size: 18px;
@@ -150,6 +174,4 @@
 //         background: $fill;
 //       padding: 10px 80px;
 //     }
-//   }
-  
-  
+// }

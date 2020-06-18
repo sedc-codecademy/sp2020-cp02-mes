@@ -70,10 +70,6 @@ a, button {
   text-decoration: none;
 }
 
-button {
-  border: none;
-}
-
 h1 {
   font-family: "Fjalla One";
   font-weight: 500;
@@ -3121,7 +3117,11 @@ a.just-line + ul:before, button.just-line + ul:before {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: #11151C;
-  border-radius: 1%;
+  border-radius: 5px;
+  border: 1px solid #931621;
+  -webkit-box-shadow: 0 0 10px #EE2E31;
+          box-shadow: 0 0 10px #EE2E31;
+  padding: 30px 10px;
 }
 
 .login__form p {
@@ -3181,6 +3181,67 @@ a.just-line + ul:before, button.just-line + ul:before {
   border-radius: 3%;
 }
 
+.login_wrapper {
+  display: none;
+}
+
+.login_wrapper-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 21, 28, 0.8);
+  z-index: 100;
+  position: fixed;
+  -webkit-animation: LoginOpen 1s linear;
+          animation: LoginOpen 1s linear;
+}
+
+@-webkit-keyframes LoginOpen {
+  from {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes LoginOpen {
+  from {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes LoginClose {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+}
+
+@keyframes LoginClose {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+}
+
 .register__form {
   width: 350px;
   height: auto;
@@ -3190,7 +3251,11 @@ a.just-line + ul:before, button.just-line + ul:before {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: #11151C;
-  border-radius: 1%;
+  border-radius: 5px;
+  border: 1px solid #931621;
+  -webkit-box-shadow: 0 0 10px #EE2E31;
+          box-shadow: 0 0 10px #EE2E31;
+  padding: 30px 10px;
 }
 
 .register__form p {
@@ -3276,5 +3341,44 @@ a.just-line + ul:before, button.just-line + ul:before {
   border-radius: 5px;
   color: #931621;
   font-family: "Fjalla One";
+}
+
+.register_wrapper {
+  display: none;
+}
+
+.register_wrapper-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 21, 28, 0.8);
+  z-index: 100;
+  position: fixed;
+  -webkit-animation: RegisterOpen 1s linear;
+          animation: RegisterOpen 1s linear;
+}
+
+@-webkit-keyframes RegisterOpen {
+  from {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes RegisterOpen {
+  from {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: $primary;
-    border-radius: 1%;
+    border-radius: 5px;
+    border: 1px solid $fill;
+    box-shadow: 0 0 10px $red;
+    padding: 30px 10px;
     
      p {
          padding-bottom: 2%;
@@ -44,4 +47,45 @@
     }
 } 
 
+.login_wrapper{  
+    display:none;
+}
 
+.login_wrapper-active{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: (rgba($primary,0.8));
+    z-index: 100;
+    position: fixed;
+    animation: LoginOpen 1s linear;
+}
+
+@keyframes LoginOpen {
+    from{
+        transform: translateY(-150%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+// .login_wrapper-close{
+//     display: flex;
+//     width: 100vw;
+//     height: 100vh;
+//     background: (rgba($primary,0.8));
+//     z-index: 100;
+//     position: fixed;
+//     animation: LoginClose 1s linear;
+// }
+
+@keyframes LoginClose {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-150%);
+    }
+}

@@ -6,6 +6,51 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
+//***LOGIN ***
+
+const login = document.querySelector('.btn__desktop__login');
+let loginWrapper = document.querySelector('.login_wrapper');
+const loginClose = document.querySelector('.login__exit-button');
+
+login.addEventListener('click', function(){
+    loginWrapper.classList.remove('login_wrapper');
+    loginWrapper.classList.add('login_wrapper-active');
+})
+
+loginClose.addEventListener('click', function(){
+    loginWrapper.classList.remove('login_wrapper-active');
+    loginWrapper.classList.add('login_wrapper');
+})
+
+//***REGISTER***
+
+const register = document.querySelector('#registerOpen');
+const registerWrapper = document.querySelector('.register_wrapper');
+const registerClose = document.querySelector('.register__exit-button');
+
+register.addEventListener('click', function(){
+    loginWrapper.classList.remove('login_wrapper-active');
+    loginWrapper.animate([
+        // keyframes
+        { transform: 'translateY(0px)' }, 
+        { transform: 'translateY(-150px)' }
+      ], { 
+        // timing options
+        duration: 1000,
+        // iterations: Infinity
+      });
+    
+    loginWrapper.classList.add('login_wrapper');
+    registerWrapper.classList.remove('register_wrapper');
+    registerWrapper.classList.add('register_wrapper-active');
+})
+
+registerClose.addEventListener('click', function(){
+    registerWrapper.classList.remove('register_wrapper-active');
+    registerWrapper.classList.add('register_wrapper');
+})
+
+
 //***HEADER***
 
 const navSlide = () =>{
