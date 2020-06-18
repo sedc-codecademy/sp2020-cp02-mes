@@ -5,12 +5,17 @@
     padding: 2px 30px;
     border-radius: 5px;
     &:hover{
-        background-color:lighten($fill, 15%);
+        background-color:lighten($fill, 10%);
         color: $secondary;
     }
     
 }
 
+button {
+    border: none;
+    @extend a ;
+    @extend .btn ;     
+ }
 
 // .btn:hover {
 //     opacity: 0.7;
