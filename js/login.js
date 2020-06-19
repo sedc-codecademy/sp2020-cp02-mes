@@ -20,7 +20,7 @@ function PasswordValidation() {
 }
 
 function ValidateEmail(inputText) {
-    errorContainer.innerHTML = "";
+
 
     var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     
