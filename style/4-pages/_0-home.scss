@@ -132,7 +132,7 @@ i {
         padding: 20px 0;
     }
     i {
-        padding-top: 50px;
+        padding-top: 30px;
         font-size: 50px;
         color: $fill;
     }
@@ -270,7 +270,7 @@ i {
     justify-content: space-between;
 
     .becomeAMember__wrapper {
-        background-color: white;
+        background-color: $secondary;
         width: 100%;
         height: 100%;
 
@@ -296,17 +296,13 @@ i {
         h5,
         p {
             padding-left: 90px;
-            // display: block;
         }
-
         h5 {
             padding-bottom: 10px;
         }
-
         p {
             font-style: italic;
             font-weight: 200;
-            font-size: 14px;
         }
     }
 }
@@ -365,9 +361,30 @@ i {
 
 // MEDIA QUERY
 
-@include laptopL {}
+@include laptopL {
+    // ***First Section***
+
+    // *** OUR MISSION ***
+
+    .ourMission_sub-div {
+
+        i {
+            padding-top: 30px;
+            font-size: 40px;
+            color: $fill;
+        }
+        p {
+            opacity: 0.8;
+            font-style: italic;
+            font-size: 13px;
+            padding: 0 30px;
+        }
+    };
+    // Become a member****
+}
 
 @include laptop {
+    // ***First Section***
     .firstSectiion {
         .new_slider {
             .carousel {
@@ -382,24 +399,115 @@ i {
             }
         }
     }
+    // *** OUR MISSION ***
+
+    .ourMission_sub-div {
+
+        i {
+            padding-top: 30px;
+            font-size: 40px;
+            color: $fill;
+        }
+        p {
+            opacity: 0.8;
+            font-style: italic;
+            font-size: 13px;
+            padding: 0 15px;
+        }
+    };
+    // Become a member****
+    .becomeAMember__main-div {
+        .becomeAMember__sub-div1 {
+            margin-right: 10px;
+        }
+        .becomeAMember__sub-div2 {
+            margin-left: 10px;
+            margin-top: 0;
+        }
+        .becomeAMember__card {
+            margin: 20px 0;
+        }
+    }
 }
 
-@include tablet { .firstSectiion {
-    .new_slider {
-        .carousel {
-            height: 40vh;
-            ul {
-                li {
-                    img {
-                        height: 40vh;
+
+@include tablet {
+    // ***First Section***
+    .firstSectiion {
+        .new_slider {
+            .carousel {
+                height: 40vh;
+                ul {
+                    li {
+                        img {
+                            height: 40vh;
+                        }
                     }
                 }
             }
         }
     }
-}}
+    // *** OUR MISSION ***
+
+    .ourMission__main-div {
+        display: inline-block;
+
+        i {
+            // text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+            color: $fill;
+        }
+        h5 {
+            padding: 5px 0;
+        }
+        p {
+            opacity: 0.8;
+            font-style: italic;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+    }
+    // Become a member****
+
+    .becomeAMember__main-div {
+        display: inline-block;
+
+        .becomeAMember__wrapper {
+            i {
+                font-size: 50px;
+
+            }
+        }
+        .becomeAMember__sub-div1 {
+            margin-right: 0;
+        }
+        .becomeAMember__sub-div2 {
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+    // JOIN NOW***************
+
+    .join_now {
+        text-align: center;
+        .joinNow__main-div {
+            display: inline-block;
+            padding:  0;
+            h3{
+                padding-bottom: 10px;
+                font-size: 18px;
+            }
+            .join_now-btn {                
+                font-size: 14px;
+            }
+        }
+    }
+}
+
 
 @include mobile {
+    // ***First Section***
     .firstSectiion {
         .new_slider {
             .carousel {
@@ -411,6 +519,31 @@ i {
                         }
                     }
                 }
+            }
+        }
+    }
+    // *** OUR MISSION ***
+    .becomeAMember__main-div {
+
+        .becomeAMember__wrapper {
+            i {
+                font-size: 40px;
+            }
+
+        }
+    }
+    // JOIN NOW***************
+
+    .join_now {
+        
+        .joinNow__main-div {
+            
+            h3{
+                padding-bottom: 10px;
+                font-size: 16px;
+            }
+            .join_now-btn {                
+                font-size: 14px;
             }
         }
     }

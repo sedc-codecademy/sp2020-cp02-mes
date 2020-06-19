@@ -1746,7 +1746,7 @@ i {
 }
 
 .ourMission_sub-div i {
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: 50px;
   color: #931621;
 }
@@ -1897,7 +1897,7 @@ i {
 }
 
 .becomeAMember__main-div .becomeAMember__wrapper {
-  background-color: white;
+  background-color: #E3E3E3;
   width: 100%;
   height: 100%;
 }
@@ -1935,7 +1935,6 @@ i {
 .becomeAMember__main-div .becomeAMember__card p {
   font-style: italic;
   font-weight: 200;
-  font-size: 14px;
 }
 
 .join_now {
@@ -1996,12 +1995,47 @@ i {
   margin: 0;
 }
 
+@media (max-width: 1290px) {
+  .ourMission_sub-div i {
+    padding-top: 30px;
+    font-size: 40px;
+    color: #931621;
+  }
+  .ourMission_sub-div p {
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 13px;
+    padding: 0 30px;
+  }
+}
+
 @media (max-width: 1024px) {
   .firstSectiion .new_slider .carousel {
     height: 50vh;
   }
   .firstSectiion .new_slider .carousel ul li img {
     height: 50vh;
+  }
+  .ourMission_sub-div i {
+    padding-top: 30px;
+    font-size: 40px;
+    color: #931621;
+  }
+  .ourMission_sub-div p {
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 13px;
+    padding: 0 15px;
+  }
+  .becomeAMember__main-div .becomeAMember__sub-div1 {
+    margin-right: 10px;
+  }
+  .becomeAMember__main-div .becomeAMember__sub-div2 {
+    margin-left: 10px;
+    margin-top: 0;
+  }
+  .becomeAMember__main-div .becomeAMember__card {
+    margin: 20px 0;
   }
 }
 
@@ -2012,6 +2046,50 @@ i {
   .firstSectiion .new_slider .carousel ul li img {
     height: 40vh;
   }
+  .ourMission__main-div {
+    display: inline-block;
+  }
+  .ourMission__main-div i {
+    padding-top: 20px;
+    font-size: 30px;
+    color: #931621;
+  }
+  .ourMission__main-div h5 {
+    padding: 5px 0;
+  }
+  .ourMission__main-div p {
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .becomeAMember__main-div {
+    display: inline-block;
+  }
+  .becomeAMember__main-div .becomeAMember__wrapper i {
+    font-size: 50px;
+  }
+  .becomeAMember__main-div .becomeAMember__sub-div1 {
+    margin-right: 0;
+  }
+  .becomeAMember__main-div .becomeAMember__sub-div2 {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .join_now {
+    text-align: center;
+  }
+  .join_now .joinNow__main-div {
+    display: inline-block;
+    padding: 0;
+  }
+  .join_now .joinNow__main-div h3 {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .join_now .joinNow__main-div .join_now-btn {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -2020,6 +2098,16 @@ i {
   }
   .firstSectiion .new_slider .carousel ul li img {
     height: 30vh;
+  }
+  .becomeAMember__main-div .becomeAMember__wrapper i {
+    font-size: 40px;
+  }
+  .join_now .joinNow__main-div h3 {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .join_now .joinNow__main-div .join_now-btn {
+    font-size: 14px;
   }
 }
 
