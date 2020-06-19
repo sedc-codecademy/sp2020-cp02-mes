@@ -33,17 +33,17 @@ footer {
             font-size: 20px;
         }
     }
-    a {
-        font-size: 16px;
-        font-family: $FjallaOne;
-        letter-spacing: 1px;
+    // a {
+    //     font-size: 16px;
+    //     font-family: $FjallaOne;
+    //     letter-spacing: 1px;
 
 
-        &:hover {
-            color: $fill;
+    //     &:hover {
+    //         color: $fill;
 
-        }
-    }
+    //     }
+    // }
     h3 {
         text-transform: unset;
         color: $fill;
@@ -68,3 +68,13 @@ footer {
         color: $red;
     }
 }
+
+// MEDIA QUERY
+
+@include laptopL {}
+
+@include laptop {}
+
+@include tablet {}
+
+@include mobile {}

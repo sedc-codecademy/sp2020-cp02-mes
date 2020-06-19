@@ -145,6 +145,282 @@ a:hover, button:hover {
   color: #931621;
 }
 
+@media (max-width: 1290px) {
+  h1 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 36px;
+    color: #E3E3E3;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 28px;
+    color: #E3E3E3;
+    line-height: 1.38;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 24px;
+    color: #E3E3E3;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 20px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 18px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 16px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 15px;
+    color: #E3E3E3;
+    opacity: 0.8;
+  }
+  a, button {
+    font-family: "Fjalla One";
+    font-weight: 400;
+    font-size: 15px;
+    color: #E3E3E3;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  a:hover, button:hover {
+    color: #931621;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 34px;
+    color: #E3E3E3;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 27px;
+    color: #E3E3E3;
+    line-height: 1.38;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 23px;
+    color: #E3E3E3;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 19px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 17px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 15px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #E3E3E3;
+    opacity: 0.8;
+  }
+  a, button {
+    font-family: "Fjalla One";
+    font-weight: 400;
+    font-size: 14px;
+    color: #E3E3E3;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  a:hover, button:hover {
+    color: #931621;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 32px;
+    color: #E3E3E3;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 26px;
+    color: #E3E3E3;
+    line-height: 1.38;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 22px;
+    color: #E3E3E3;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 18px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 16px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 14px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 13px;
+    color: #E3E3E3;
+    opacity: 0.8;
+  }
+  a, button {
+    font-family: "Fjalla One";
+    font-weight: 400;
+    font-size: 13px;
+    color: #E3E3E3;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  a:hover, button:hover {
+    color: #931621;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 30px;
+    color: #E3E3E3;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 24px;
+    color: #E3E3E3;
+    line-height: 1.38;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 20px;
+    color: #E3E3E3;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 16px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h5 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 15px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-family: "Fjalla One";
+    font-weight: 500;
+    font-size: 13px;
+    color: #E3E3E3;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    color: #E3E3E3;
+    opacity: 0.8;
+  }
+  a, button {
+    font-family: "Fjalla One";
+    font-weight: 400;
+    font-size: 12px;
+    color: #E3E3E3;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  a:hover, button:hover {
+    color: #931621;
+  }
+}
+
 .btn, button {
   background-color: #931621;
   font-size: 16px;
@@ -365,16 +641,6 @@ footer .footer__main-div .footer__sub-div ul .second_number {
 
 footer .footer__main-div i {
   font-size: 20px;
-}
-
-footer a, footer button {
-  font-size: 16px;
-  font-family: "Fjalla One";
-  letter-spacing: 1px;
-}
-
-footer a:hover, footer button:hover {
-  color: #931621;
 }
 
 footer h3 {

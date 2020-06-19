@@ -9,19 +9,19 @@
 }
 
 //Mixin for paragraph
-@mixin p {
+@mixin p ($fontSize) {
     font-family: $Roboto;
     font-weight: 400;
-    font-size: 16px;
+    font-size: $fontSize;
     color: $secondary;
     opacity: 0.8;
 }
 
 //Mixin for anchor tags
-@mixin a {
+@mixin a ($fontSize) {
     font-family: $FjallaOne;
     font-weight: 400;
-    font-size: 16px;
+    font-size: $fontSize;
     color: $secondary;
     text-transform: uppercase;
     cursor: pointer;
