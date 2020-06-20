@@ -71,15 +71,15 @@
 }
 
 
-// .login_wrapper-close{
-//     display: flex;
-//     width: 100vw;
-//     height: 100vh;
-//     background: (rgba($primary,0.8));
-//     z-index: 100;
-//     position: fixed;
-//     animation: LoginClose 1s linear;
-// }
+.login_wrapper-close{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: (rgba($primary,0.8));
+    z-index: 100;
+    position: fixed;
+    animation: LoginClose 1s linear;
+}
 
 @keyframes LoginClose {
     from{

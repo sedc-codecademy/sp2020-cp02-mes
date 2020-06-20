@@ -235,43 +235,68 @@
     <section name:LatestNews class="pd">
         <div class="container">
             <h1>LATEST NEWS</h1>
-            <div class="news-slider slider container-overflow">
-                <i class="fas fa-chevron-left chevron" id="moveLeftBtn" onclick="moveLeft()"></i>
-                <img src="" alt="" class="slider1" onclick="moveRightTwice()">
-                <img src="" alt="" class="slider2" onclick="moveRight()">
-                <img src="" alt="" class="slider3">
-                <img src="" alt="" class="slider4" onclick="moveLeft()">
-                <img src="" alt="" class="slider5" onclick="moveLeftTwice()">
-                <i class="fas fa-chevron-right chevron" id="moveRightBtn" onclick="moveRight()"></i>
+            <div class="slider-container news-slider_main">
+                <i class="fas fa-chevron-left chevron " onclick="slideLeftNews()"></i>
+                <div id="news-slider" class="slider">
+                    <ul class="list polygon">
+                        <li class="hide">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
+                                <h5>Latest News 1 </h5>
+                            </a>
+                        </li>
+                        <li class="prev">
+                            <a href="http://www.google.com">
+                                <img src="./img/74381.JPG" width="100%">
+                                <h5>Latest News 2</h5>
+                            </a>
+                        </li>
+                        <li class="act">
+                            <a href="http://www.google.com">
+                                <img src="./img/animals-birds-dawn-giraffe-417142.jpg" width="100%">
+                                <h5>Latest News 3</h5>
+                            </a>
+                        </li>
+                        <li class="next">
+                            <a href="http://www.google.com">
+                                <img src="./img/under.png" width="100%">
+                                <h5>Latest News 4</h5>
+                            </a>
+                        </li>
+                        <li class="new-next">
+                            <a href="http://www.google.com">
+                                <img src="./img/background/pic1.jpg" width="100%">
+                                <h5>Latest News 5</h5>
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
+                                <h5>Latest News 6</h5>
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
+                                <h5>Latest News 7</h5>
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="">
+                                <img src="./img/606641.jpg" width="100%">
+                                <h5>Latest News 8</h5>
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
+                                <h5>Latest News 9</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-chevron-right chevron" onclick="slideRightNews()"></i>
             </div>
-
-            <!-- <div class="news-slider slider container-overflow">
-                <i class="fas fa-chevron-left chevron" id="moveLeftBtn" onclick="moveLeft()"></i>
-                <div class="slider1" onclick="moveRightTwice()">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </div>
-                <div class="slider2" onclick="moveRight()">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </div>
-                <div class="slider3">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </div>
-                <div class="slider4" onclick="moveLeft()">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </div>
-                <div class="slider5" onclick="moveLeftTwice()">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </div>
-                <i class="fas fa-chevron-right chevron" id="moveRightBtn" onclick="moveRight()"></i>
-            </div> -->
-
-
-
         </div>
     </section>
     <section name:WhatIsESport class="pd container">
@@ -369,48 +394,92 @@
     <section name:Members class="pd members_background">
         <div class="container">
             <h1>Members</h1>
-            <div class="slider-members">
+            <div class="slider-container">
+                <i class="fas fa-chevron-left" onclick="slideLeftMembers()"></i>
+                <div id="members-slider" class="slider slider-members">
+                    <ul class="list">
+                        <li class="hide">
+                            <div class="member-left2">
+                                <a href="https:\\www.facebook.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member One</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="prev">
+                            <div class="member-left1">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Two</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="act">
+                            <div class="member-mid">
+                                <a href="https:\\www.twitter.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Three</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="next">
+                            <div class="member-right1">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Four</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new-next">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Five</h5>
+                                </a>
+                            </div>
+                        </li>
 
-                <i class="fas fa-chevron-left"></i>
+                        <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Six</h5>
+                                </a>
+                            </div>
+                        </li>
 
-                <div class="member-left2">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member One</h5>
-                    </a>
+                        <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Seven</h5>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Eight</h5>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!-- <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Nine</h5>
+                                </a>
+                            </div>
+                        </li> -->
+                    </ul>
                 </div>
 
-                <div class="member-left1">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Two</h5>
-                    </a>
-                </div>
-
-                <div class="member-mid">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Three</h5>
-                    </a>
-                </div>
-
-                <div class="member-right1">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Four</h5>
-                    </a>
-                </div>
-
-                <div class="member-right2">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Five</h5>
-                    </a>
-                </div>
-
-
-
-                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right" onclick="slideRightMembers()"></i>
 
             </div>
         </div>
@@ -575,7 +644,9 @@
 
     <script src="./js/loader.js"></script>
     <script src="./js/login.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="js/home.js"></script>
+
 
 </body>
 
