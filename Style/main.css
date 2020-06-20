@@ -2493,12 +2493,11 @@ a.just-line + ul:before, button.just-line + ul:before {
           flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: 200px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-left: 5px solid #E3E3E3;
-  height: 70vh;
+  height: 90vh;
   border-radius: 5px;
   margin-left: 3%;
 }
@@ -2622,10 +2621,11 @@ a.just-line + ul:before, button.just-line + ul:before {
   opacity: 1;
 }
 
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 2px;
   background-color: #931621;
@@ -2639,6 +2639,35 @@ a.just-line + ul:before, button.just-line + ul:before {
 .close:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  .videos_line_container {
+    border-left: 4px solid #E3E3E3;
+    top: 0;
+    height: 80vh;
+  }
+  .videos_line_container ul li {
+    padding: 3px 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .videos_line_container {
+    margin-left: 6%;
+  }
+  #videos a, #videos button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .videos_line_container {
+    margin-left: 10%;
+  }
+  #videos a, #videos button {
+    width: 90%;
+  }
 }
 
 .volunteer-btn {
