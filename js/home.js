@@ -39,19 +39,23 @@ const registerClose = document.querySelector('.register__exit-button');
 
 register.addEventListener('click', function(){
     loginWrapper.classList.remove('login_wrapper-active');
-    loginWrapper.animate([
-        // keyframes
-        { transform: 'translateY(0px)' }, 
-        { transform: 'translateY(-150px)' }
-      ], { 
-        // timing options
-        duration: 1000,
-        // iterations: Infinity
-      });
+    loginWrapper.classList.add('login_wrapper-close');
+    // loginWrapper.animate([
+    //     // keyframes
+    //     { transform: 'translateY(0px)' }, 
+    //     { transform: 'translateY(-150px)' }
+    //   ], { 
+    //     // timing options
+    //     duration: 1000,
+    //     // iterations: Infinity
+    //   });
+    setTimeout(function(){
+        registerWrapper.classList.remove('register_wrapper');
+        loginWrapper.classList.remove('login_wrapper-close');
+        registerWrapper.classList.add('register_wrapper-active');
+    },1000)
+    // loginWrapper.classList.add('login_wrapper');
     
-    loginWrapper.classList.add('login_wrapper');
-    registerWrapper.classList.remove('register_wrapper');
-    registerWrapper.classList.add('register_wrapper-active');
 })
 
 registerClose.addEventListener('click', function(){
@@ -101,6 +105,103 @@ setInterval(function(){
 
 }, 5000)
 
+//***Slider-Members***
+
+// var news = []
+
+// function setSrc() {
+//   var i = 0;
+//   const elements = document.querySelectorAll("#news-slider li img")
+
+//   elements.forEach(el=> {
+//     news.push(el.getAttribute("src"))
+//   })
+
+//   news = shuffle(news)
+
+//   elements.forEach(el=> {
+//     el.setAttribute("src", news[i]);
+//     i = i + 1
+//   })
+// }
+
+// function shuffle(array) {
+//   return array.sort(() => Math.random() - 0.5);
+// }
+
+// setSrc()
+
+var newsSliderItems = []
+var membersSliderItems = []
+
+function prefil(){
+  document.querySelectorAll("#news-slider .begin-anew").forEach(el => newsSliderItems.push(el))
+  document.querySelectorAll("#members-slider .begin-anew").forEach(el => membersSliderItems.push(el))
+}
+
+prefil()
+
+function slideLeftNews(){ 
+    element = document.querySelector("#news-slider")
+    slideLeft(newsSliderItems)
+}
+
+function slideRightNews(){
+    element = document.querySelector("#news-slider")
+    slideRight(newsSliderItems)
+}
+
+function slideLeftMembers(){ 
+  element = document.querySelector("#members-slider")
+  slideLeft(membersSliderItems)
+}
+
+function slideRightMembers(){
+  element = document.querySelector("#members-slider")
+  slideRight(membersSliderItems)
+}
+
+//*** RANDOMIZER img & h5 
+
+var randomzieElement;
+
+function randomize() {
+
+  var images = []
+  var titles = []
+  var indexes = []
+
+  const elementsImgs = randomzieElement.querySelectorAll("li img")
+  const elementsTitles = randomzieElement.querySelectorAll("li h5")
+  var len = elementsImgs.length
+
+  for(var i = 0; i < len; i++) {
+    images.push(elementsImgs[i].getAttribute("src"))
+    titles.push(elementsTitles[i].textContent)
+    indexes.push(i)
+  }
+
+  indexes = shuffle(indexes)
+
+  for(var i = 0; i < len; i++) {
+    elementsImgs[i].setAttribute("src", images[indexes[i]])
+    elementsTitles[i].textContent = titles[indexes[i]]
+  }
+
+}
+
+function randomizeAll(){
+  randomzieElement = document.querySelector("#news-slider");
+  randomize();
+  randomzieElement = document.querySelector("#members-slider")
+  randomize()
+}
+
+function shuffle(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
+randomizeAll()
 
 
 //************************************************************//

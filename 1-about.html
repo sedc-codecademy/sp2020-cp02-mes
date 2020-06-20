@@ -119,6 +119,71 @@
         </form>
     </div>
 
+    <div class="register_wrapper">
+        <form action="" class="register__form " id="form">
+            <a href="#"><i class="fas fa-times-circle  register__exit-button"></i></a>
+            <div class="register_container">
+                <h3>Register</h3> <br>
+                <!-- <div class="flex-center">
+            <p>
+              Sign up with social networks
+            </p>
+    
+            <div class="flex-space-between padding-bt-30">
+              <a href="">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div> -->
+
+            </div>
+            <div class="flex-center ">
+                <div class="padding-bt-20">
+                    <input type="text" placeholder="First name" class="register__input register__firstName">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="text" placeholder="Last name" class="register__input">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="date" placeholder="Date of birth" class="register__input" id="birth_date">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="email" placeholder="Email" class="register__input">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="password" placeholder="Password" class="register__input">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="password" placeholder="Confirm password" class="register__input">
+                </div>
+                <div class="select_label">
+                    <label for="gameselection">Choose your primary game</label>
+                </div>
+                <div class="padding-bt-20">
+
+                    <select id="gameselection" name="gameselection">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="Counter-Strike">Counter-Strike</option>
+                        <option value="Dota2">Dota 2</option>
+                        <option value="Pes2020">PES 2020</option>
+                        <option value="CallOfDuty">Call of Duty</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex-center padding-bt-20">
+                <!-- <a type="submit" href="#" class="btn">Sign Up</a> -->
+                <button href="" type="submit">Sign Up</button>
+            </div>
+
+
+        </form>
+    </div>
+
     <section class="pd-top130 pd container flex-center ">
         <div class="pd-bottom30">
             <h1 class="">about us</h1>
@@ -410,59 +475,92 @@
     <section name:Members class="pd members_background">
         <div class="container">
             <h1>Members</h1>
-            <div class="slider-members">
+            <div class="slider-container">
+                <i class="fas fa-chevron-left" onclick="slideLeftMembers()"></i>
+                <div id="members-slider" class="slider slider-members">
+                    <ul class="list">
+                        <li class="hide">
+                            <div class="member-left2">
+                                <a href="https:\\www.facebook.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member One</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="prev">
+                            <div class="member-left1">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Two</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="act">
+                            <div class="member-mid">
+                                <a href="https:\\www.twitter.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Three</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="next">
+                            <div class="member-right1">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Four</h5>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="new-next">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Five</h5>
+                                </a>
+                            </div>
+                        </li>
 
-                <i class="fas fa-chevron-left"></i>
+                        <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Six</h5>
+                                </a>
+                            </div>
+                        </li>
 
-                <div class="member-left2">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member One</h5>
-                    </a>
+                        <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Seven</h5>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Eight</h5>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <!-- <li class="begin-anew">
+                            <div class="member-right2">
+                                <a href="https:\\www.google.com" target="_blank">
+                                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
+                                    <h5>Member Nine</h5>
+                                </a>
+                            </div>
+                        </li> -->
+                    </ul>
                 </div>
 
-                <div class="member-left1">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Two</h5>
-                    </a>
-                </div>
-
-                <div class="member-mid">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Three</h5>
-                    </a>
-                </div>
-
-                <div class="member-right1">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Four</h5>
-                    </a>
-                </div>
-
-                <div class="member-right2">
-                    <a href="https:\\www.google.com" target="_blank">
-                        <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                        <h5>Member Five</h5>
-                    </a>
-                </div>
-
-                <!-- <a href="https:\\www.google.com" target="_blank">
-                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                    <h5>Member Six</h5>
-                </a>
-                <a href="https:\\www.google.com" target="_blank">
-                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                    <h5>Member Seven</h5>
-                </a>
-                <a href="https:\\www.google.com" target="_blank">
-                    <img src="./img/e-sport Macedonia - LOGO.png" alt="">
-                    <h5>Member Eight</h5>
-                </a> -->
-
-                <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right" onclick="slideRightMembers()"></i>
 
             </div>
         </div>
@@ -647,6 +745,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/about.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="/js/home.js"></script>
 
 </body>

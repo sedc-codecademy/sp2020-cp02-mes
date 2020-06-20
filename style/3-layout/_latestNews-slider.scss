@@ -1,161 +1,20 @@
-.slider1-animate-left{
-    animation: slide2-left 1s forwards;
+
+#news-slider {
+    .list {
+        li {
+            height: 250px;
+            h5 {
+                margin-top: 10px;
+                text-align: center;
+            }
+            img {
+                height: 200px;
+            }
+        }
+    }
+}
+.news-slider_main{
+  i{
+    margin-top: 30px;
   }
-  .slider2-animate-left{
-    animation: slide2-left 1s forwards;
-  }
-  .slider3-animate-left{
-    animation: slide3-left 1s forwards;
-  }
-  .slider4-animate-left{
-    animation: slide4-left 1s forwards;
-  }
-  .slider5-animate-left{
-    animation: slide5-left 1s forwards;
-  }
-  .slider1-animate-right {
-    animation: slide1-right 1s forwards;
-  }
-  .slider2-animate-right{
-    animation: slide2-right 1s forwards;
-  }
-  .slider3-animate-right {
-    animation: slide3-right 1s forwards;
-  }
-  .slider4-animate-right {
-    animation: slide4-right 1s forwards;
-  }
-  .slider5-animate-right {
-    animation: slide5-right 1s forwards;
-  }
-  .disable-events {
-    pointer-events: none;
-  }
-  @keyframes slide1-left {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(-84%) scale(0.66);
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  @keyframes slide1-right {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(125%) scale(1.5);
-      
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide2-left {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(-84%) scale(0.66);
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide2-right {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(116%) scale(1.35);
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide3-left {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(-88%) scale(0.75);
-      
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide3-right {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(88%) scale(0.75);
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide4-left {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(-116%) scale(1.35);
-      
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide4-right {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(84%) scale(0.66);
-      
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide5-left {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(-125%) scale(1.5);
-      
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slide5-right {
-    0% {
-      transform: translateX(0px) scale(1);
-    }
-    99.999% {
-      transform: translateX(84%) scale(0.66);
-      
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  .chevron {
-    z-index: 10;
-  }
+}
