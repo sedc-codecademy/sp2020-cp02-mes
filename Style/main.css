@@ -2705,7 +2705,9 @@ a.just-line + ul:before, button.just-line + ul:before {
   letter-spacing: 3px;
 }
 
-.mac-league-container {
+.macedonian-league-competitions .mac-league-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2715,7 +2717,7 @@ a.just-line + ul:before, button.just-line + ul:before {
   padding-bottom: 30px;
 }
 
-.mac-league-container .league-choose {
+.macedonian-league-competitions .mac-league-container .league-choose {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2723,80 +2725,86 @@ a.just-line + ul:before, button.just-line + ul:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 300px;
+  width: 350px;
 }
 
-.mac-league-container .league-choose nav ul li {
-  padding: 10px 0px;
+.macedonian-league-competitions .mac-league-container .league-choose #leagues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.mac-league-container .league-choose h5 {
-  padding-bottom: 20px;
+.macedonian-league-competitions .mac-league-container .league-choose #leagues p {
+  padding-bottom: 10px;
 }
 
-.mac-league-container .tablediv {
+.macedonian-league-competitions .mac-league-container .league-choose h5 {
+  padding-bottom: 30px;
+}
+
+.macedonian-league-competitions .mac-league-container .tablediv {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.mac-league-container .tablediv .csgo-table table {
+.macedonian-league-competitions .mac-league-container .tablediv .csgo-table table {
   width: 100%;
 }
 
-.mac-league-container .tablediv .pes-table table {
+.macedonian-league-competitions .mac-league-container .tablediv .pes-table table {
   width: 100%;
 }
 
-.mac-league-container .tablediv .lol-table table {
+.macedonian-league-competitions .mac-league-container .tablediv .lol-table table {
   width: 100%;
 }
 
-.mac-league-container .tablediv .dota2-table table {
+.macedonian-league-competitions .mac-league-container .tablediv .dota2-table table {
   width: 100%;
 }
 
-.mac-league-container .tablediv table, .mac-league-container .tablediv th, .mac-league-container .tablediv td {
+.macedonian-league-competitions .mac-league-container .tablediv table, .macedonian-league-competitions .mac-league-container .tablediv th, .macedonian-league-competitions .mac-league-container .tablediv td {
   font-family: "Fjalla One";
   border-collapse: collapse;
   opacity: 0.95;
 }
 
-.mac-league-container .tablediv table img, .mac-league-container .tablediv th img, .mac-league-container .tablediv td img {
+.macedonian-league-competitions .mac-league-container .tablediv table img, .macedonian-league-competitions .mac-league-container .tablediv th img, .macedonian-league-competitions .mac-league-container .tablediv td img {
   width: 40px;
   height: 40px;
 }
 
-.mac-league-container .tablediv table h5, .mac-league-container .tablediv th h5, .mac-league-container .tablediv td h5 {
+.macedonian-league-competitions .mac-league-container .tablediv table h5, .macedonian-league-competitions .mac-league-container .tablediv th h5, .macedonian-league-competitions .mac-league-container .tablediv td h5 {
   color: #11151C;
   padding: 5px;
 }
 
-.mac-league-container .tablediv table th, .mac-league-container .tablediv table td, .mac-league-container .tablediv th th, .mac-league-container .tablediv th td, .mac-league-container .tablediv td th, .mac-league-container .tablediv td td {
+.macedonian-league-competitions .mac-league-container .tablediv table th, .macedonian-league-competitions .mac-league-container .tablediv table td, .macedonian-league-competitions .mac-league-container .tablediv th th, .macedonian-league-competitions .mac-league-container .tablediv th td, .macedonian-league-competitions .mac-league-container .tablediv td th, .macedonian-league-competitions .mac-league-container .tablediv td td {
   padding: 10px;
   text-align: center;
   color: #E3E3E3;
   font-size: 18px;
 }
 
-.mac-league-container .tablediv table th, .mac-league-container .tablediv th th, .mac-league-container .tablediv td th {
+.macedonian-league-competitions .mac-league-container .tablediv table th, .macedonian-league-competitions .mac-league-container .tablediv th th, .macedonian-league-competitions .mac-league-container .tablediv td th {
   background-color: #931621;
   color: #11151C;
 }
 
-.mac-league-container .tablediv table #header, .mac-league-container .tablediv th #header, .mac-league-container .tablediv td #header {
+.macedonian-league-competitions .mac-league-container .tablediv table #header, .macedonian-league-competitions .mac-league-container .tablediv th #header, .macedonian-league-competitions .mac-league-container .tablediv td #header {
   background-color: #E3E3E3;
   color: #11151C;
   font-size: 18px;
   padding: 10px;
 }
 
-.mac-league-container .tableIsInactive {
+.macedonian-league-competitions .mac-league-container .tableIsInactive {
   display: none;
-}
-
-.macedonian-league-competitions h5 {
-  padding-bottom: 30px;
 }
 
 .macedonian-league-competitions #liveResults {
@@ -2819,7 +2827,210 @@ a.just-line + ul:before, button.just-line + ul:before {
   padding: 10px;
 }
 
-.macedonian-league-competitions .btnl {
+.macedonian-league-competitions .live-matches .match-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.macedonian-league-competitions .live-matches .match-info #vs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.macedonian-league-competitions .live-matches .match-info p {
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.macedonian-league-competitions .live-matches .match-info img {
+  width: 40px;
+  height: 40px;
+}
+
+.macedonian-league-competitions .live-matches .match-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #E3E3E3;
+  width: 240px;
+}
+
+.macedonian-league-competitions .latest-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+}
+
+.macedonian-league-competitions .latest-results table {
+  width: 100%;
+}
+
+.macedonian-league-competitions .latest-results table .td-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.macedonian-league-competitions .latest-results table .td-elements p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  font-size: 14px;
+  width: 30%;
+}
+
+.macedonian-league-competitions .latest-results table .td-elements:last-child {
+  border-right: 2px solid #931621;
+}
+
+.macedonian-league-competitions .latest-results table, .macedonian-league-competitions .latest-results th, .macedonian-league-competitions .latest-results td {
+  font-family: "Fjalla One";
+  border-collapse: collapse;
+  opacity: 0.95;
+}
+
+.macedonian-league-competitions .latest-results table img, .macedonian-league-competitions .latest-results th img, .macedonian-league-competitions .latest-results td img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.macedonian-league-competitions .latest-results table h5, .macedonian-league-competitions .latest-results th h5, .macedonian-league-competitions .latest-results td h5 {
+  color: #11151C;
+}
+
+.macedonian-league-competitions .latest-results table th, .macedonian-league-competitions .latest-results table td, .macedonian-league-competitions .latest-results th th, .macedonian-league-competitions .latest-results th td, .macedonian-league-competitions .latest-results td th, .macedonian-league-competitions .latest-results td td {
+  text-align: center;
+  color: #E3E3E3;
+  font-size: 18px;
+}
+
+.macedonian-league-competitions .latest-results table th, .macedonian-league-competitions .latest-results th th, .macedonian-league-competitions .latest-results td th {
+  background-color: #931621;
+  color: #11151C;
+  padding: 5px;
+}
+
+.macedonian-league-competitions .latest-results table #header123, .macedonian-league-competitions .latest-results th #header123, .macedonian-league-competitions .latest-results td #header123 {
+  background-color: #E3E3E3;
+  color: #11151C;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.macedonian-league-competitions .latest-results table #header123 p, .macedonian-league-competitions .latest-results th #header123 p, .macedonian-league-competitions .latest-results td #header123 p {
+  color: #931621;
+  font-weight: 700;
+  font-family: "Fjalla One";
+}
+
+.national-competitions h5, .national-competitions p {
+  padding-bottom: 30px;
+}
+
+.international-competitions h5, .international-competitions p {
+  padding-bottom: 30px;
+}
+
+.regulations div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.regulations div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .macedonian-league-competitions .mac-league-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #league-h5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 728px;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #league-h5 h5 {
+    padding-bottom: 20px;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #leagues {
+    width: 728px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #leagues a, .macedonian-league-competitions .mac-league-container .league-choose #leagues button {
+    font-size: 14px;
+  }
+  .macedonian-league-competitions .live-matches .match-info a, .macedonian-league-competitions .live-matches .match-info button {
+    display: none;
+  }
+}
+
+.btnl {
   width: 120px;
   height: 45px;
   display: block;
@@ -2840,7 +3051,7 @@ a.just-line + ul:before, button.just-line + ul:before {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-.macedonian-league-competitions .btnl:hover {
+.btnl:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   padding: calc(13px * 1.2) calc(25px * 1.2);
@@ -2851,12 +3062,12 @@ a.just-line + ul:before, button.just-line + ul:before {
           box-shadow: 0px 5px 10px #0271ae;
 }
 
-.macedonian-league-competitions .btnl:hover > span:before {
+.btnl:hover > span:before {
   -webkit-animation: none;
           animation: none;
 }
 
-.macedonian-league-competitions .btnl:active {
+.btnl:active {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   padding: calc(13px * 0.95) calc(25px * 0.95);
@@ -2864,7 +3075,7 @@ a.just-line + ul:before, button.just-line + ul:before {
           box-shadow: inset 0px 2px 1px #02679e;
 }
 
-.macedonian-league-competitions .btn_transparent {
+.btn_transparent {
   border: 0px;
   border-radius: 0px;
   padding: 13px 25px;
@@ -2874,17 +3085,17 @@ a.just-line + ul:before, button.just-line + ul:before {
           box-shadow: none;
 }
 
-.macedonian-league-competitions .btn_transparent:hover {
+.btn_transparent:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: inherit;
 }
 
-.macedonian-league-competitions .btn_live {
+.btn_live {
   padding-right: 22px;
 }
 
-.macedonian-league-competitions span.live-icon {
+span.live-icon {
   display: inline-block;
   top: calc(50% - 5px);
   background-color: red;
@@ -2896,7 +3107,7 @@ a.just-line + ul:before, button.just-line + ul:before {
   z-index: 1;
 }
 
-.macedonian-league-competitions span.live-icon:before {
+span.live-icon:before {
   content: '';
   display: block;
   position: absolute;
@@ -2933,195 +3144,33 @@ a.just-line + ul:before, button.just-line + ul:before {
   }
 }
 
-.macedonian-league-competitions small {
+small {
   position: absolute;
   font-size: 0.9em;
   color: rgba(255, 255, 255, 0.5);
   bottom: 2rem;
 }
 
-.macedonian-league-competitions small b {
+small b {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
   z-index: -1;
 }
 
 @media only screen and (max-width: 500px) {
-  .macedonian-league-competitions .btnl {
+  .btnl {
     width: 250px;
   }
-  .macedonian-league-competitions span.live-icon {
+  span.live-icon {
     position: absolute;
     right: 20px;
   }
 }
 
 @media only screen and (max-width: 350px) {
-  .macedonian-league-competitions .btnl {
+  .btnl {
     width: 100%;
   }
-}
-
-.macedonian-league-competitions .match-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 30px;
-}
-
-.macedonian-league-competitions .match-info #vs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 150px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.macedonian-league-competitions .match-info p {
-  padding: 5px;
-  margin: 5px;
-  width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.macedonian-league-competitions .match-info img {
-  width: 40px;
-  height: 40px;
-}
-
-.macedonian-league-competitions .match-info div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid #E3E3E3;
-  width: 240px;
-}
-
-.regulations div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.regulations div p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  margin: 5px;
-}
-
-.latest-results {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 30px 0;
-}
-
-.latest-results table {
-  width: 100%;
-}
-
-.latest-results table .td-elements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.latest-results table .td-elements p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px;
-  font-size: 14px;
-  width: 30%;
-}
-
-.latest-results table .td-elements:last-child {
-  border-right: 2px solid #931621;
-}
-
-.latest-results table, .latest-results th, .latest-results td {
-  font-family: "Fjalla One";
-  border-collapse: collapse;
-  opacity: 0.95;
-}
-
-.latest-results table img, .latest-results th img, .latest-results td img {
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-}
-
-.latest-results table h5, .latest-results th h5, .latest-results td h5 {
-  color: #11151C;
-}
-
-.latest-results table th, .latest-results table td, .latest-results th th, .latest-results th td, .latest-results td th, .latest-results td td {
-  text-align: center;
-  color: #E3E3E3;
-  font-size: 18px;
-}
-
-.latest-results table th, .latest-results th th, .latest-results td th {
-  background-color: #931621;
-  color: #11151C;
-  padding: 5px;
-}
-
-.latest-results table #header123, .latest-results th #header123, .latest-results td #header123 {
-  background-color: #E3E3E3;
-  color: #11151C;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.latest-results table #header123 p, .latest-results th #header123 p, .latest-results td #header123 p {
-  color: #931621;
-  font-weight: 700;
-  font-family: "Fjalla One";
-}
-
-.international-competitions h5, .international-competitions p {
-  padding-bottom: 30px;
-}
-
-.national-competitions h5, .national-competitions p {
-  padding-bottom: 30px;
 }
 
 .login__form {
