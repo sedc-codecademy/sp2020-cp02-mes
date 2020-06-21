@@ -671,6 +671,17 @@ footer .iframe__map {
   color: #EE2E31;
 }
 
+@media (max-width: 425px) {
+  .iframe_div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .iframe__map {
+    display: none;
+  }
+}
+
 .main__nav {
   z-index: 100;
   position: fixed;

@@ -73,8 +73,22 @@ footer {
 
 @include laptopL {}
 
-@include laptop {}
+@include laptop {
+    // footer{
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 100vw;
+    // }   Nema potreba
+}
 
 @include tablet {}
 
-@include mobile {}
+@include mobile {
+    .iframe_div{
+        align-self: center;
+
+    }
+    .iframe__map{
+        display: none;
+    }
+}
