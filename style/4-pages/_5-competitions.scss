@@ -234,56 +234,6 @@ $btnPaddingScaleMinus: .95;
 }
 
 
-//MIXIN
-
-@include tablet{
-    .macedonian-league-competitions{
-        .mac-league-container{
-            display: flex;
-            flex-direction: column;
-            .league-choose{
-                #league-h5{
-                    display: flex;
-                    justify-content: center;
-                    width: 728px;
-                    h5{
-                        padding-bottom: 20px;
-                    }
-                }
-                #leagues{
-                    width: 728px;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    align-content: center;
-                    a{
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-        .live-matches{
-            .match-info{
-                a{
-                    display: none;
-                }
-            }
-        }
-    }
-}
-
-@include mobile{
-    
-}
-
-
-
-
-
-
-
-
-
-
 // LIVE BTN
 .btnl{
     width: 120px;
@@ -393,6 +343,127 @@ small{
     .btnl{
       width: 100%;
     }
+}
+
+
+// mixin
+
+@include tablet{
+    .macedonian-league-competitions{
+        .mac-league-container{
+            display: flex;
+            flex-direction: column;
+            .league-choose{
+                #league-h5{
+                    display: flex;
+                    justify-content: center;
+                    width: 728px;
+                    h5{
+                        padding-bottom: 20px;
+                    }
+                }
+                #leagues{
+                    width: 728px;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-content: center;
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .live-matches{
+            .match-info{
+                a{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include mobile{
+    .macedonian-league-competitions{
+        .mac-league-container{
+            .league-choose{
+                #league-h5{
+                    width: 385px;
+                    justify-content: center;
+                }
+                #leagues{
+                    width: 385px;
+                }
+            }
+
+            .tablediv{
+                .header-row{
+                    th{
+                        font-size: 14px;
+                        padding: 2px;
+                    }
+                }
+                table td{
+                    font-size: 14px;
+                    padding: 2px;
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+
+        .live-matches{
+            width: 385px;
+            .match-info{
+                justify-content: start;
+                #vs{
+                    width: 40px;
+                    font-size: 12px;
+                    margin: 0;
+                    padding: 0;
+                    align-items: center;
+                }
+                div{
+                    width: 110px;
+                    img{
+                        display: none;
+                    }
+                }
+                p{
+                    margin: 0;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .latest-results{
+            img{
+                display: none;
+            }
+            table{
+                .td-elements{
+                    p{
+                        font-size: 11px;
+                        width: 33%;
+                        padding: 7px 2px;
+                    }
+                }
+                #header123 p{
+                    font-size: 14px;
+                }
+                tr{
+                    th{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
 
 

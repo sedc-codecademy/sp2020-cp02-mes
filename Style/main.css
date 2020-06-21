@@ -3187,47 +3187,6 @@ a.just-line + ul:before, button.just-line + ul:before {
   margin: 5px;
 }
 
-@media (max-width: 768px) {
-  .macedonian-league-competitions .mac-league-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .macedonian-league-competitions .mac-league-container .league-choose #league-h5 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 728px;
-  }
-  .macedonian-league-competitions .mac-league-container .league-choose #league-h5 h5 {
-    padding-bottom: 20px;
-  }
-  .macedonian-league-competitions .mac-league-container .league-choose #leagues {
-    width: 728px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .macedonian-league-competitions .mac-league-container .league-choose #leagues a, .macedonian-league-competitions .mac-league-container .league-choose #leagues button {
-    font-size: 14px;
-  }
-  .macedonian-league-competitions .live-matches .match-info a, .macedonian-league-competitions .live-matches .match-info button {
-    display: none;
-  }
-}
-
 .btnl {
   width: 120px;
   height: 45px;
@@ -3368,6 +3327,117 @@ small b {
 @media only screen and (max-width: 350px) {
   .btnl {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .macedonian-league-competitions .mac-league-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #league-h5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 728px;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #league-h5 h5 {
+    padding-bottom: 20px;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #leagues {
+    width: 728px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #leagues a, .macedonian-league-competitions .mac-league-container .league-choose #leagues button {
+    font-size: 14px;
+  }
+  .macedonian-league-competitions .live-matches .match-info a, .macedonian-league-competitions .live-matches .match-info button {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .macedonian-league-competitions .mac-league-container .league-choose #league-h5 {
+    width: 385px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .macedonian-league-competitions .mac-league-container .league-choose #leagues {
+    width: 385px;
+  }
+  .macedonian-league-competitions .mac-league-container .tablediv .header-row th {
+    font-size: 14px;
+    padding: 2px;
+  }
+  .macedonian-league-competitions .mac-league-container .tablediv table td {
+    font-size: 14px;
+    padding: 2px;
+  }
+  .macedonian-league-competitions .mac-league-container .tablediv table td img {
+    width: 35px;
+    height: 35px;
+  }
+  .macedonian-league-competitions .live-matches {
+    width: 385px;
+  }
+  .macedonian-league-competitions .live-matches .match-info {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .macedonian-league-competitions .live-matches .match-info #vs {
+    width: 40px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .macedonian-league-competitions .live-matches .match-info div {
+    width: 110px;
+  }
+  .macedonian-league-competitions .live-matches .match-info div img {
+    display: none;
+  }
+  .macedonian-league-competitions .live-matches .match-info p {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .macedonian-league-competitions .latest-results img {
+    display: none;
+  }
+  .macedonian-league-competitions .latest-results table .td-elements p {
+    font-size: 11px;
+    width: 33%;
+    padding: 7px 2px;
+  }
+  .macedonian-league-competitions .latest-results table #header123 p {
+    font-size: 14px;
+  }
+  .macedonian-league-competitions .latest-results table tr th {
+    font-size: 12px;
   }
 }
 
