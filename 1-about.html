@@ -184,16 +184,16 @@
         </form>
     </div>
 
-    <section class="pd-top130 pd container flex-center ">
+    <section class="pd-top130 pd container flex-center about__aboutUs ">
         <div class="pd-bottom30">
             <h1 class="">about us</h1>
         </div>
         <div class="about__section-wrapper flex-space-between">
-            <div>
-                <img src="./img/About.Images/aboutSectionImg.jpg" alt="cannot upload image">
+            <div class="hideElements">
+                <img src="./img/About.Images/aboutSectionImg.jpg" alt="cannot upload image" >
             </div>
 
-            <div>
+            <div class="about__aboutUs__infoWrapper">
                 <p>Macedonian Esports Federation is a nonprofit organization responsible for esports competitions and
                     tournaments. Our mission is promotion of esports and recognition from the government institutions.
                     MESF
@@ -261,7 +261,7 @@
                                         Dragan Arsovski <br /><span class="structure__memberPosition">Vice
                                             President</span>
                                         <div class="info">
-                                     
+
                                         </div>
                                     </a>
                                 </div>
@@ -570,21 +570,21 @@
         <div>
             <h1>international organizations</h1>
         </div>
-        <div class="pd flex-space-between  slider  organizations__cardsWrapper">
+        <div class="pd flex-space-between organizations__cardsWrapper about__intOrg">
             <div class="org-cards ">
-                <img src="./img/About.Images/iesfImg.jpg" alt="cannot upload image" class="slider2">
+                <img src="./img/About.Images/iesfImg.jpg" alt="cannot upload image" class="intOrgCards">
                 <h6>org one</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Debitis dolores dignissimos accusamus
                     tempore et minus!</br></p>
             </div>
             <div class="org-cards  ">
-                <img src="./img/About.Images/iesfImg.jpg" alt="cannot upload image" class="slider2">
+                <img src="./img/About.Images/iesfImg.jpg" alt="cannot upload image" class="intOrgCards">
                 <h6>org two</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Debitis dolores dignissimos accusamus
                     tempore et minus!</br></p>
             </div>
             <div class="org-cards  ">
-                <img src="./img/About.Images/iesfImg.jpg" alt="cannot upload image" class="slider2">
+                <img src="./img/About.Images/iesfImg.jpg" alt="cannot upload image" class="intOrgCards">
                 <h6>org three</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </br> Debitis dolores dignissimos accusamus
                     tempore et minus!</br></p>
@@ -626,55 +626,106 @@
     </section>
 
     <!-- CURRENT PARTNERS SECTION -->
-    <section class="pd container flex-center">
-        <div>
-            <h1>current partners</h1>
-        </div>
-        <div class="slider">
-            <i class="fas fa-chevron-left"></i>
-            <img src="" alt="" class="slider1">
+    <section class="pd ">
+        <div class="container">
+            <h1>CURRENT PARTNERS</h1>
+            <div class="slider-container news-slider_main">
+                <i class="fas fa-chevron-left chevron " onclick="slideLeftNews()"></i>
+                <div id="news-slider" class="slider">
+                    <ul class="list polygon">
+                        <li class="hide">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
 
-            <img src="" alt="" class="slider2">
+                            </a>
+                        </li>
+                        <li class="prev">
+                            <a href="http://www.google.com">
+                                <img src="./img/74381.JPG" width="100%">
 
-            <img src="" alt="" class="slider3">
+                            </a>
+                        </li>
+                        <li class="act">
+                            <a href="http://www.google.com">
+                                <img src="./img/animals-birds-dawn-giraffe-417142.jpg" width="100%">
 
-            <img src="" alt="" class="slider4">
+                            </a>
+                        </li>
+                        <li class="next">
+                            <a href="http://www.google.com">
+                                <img src="./img/under.png" width="100%">
 
-            <img src="" alt="" class="slider5">
-            <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li class="new-next">
+                            <a href="http://www.google.com">
+                                <img src="./img/background/pic1.jpg" width="100%">
+
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
+
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
+
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="">
+                                <img src="./img/606641.jpg" width="100%">
+
+                            </a>
+                        </li>
+                        <li class="begin-anew">
+                            <a href="http://www.google.com">
+                                <img src="./img/606641.jpg" width="100%">
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-chevron-right chevron" onclick="slideRightNews()"></i>
+            </div>
         </div>
     </section>
+    <!-- CURRENT PARTNERS SECTION ENDS HERE!!! -->
+
     <!-- PAST PARTNERS SECTION -->
-    <section class="pd container pd__bottom50">
+    <section class="pd container pd__bottom50 flex-center about__pastPartners">
         <div class="flex-center">
             <h1>past partners</h1>
         </div>
         <div class="slider pastPartners__slider">
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
         </div>
-        <br>
+        
         <div class="slider pastPartners__slider">
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
-            <img src="" alt="" class="slider1">
+            <img src="./img/587508.png" alt="" class="pastPartnersMembers">
 
         </div>
     </section>
