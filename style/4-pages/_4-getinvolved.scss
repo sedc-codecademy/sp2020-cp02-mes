@@ -1,3 +1,41 @@
+.getInvolvedSlider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .slider1 {
+        width: 200px;
+        height: 100px;
+        background-color: $fill;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+
+    }
+    .slider2 {
+        width: 300px;
+        height: 150px;
+        background-color: $secondary;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    }
+    .slider3 {
+        width: 400px;
+        height: 200px;
+        background-color: grey;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    }
+    .slider4 {
+        width: 300px;
+        height: 150px;
+        background-color: $secondary;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    }
+    .slider5 {
+        width: 200px;
+        height: 100px;
+        background-color: $fill;
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    }
+}
+
 .volunteer-btn {
     display: flex;
     align-items: center;
@@ -17,5 +55,47 @@
     h5{
         text-transform: none;
         letter-spacing: 3px;
+    }
+}
+
+.slides{
+    width: 200px;
+    height: 100px;
+    background-color: #E3E3E3;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%)
+}
+   
+
+@include mobile{
+    .goFoundMe__main-div{
+        h5{
+            font-size: 16px;
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+    h1{
+        font-size: 32px;
+    }
+    .getInvolvedSlider{
+        .slider1 , .slider2, .slider3, .slider5{
+            display: none;
+        }
+    }
+    .pastPartners__slider{
+        .slides{
+            width: 300px;
+            height: 150px;
+        }
+        .slide1,.slide2, .slide4, .slide5, .slide6{
+            display: none;
+        }
+    }
+
+    .volunteer__slider{
+        .volunteerSlide1, .volunteerSlide2,.volunteerSlide4,.volunteerSlide5,.volunteerSlide6{
+            display: none;
+        }
     }
 }
