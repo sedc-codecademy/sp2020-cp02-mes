@@ -6,6 +6,36 @@ window.addEventListener("load", function(){
     loader.className += " hidden";
 })
 
+//***HEADER***
+
+const navSlide = () =>{
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+  
+
+    burger.addEventListener('click',()=>{
+          //toggle nav
+        nav.classList.toggle('nav-active');
+    
+    //animate links
+    navLinks.forEach((link, index)=>{
+        if(link.style.animation) {
+            link.style.animation = '';
+        }   else {
+            link.style.animation = `navLinkFade 0.8s ease forwards ${index/ 7 + 0.5}s`;
+        }
+
+        });
+        //burger animation
+
+        burger.classList.toggle('toggle');
+    
+    });
+}
+
+navSlide();
+
 //***LOGIN ***
 
 const login = document.querySelector('.btn__desktop__login');
@@ -40,15 +70,7 @@ const registerClose = document.querySelector('.register__exit-button');
 register.addEventListener('click', function(){
     loginWrapper.classList.remove('login_wrapper-active');
     loginWrapper.classList.add('login_wrapper-close');
-    // loginWrapper.animate([
-    //     // keyframes
-    //     { transform: 'translateY(0px)' }, 
-    //     { transform: 'translateY(-150px)' }
-    //   ], { 
-    //     // timing options
-    //     duration: 1000,
-    //     // iterations: Infinity
-    //   });
+    
     setTimeout(function(){
         registerWrapper.classList.remove('register_wrapper');
         loginWrapper.classList.remove('login_wrapper-close');
@@ -64,35 +86,7 @@ registerClose.addEventListener('click', function(){
 })
 
 
-//***HEADER***
 
-const navSlide = () =>{
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-  
-
-    burger.addEventListener('click',()=>{
-          //toggle nav
-        nav.classList.toggle('nav-active');
-    
-    //animate links
-    navLinks.forEach((link, index)=>{
-        if(link.style.animation) {
-            link.style.animation = '';
-        }   else {
-            link.style.animation = `navLinkFade 0.8s ease forwards ${index/ 7 + 0.5}s`;
-        }
-
-        });
-        //burger animation
-
-        burger.classList.toggle('toggle');
-    
-    });
-}
-
-navSlide();
 
 //***Home slider***
 

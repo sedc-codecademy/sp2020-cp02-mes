@@ -125,7 +125,7 @@
 
 .slider-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     .list {
         height: 200px;
@@ -145,7 +145,7 @@
 
         .polygon {
             li {
-                clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+                clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); //za latest news
             }
         }
         
@@ -326,6 +326,24 @@
 }
 
 @include laptop {
+
+    // SLIDERS
+
+    // .slider-container{
+    //     .list {
+    //         height: 200px;
+    //         li {
+    //             list-style-type: none;
+    //             width: 300px;
+    //             height: 100px;
+    //             position: absolute;
+    //             left: 50%;
+    //             margin-left: -150px;
+    //             transition: transform 1s, opacity 1s;
+    //         }
+    //     }
+    // }
+
     // ***First Section***
     .firstSectiion {
         .new_slider {
