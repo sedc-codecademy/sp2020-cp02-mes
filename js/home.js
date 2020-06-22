@@ -105,31 +105,7 @@ setInterval(function(){
 
 }, 5000)
 
-//***Slider-Members***
-
-// var news = []
-
-// function setSrc() {
-//   var i = 0;
-//   const elements = document.querySelectorAll("#news-slider li img")
-
-//   elements.forEach(el=> {
-//     news.push(el.getAttribute("src"))
-//   })
-
-//   news = shuffle(news)
-
-//   elements.forEach(el=> {
-//     el.setAttribute("src", news[i]);
-//     i = i + 1
-//   })
-// }
-
-// function shuffle(array) {
-//   return array.sort(() => Math.random() - 0.5);
-// }
-
-// setSrc()
+//*******************************
 
 var newsSliderItems = []
 var membersSliderItems = []
@@ -167,28 +143,37 @@ var randomzieElement;
 
 function randomize() {
 
-  var images = []
-  var titles = []
-  var indexes = []
-
-  const elementsImgs = randomzieElement.querySelectorAll("li img")
-  const elementsTitles = randomzieElement.querySelectorAll("li h5")
-  var len = elementsImgs.length
-
-  for(var i = 0; i < len; i++) {
-    images.push(elementsImgs[i].getAttribute("src"))
-    titles.push(elementsTitles[i].textContent)
-    indexes.push(i)
+    var images = []
+    var titles = []
+    var indexes = []
+    var links = []
+  
+    const elementsImgs = randomzieElement.querySelectorAll("li img")
+    const elementsTitles = randomzieElement.querySelectorAll("li h5")
+    const elementLinks = randomzieElement.querySelectorAll("li a")
+    var len = elementsImgs.length
+  
+  
+    for(var i = 0; i < len; i++) {
+      images.push(elementsImgs[i].getAttribute("src"))
+      titles.push(elementsTitles[i].textContent)
+      if(elementLinks.length > 0){
+        links.push(elementLinks[i].getAttribute("href"))
+      } 
+      indexes.push(i)
+    }
+  
+    indexes = shuffle(indexes)
+  
+    for(var i = 0; i < len; i++) {
+      elementsImgs[i].setAttribute("src", images[indexes[i]])
+      elementsTitles[i].textContent = titles[indexes[i]]
+      if(elementLinks.length > 0){
+        elementLinks[i].setAttribute("href", links[indexes[i]])
+      } 
+    }
+  
   }
-
-  indexes = shuffle(indexes)
-
-  for(var i = 0; i < len; i++) {
-    elementsImgs[i].setAttribute("src", images[indexes[i]])
-    elementsTitles[i].textContent = titles[indexes[i]]
-  }
-
-}
 
 function randomizeAll(){
   randomzieElement = document.querySelector("#news-slider");

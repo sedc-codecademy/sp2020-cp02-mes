@@ -1,5 +1,8 @@
 h1 {
-    @include h(38px, 1.2)}
+    @include h(38px, 1.2);
+    text-align: center;
+    padding-bottom: 30px;
+}
 h2 {
     @include h(32px, 1.38)}
 h3 {
@@ -16,6 +19,17 @@ p {
 
 a {
     @include a(16px)}
+
+// strelki za levo/desno
+
+// <i class="fas fa-chevron-left"></i> levo
+// <i class="fas fa-chevron-right"></i> desno
+
+.fa-chevron-left , .fa-chevron-right{
+    cursor: pointer;
+    color: $secondary;
+    font-size: 30px;
+}
 
 // MEDIA QUERY LAPTOP L - 1290px
 
