@@ -648,7 +648,7 @@ footer .footer__main-div .footer__sub-div ul p {
 }
 
 footer .footer__main-div .footer__sub-div ul .second_number {
-  padding-left: 36px;
+  padding-left: 23px;
 }
 
 footer .footer__main-div i {
@@ -1431,18 +1431,13 @@ footer .iframe__map {
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 
-.slider-container .slider .list.polygon li {
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-}
-
 .slider-container .slider {
   width: 100%;
 }
 
-.slider-container .slider .list .prev,
-.slider-container .slider .list .next {
-  cursor: pointer;
+.slider-container .slider .polygon li {
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 .slider-container .slider .list .prev {

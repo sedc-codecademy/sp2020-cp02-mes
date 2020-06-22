@@ -140,18 +140,16 @@
         }
     }
 
-    .slider .list.polygon li {
-        -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-    }
-
     .slider {
         width: 100%;
-        .list {
-            .prev,
-            .next {
-                cursor: pointer;
+
+        .polygon {
+            li {
+                clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
             }
+        }
+        
+        .list {           
 
             .prev {
                 transform: translateX(-90%) scale(0.66);
@@ -276,18 +274,18 @@
 
 // E-STORE ***************
 
-.img-store{
+.img-store {
     width: 30%;
     position: relative;
     left: 50%;
-    transform: translate(-50%, 0);    
+    transform: translate(-50%, 0);
 }
 .store-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     // margin-top: 90px;
-    display: none; //dodeka nema store, nema potreba da ima kopche FIND OUT MORE
+    display: none; // dodeka nema store, nema potreba da ima kopche FIND OUT MORE
 }
 
 // ENDORSED BY
@@ -296,7 +294,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    a {        
+    a {
         img {
             width: 200px;
         }
