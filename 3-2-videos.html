@@ -65,6 +65,126 @@
         </nav>
     </header>
 
+
+    <div class="login_wrapper ">
+        <form action="/" class="login__form">
+            <a href="#"><i class="fas fa-times-circle  login__exit-button"></i></a>
+            <div class="">
+                <div class="flex-center padding-bt-20">
+                    <img src="../img/e-sport Macedonia - LOGO.png" alt="cannot upload image" width="100px"
+                        height="100px">
+                </div>
+                <div class="flex-center">
+                    <p>
+                        Sign in with social networks
+                    </p>
+
+                    <div class="flex-space-between padding-bt-30">
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="flex-center ">
+                    <div class="padding-bt-20">
+                        <input type="email" placeholder="Email" class="login__input" id="email">
+                    </div>
+                    <div class="padding-bt-20">
+                        <input type="password" placeholder="Password" class="login__input" id="password">
+                    </div>
+                </div>
+
+                <div class="errorContainer flex-center ">
+
+                </div>
+                <div class="flex-center padding-bt-20">
+
+                    <button href="" type="submit">Login</button>
+
+                </div>
+
+                <div class="flex-space-between">
+                    <a href="" class="login__aTags">forgot password</a>
+                    <a href="#" class="login__aTags" id="registerOpen">register</a>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="register_wrapper">
+        <form action="" class="register__form " id="form">
+            <a href="#"><i class="fas fa-times-circle  register__exit-button"></i></a>
+            <div class="register_container">
+                <h3>Register</h3> <br>
+                <!-- <div class="flex-center">
+            <p>
+              Sign up with social networks
+            </p>
+    
+            <div class="flex-space-between padding-bt-30">
+              <a href="">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div> -->
+
+            </div>
+            <div class="flex-center ">
+                <div class="padding-bt-20">
+                    <input type="text" placeholder="First name" class="register__input register__firstName">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="text" placeholder="Last name" class="register__input">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="date" placeholder="Date of birth" class="register__input" id="birth_date">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="email" placeholder="Email" class="register__input">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="password" placeholder="Password" class="register__input">
+                </div>
+                <div class="padding-bt-20">
+                    <input type="password" placeholder="Confirm password" class="register__input">
+                </div>
+                <div class="select_label">
+                    <label for="gameselection">Choose your primary game</label>
+                </div>
+                <div class="padding-bt-20">
+
+                    <select id="gameselection" name="gameselection">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="Counter-Strike">Counter-Strike</option>
+                        <option value="Dota2">Dota 2</option>
+                        <option value="Pes2020">PES 2020</option>
+                        <option value="CallOfDuty">Call of Duty</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex-center padding-bt-20">
+                <!-- <a type="submit" href="#" class="btn">Sign Up</a> -->
+                <button href="" type="submit">Sign Up</button>
+            </div>
+
+
+        </form>
+    </div>
+
     <section class="pd-top130 pd container">
         <h1>Videos</h1>
         <div class="videos-whole-container">
@@ -122,7 +242,7 @@
     </section>
 
 
-      <footer>
+    <footer>
         <div class="container">
             <div class="footer__main-div">
                 <div class="footer__sub-div">
@@ -130,23 +250,32 @@
                         <h3>Find Us</h3>
 
                         <li>
-                            <i class="fab fa-facebook-square"></i>
-                            <a href="https://www.facebook.com/MacedonianESF/">Facebook</a>
+                            <a href="https://www.facebook.com/MacedonianESF/" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>FACEBOOK</span>
+                            </a>
                         </li>
 
                         <li>
-                            <i class="fab fa-instagram"></i>
-                            <a href="#">Instagram</a>
+                            <a href="https://www.instagram.com/MacedonianESF/?fbclid=IwAR38KzskI9HPjHseOy9ryqvqjOrnWNLmkPF1e_asP9NTwEK3LDNmjxO8048"
+                                target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>INSTAGRAM</span>
+                            </a>
                         </li>
 
                         <li>
-                            <i class="fab fa-youtube"></i>
-                            <a href="https://www.youtube.com/channel/UCyc59ZppqS0IMiLUlniwJSA/about">Youtube</a>
+                            <a href="https://www.youtube.com/channel/UCyc59ZppqS0IMiLUlniwJSA/about" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                <span>YOUTUBE</span>
+                            </a>
                         </li>
                         <li>
-                            <i class="fab fa-twitch"></i>
-                            <a
-                                href="https://www.twitch.tv/mesfofficial?fbclid=IwAR1-0OimJ-ByGUdMWzoEShTJ8EvF9_YHYwsdB4_9LkJcttMW2Fag__lkzk0">Twitch</a>
+                            <a href="https://www.twitch.tv/mesfcsgo?fbclid=IwAR3oZMml2zY9Ld_TeT8ejiA5mSlKBE5TUdfbdAm5JWWm-ep_9TZj4WW0p_U"
+                                target="_blank">
+                                <i class="fab fa-twitch"></i>
+                                <span>TWITCH</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -156,14 +285,22 @@
                         <h3>Contact us</h3>
 
                         <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="">contact@mesf.mk </a>
+                            <a href="#">
+                                <i class="fas fa-envelope"></i>
+                                <span>contact@mesf.mk</span>
+                            </a>
                         </li>
 
                         <li>
                             <i class="fas fa-phone-square-alt"></i>
-                            <a href="">+38970800559</a> <br>
-                            <a href="" class="second_number">+38972606018</a></li>
+                            <a href="#">
+                                <span>+38970800559</span>
+                            </a>
+                            <br>
+                            <a href="#"> 
+                                <span class="second_number">+38972606018</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__sub-div">
@@ -180,9 +317,9 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="copyright">
-            <span> &copy; Copyright 2020 <span class="copyright__color">Code Academy</span> </span>
+            <span> &copy; Copyright 2020 <span class="copyright__color">SEDC</span> </span>
         </div>
 
     </footer>

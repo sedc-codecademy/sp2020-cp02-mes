@@ -17,7 +17,9 @@ footer {
             ul {
                 li {
                     margin: 5px 0;
-
+                    a {
+                        letter-spacing: 1px;
+                    }
                 }
                 p {
                     font-style: italic;
@@ -33,17 +35,7 @@ footer {
             font-size: 20px;
         }
     }
-    // a {
-    //     font-size: 16px;
-    //     font-family: $FjallaOne;
-    //     letter-spacing: 1px;
 
-
-    //     &:hover {
-    //         color: $fill;
-
-    //     }
-    // }
     h3 {
         text-transform: unset;
         color: $fill;
@@ -74,6 +66,7 @@ footer {
 @include laptopL {}
 
 @include laptop {
+    
     // footer{
     //     display: flex;
     //     flex-direction: column;
@@ -84,11 +77,11 @@ footer {
 @include tablet {}
 
 @include mobile {
-    .iframe_div{
+    .iframe_div {
         align-self: center;
 
     }
-    .iframe__map{
+    .iframe__map {
         display: none;
     }
 }

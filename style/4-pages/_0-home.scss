@@ -146,12 +146,12 @@ i {
 
 // Members******
 
-// .members_background {
-//     background-image: linear-gradient(rgba($primary, 0.8) 0%, rgba($primary,9) 50% ,rgba($primary,0.9) 90%), url('/img/background/section-background.PNG');
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
+.members_background {
+    background-image: linear-gradient(rgba($primary, 0.8) 0%, rgba($primary,9) 50% ,rgba($primary,0.9) 90%), url('/img/background/section-background.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 // .slider-members {
 //     display: flex;
