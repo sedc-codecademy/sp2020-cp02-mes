@@ -2482,7 +2482,7 @@ a.just-line + ul:before, button.just-line + ul:before {
     padding: 0 80px 0 0;
   }
   .container-news .news-feed .container-pressKit .documentation .documentation-btn a, .container-news .news-feed .container-pressKit .documentation .documentation-btn button {
-    font-size: 12px;
+    font-size: 11px;
     padding: 3px 10px;
   }
   .container-news .fix-sidebar-news {
