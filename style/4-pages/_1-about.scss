@@ -29,14 +29,16 @@
 // ABOUT US
 
 .about__section-wrapper {
+
     img {
-        width: 500px;
-        height: 400px;
+
+        width: 100%;
         border: 1px solid $fill;
     }
 
     div {
-        width: 33%;
+        padding: 0 20px;
+        width: 50%;
     }
 }
 
@@ -188,20 +190,32 @@ a.just-line + ul:before {
 // POPUP TRIALS END HERE!
 
 // INTERNATIONAL ORGANIZATIONS
-.organizations__cardsWrapper {
-    margin-left: -100px;
-}
+// .organizations__cardsWrapper {
+//     margin-left: -100px;
+// }
 
 .org-cards {
-    width: 16.66%;
-    overflow: none;
+    width: auto;
+    padding: 0 60px;
+    text-align: center;
+    a {
+        h5 {
+            padding-top: 20px;
+        }
+        p {
+            text-transform: none;
+            padding-top: 30px;
+        }
+    }
 }
+
 
 .intOrgCards {
     width: 300px;
-    height: 150px;
-    background-color: $secondary;
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    padding-bottom: 30px;
+    // height: 150px;
+    // background-color: $secondary;
+    // clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 // FACT SHEET
@@ -290,9 +304,9 @@ a.just-line + ul:before {
 // }
 // }
 .pastPartners__slider {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .pastPartnersMembers {
         width: 150px;
         // height: 100px;

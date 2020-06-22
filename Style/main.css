@@ -1811,13 +1811,13 @@ footer .iframe__map {
 }
 
 .about__section-wrapper img {
-  width: 500px;
-  height: 400px;
+  width: 100%;
   border: 1px solid #931621;
 }
 
 .about__section-wrapper div {
-  width: 33%;
+  padding: 0 20px;
+  width: 50%;
 }
 
 .tree ul {
@@ -1964,21 +1964,24 @@ a.just-line + ul:before, button.just-line + ul:before {
   height: 200px;
 }
 
-.organizations__cardsWrapper {
-  margin-left: -100px;
+.org-cards {
+  width: auto;
+  padding: 0 60px;
+  text-align: center;
 }
 
-.org-cards {
-  width: 16.66%;
-  overflow: none;
+.org-cards a h5, .org-cards button h5 {
+  padding-top: 20px;
+}
+
+.org-cards a p, .org-cards button p {
+  text-transform: none;
+  padding-top: 30px;
 }
 
 .intOrgCards {
   width: 300px;
-  height: 150px;
-  background-color: #E3E3E3;
-  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-          clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  padding-bottom: 30px;
 }
 
 [type="radio"] {
