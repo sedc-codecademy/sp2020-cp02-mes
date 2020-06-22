@@ -634,6 +634,10 @@ footer .footer__main-div .footer__sub-div ul li {
   margin: 5px 0;
 }
 
+footer .footer__main-div .footer__sub-div ul li a, footer .footer__main-div .footer__sub-div ul li button {
+  letter-spacing: 1px;
+}
+
 footer .footer__main-div .footer__sub-div ul p {
   font-style: italic;
   font-weight: 200;
@@ -1379,6 +1383,14 @@ i {
   font-style: italic;
   font-size: 14px;
   padding: 0 60px;
+}
+
+.members_background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 21, 28, 0.8)), color-stop(50%, #11151c), color-stop(90%, rgba(17, 21, 28, 0.9))), url("/img/background/section-background.PNG");
+  background-image: linear-gradient(rgba(17, 21, 28, 0.8) 0%, #11151c 50%, rgba(17, 21, 28, 0.9) 90%), url("/img/background/section-background.PNG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slider-members {
