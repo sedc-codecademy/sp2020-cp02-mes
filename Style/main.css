@@ -2085,7 +2085,7 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 .pastPartners__slider .pastPartnersMembers, .volunteer_slider .pastPartnersMembers {
-  width: 150px;
+  width: 100px;
 }
 
 @media (max-width: 425px) {
