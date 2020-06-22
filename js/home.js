@@ -43,20 +43,24 @@ let loginWrapper = document.querySelector('.login_wrapper');
 const loginClose = document.querySelector('.login__exit-button');
 
 login.addEventListener('click', function(){
-    loginWrapper.classList.remove('login_wrapper');
     loginWrapper.classList.add('login_wrapper-active');
 })
 
 loginClose.addEventListener('click', function(){
     loginWrapper.classList.remove('login_wrapper-active');
-    loginWrapper.classList.add('login_wrapper');
+    loginWrapper.classList.add('login_wrapper-close');
+
+    setTimeout(function(){
+        loginWrapper.classList.remove('login_wrapper-close');
+        loginWrapper.classList.add('login_wrapper');
+    },1000)
+   
 })
 //mobile
 const loginMobile = document.querySelector('.btn__mobile__login');
 
 
-loginMobile.addEventListener('click', function(){
-    loginWrapper.classList.remove('login_wrapper');
+loginMobile.addEventListener('click', function(){   
     loginWrapper.classList.add('login_wrapper-active');
 })
 
@@ -70,19 +74,24 @@ const registerClose = document.querySelector('.register__exit-button');
 register.addEventListener('click', function(){
     loginWrapper.classList.remove('login_wrapper-active');
     loginWrapper.classList.add('login_wrapper-close');
+    loginWrapper.classList.add('login_wrapper');
     
     setTimeout(function(){
-        registerWrapper.classList.remove('register_wrapper');
         loginWrapper.classList.remove('login_wrapper-close');
         registerWrapper.classList.add('register_wrapper-active');
     },1000)
-    // loginWrapper.classList.add('login_wrapper');
     
 })
 
 registerClose.addEventListener('click', function(){
     registerWrapper.classList.remove('register_wrapper-active');
-    registerWrapper.classList.add('register_wrapper');
+    registerWrapper.classList.add('register_wrapper-close');
+
+    setTimeout(function(){
+        registerWrapper.classList.remove('register_wrapper-close');
+        registerWrapper.classList.add('register_wrapper');
+},1000)
+     
 })
 
 

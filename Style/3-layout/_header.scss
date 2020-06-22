@@ -116,6 +116,11 @@
         height: 100vh;
         top: 0;
         background-color: $primary;
+        background-image: linear-gradient(rgba($primary, 0.99) 0%,rgba($primary,0.99) 100%), 
+        url('/img/mklogobeli.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;

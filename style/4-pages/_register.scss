@@ -79,6 +79,16 @@
     animation: RegisterOpen 1s linear;
 }
 
+.register_wrapper-close {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: (rgba($primary,0.8));
+    z-index: 100;
+    position: fixed;
+    animation: RegisterClose 1s linear;
+}
+
 @keyframes RegisterOpen {
   from{
       transform: translateY(-150%);
@@ -87,6 +97,15 @@
       transform: translateY(0);
   }
 }
+
+@keyframes RegisterClose {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-150%);
+    }
+  }
 
 // Old code
 // .signupSection {
