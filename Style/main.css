@@ -2058,7 +2058,7 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 .org-cards {
-  width: auto;
+  width: 30%;
   padding: 0 60px;
   text-align: center;
 }
@@ -2073,7 +2073,7 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 .intOrgCards {
-  width: 300px;
+  width: 250px;
   padding-bottom: 30px;
 }
 
@@ -2165,7 +2165,7 @@ a.just-line + ul:before, button.just-line + ul:before {
           transform: translate3d(30%, 0, -200px);
 }
 
-.pastPartners__slider, .volunteer_slider {
+.pastPartners__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2177,54 +2177,24 @@ a.just-line + ul:before, button.just-line + ul:before {
           align-items: center;
 }
 
-.pastPartners__slider .pastPartnersMembers, .volunteer_slider .pastPartnersMembers {
-  width: 100px;
+.pastPartners__slider .pastPartnersMembers {
+  width: 8.3%;
 }
 
-@media (max-width: 425px) {
-  .about__aboutUs {
-    height: 50vh;
+@media (max-width: 1440px) {
+  .org-cards {
+    padding: 0 30px;
   }
-  .about__aboutUs .hideElements {
-    display: none;
+  .org-cards a h5, .org-cards button h5 {
+    padding-top: 20px;
   }
-  .about__aboutUs .about__aboutUs__infoWrapper {
-    width: 100%;
+  .org-cards a p, .org-cards button p {
+    text-transform: none;
+    padding-top: 30px;
   }
-  .about__aboutUs p {
-    text-align: center;
-  }
-  .about__pastPartners .pastPartners__slider, .about__pastPartners .volunteer_slider {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about__pastPartners .pastPartners__slider img, .about__pastPartners .volunteer_slider img {
-    margin-bottom: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 50%;
-    -ms-flex-preferred-size: calc(50% - 40px);
-        flex-basis: calc(50% - 40px);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+}
+
+@media (max-width: 768px) {
   .about__intOrg {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2242,8 +2212,48 @@ a.just-line + ul:before, button.just-line + ul:before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 18%;
-    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+  .about__intOrg .org-cards a h5, .about__intOrg .org-cards button h5 {
+    padding-top: 10px;
+  }
+  .about__intOrg .org-cards a p, .about__intOrg .org-cards button p {
+    text-transform: none;
+    padding: 20px 200px 0 200px;
+  }
+  .about__intOrg .org-cards_last {
+    padding: 0;
+  }
+  .intOrgCards {
+    width: 250px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about__aboutUs {
+    height: 50vh;
+  }
+  .about__aboutUs .hideElements {
+    display: none;
+  }
+  .about__aboutUs .about__aboutUs__infoWrapper {
+    width: 100%;
+  }
+  .about__aboutUs p {
+    text-align: center;
+  }
+  .about__intOrg .org-cards {
+    padding-bottom: 40px;
+  }
+  .about__intOrg .org-cards a h5, .about__intOrg .org-cards button h5 {
+    padding-top: 5px;
+  }
+  .about__intOrg .org-cards a p, .about__intOrg .org-cards button p {
+    text-transform: none;
+    padding: 10px 10px 0 10px;
   }
 }
 
@@ -3121,11 +3131,32 @@ a.just-line + ul:before, button.just-line + ul:before {
   letter-spacing: 3px;
 }
 
-.volunteer_slider a img, .volunteer_slider button img {
-  width: 150px;
+.goFoundMe__main-div .fundME {
+  color: #931621;
 }
 
-.volunteer_slider a h5, .volunteer_slider button h5 {
+.volunteer_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.volunteer_div a, .volunteer_div button {
+  padding: 0 30px;
+}
+
+.volunteer_div a img, .volunteer_div button img {
+  width: 100%;
+}
+
+.volunteer_div a h5, .volunteer_div button h5 {
   text-align: center;
 }
 
@@ -3139,7 +3170,18 @@ a.just-line + ul:before, button.just-line + ul:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .volunteer_div {
+    margin: 20px 0;
+  }
+  .volunteer_div a, .volunteer_div button {
+    padding: 0 20px;
+  }
+  .volunteer_div a img, .volunteer_div button img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -3149,36 +3191,19 @@ a.just-line + ul:before, button.just-line + ul:before {
   .goFoundMe__main-div h5 a, .goFoundMe__main-div h5 button {
     font-size: 18px;
   }
-  h1 {
-    font-size: 32px;
+  .volunteer_div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+    -ms-grid-rows: 110px 110px;
+        grid-template-rows: 110px 110px;
   }
-  .getInvolvedSlider .slider1,
-  .getInvolvedSlider .slider2,
-  .getInvolvedSlider .slider3,
-  .getInvolvedSlider .slider5 {
-    display: none;
+  .volunteer_div a, .volunteer_div button {
+    padding: 15px;
   }
-  .pastPartners__slider .slides, .volunteer_slider .slides {
-    width: 300px;
-    height: 150px;
-  }
-  .pastPartners__slider .slide1, .volunteer_slider .slide1,
-  .pastPartners__slider .slide2,
-  .volunteer_slider .slide2,
-  .pastPartners__slider .slide4,
-  .volunteer_slider .slide4,
-  .pastPartners__slider .slide5,
-  .volunteer_slider .slide5,
-  .pastPartners__slider .slide6,
-  .volunteer_slider .slide6 {
-    display: none;
-  }
-  .volunteer__slider .volunteerSlide1,
-  .volunteer__slider .volunteerSlide2,
-  .volunteer__slider .volunteerSlide4,
-  .volunteer__slider .volunteerSlide5,
-  .volunteer__slider .volunteerSlide6 {
-    display: none;
+  .volunteer_div a img, .volunteer_div button img {
+    width: 100%;
   }
 }
 

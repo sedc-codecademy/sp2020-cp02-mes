@@ -41,38 +41,60 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
     a {
         font-size: 24px;
-        // text-decoration: underline;
         padding: 0 5px;
     }
     h5 {
         text-transform: none;
         letter-spacing: 3px;
     }
+    .fundME{
+        color: $fill;
+    }    
 }
+
+
 
 // VOLUNTEER
 
-.volunteer_slider {
-  @extend .pastPartners__slider;
-    a{
-        img{
-            width: 150px;
+.volunteer_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    a {
+        padding: 0 30px;
+        img {
+            width: 100%;
         }
-        h5{
+        h5 {
             text-align: center;
         }
     }
-    
+
 }
 .volunteer-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
 }
+// MEDIA QUERY
 
+@include tablet {
+    // VOLUNTEER
+
+    .volunteer_div {
+        margin: 20px 0;
+        a {
+            padding: 0 20px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
 
 @include mobile {
     .goFoundMe__main-div {
@@ -83,38 +105,53 @@
             }
         }
     }
-    h1 {
-        font-size: 32px;
-    }
-    .getInvolvedSlider {
-        .slider1,
-        .slider2,
-        .slider3,
-        .slider5 {
-            display: none;
-        }
-    }
-    .pastPartners__slider {
-        .slides {
-            width: 300px;
-            height: 150px;
-        }
-        .slide1,
-        .slide2,
-        .slide4,
-        .slide5,
-        .slide6 {
-            display: none;
-        }
-    }
+    // VOLUNTEER
 
-    .volunteer__slider {
-        .volunteerSlide1,
-        .volunteerSlide2,
-        .volunteerSlide4,
-        .volunteerSlide5,
-        .volunteerSlide6 {
-            display: none;
+    .volunteer_div {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 110px 110px;
+        a {
+            padding: 15px;
+            img {
+                width: 100%;
+            }
         }
     }
 }
+
+
+// h1 {
+//     font-size: 32px;
+// }
+// .getInvolvedSlider {
+//     .slider1,
+//     .slider2,
+//     .slider3,
+//     .slider5 {
+//         display: none;
+//     }
+// }
+// .pastPartners__slider {
+//     .slides {
+//         width: 300px;
+//         height: 150px;
+//     }
+//     .slide1,
+//     .slide2,
+//     .slide4,
+//     .slide5,
+//     .slide6 {
+//         display: none;
+//     }
+// }
+
+// .volunteer__slider {
+//     .volunteerSlide1,
+//     .volunteerSlide2,
+//     .volunteerSlide4,
+//     .volunteerSlide5,
+//     .volunteerSlide6 {
+//         display: none;
+//     }
+// }

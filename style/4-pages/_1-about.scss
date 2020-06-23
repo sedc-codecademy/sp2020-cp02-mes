@@ -195,7 +195,7 @@ a.just-line + ul:before {
 // }
 
 .org-cards {
-    width: auto;
+    width: 30%;
     padding: 0 60px;
     text-align: center;
     a {
@@ -211,7 +211,7 @@ a.just-line + ul:before {
 
 
 .intOrgCards {
-    width: 300px;
+    width: 250px;
     padding-bottom: 30px;
     // height: 150px;
     // background-color: $secondary;
@@ -308,7 +308,7 @@ a.just-line + ul:before {
     justify-content: space-between;
     align-items: center;
     .pastPartnersMembers {
-        width: 100px;
+        width: 8.3%;
         // height: 100px;
         // background-color: $fill;
         // clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
@@ -317,6 +317,60 @@ a.just-line + ul:before {
 
 
 // RESPONSIVE
+
+@include laptopL{
+    .org-cards {
+        padding: 0 30px;
+        a {
+            h5 {
+                padding-top: 20px;
+            }
+            p {
+                text-transform: none;
+                padding-top: 30px;
+            }
+        }
+    }
+}
+
+@include laptop{
+    
+
+}
+
+@include tablet {
+    .about__intOrg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .org-cards {
+            width: 100%;
+            align-items: center;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 50px;
+            a {
+                h5 {
+                    padding-top: 10px;
+                }
+                p {
+                    text-transform: none;
+                    padding:20px 200px 0 200px;
+                }
+            }
+        }
+        .org-cards_last{
+            padding: 0;
+        }
+
+    }
+    .intOrgCards {
+        width: 250px;
+        padding-bottom: 10px;
+    }
+
+}
 
 @include mobile {
     .about__aboutUs {
@@ -334,40 +388,21 @@ a.just-line + ul:before {
             text-align: center;
         }
     }
+    .about__intOrg {
 
-    .about__pastPartners {
-        .pastPartners__slider {
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-
-            img {
-                margin-bottom: 5px;
-                display: flex;
-                width: 50%;
-                flex-basis: calc(50% - 40px);
-                justify-content: center;
-                flex-direction: column;
+        .org-cards {
+            padding-bottom: 40px;
+            a {
+                h5 {
+                    padding-top: 5px;
+                }
+                p {
+                    text-transform: none;
+                    padding:10px 10px 0 10px;
+                }
             }
         }
 
     }
-
-    .about__intOrg {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .org-cards {
-            width: 100%;
-            align-items: center;
-            padding-left: 18%;
-            padding-bottom: 20px;
-        }
-
-    }
-
 
 }

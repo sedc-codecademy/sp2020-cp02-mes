@@ -1,6 +1,6 @@
 //***LOADER***
 
-window.addEventListener("load", function(){
+document.addEventListener("load", function(){
     const load = document.querySelector(".loader");
 
     loader.className += " hidden";
