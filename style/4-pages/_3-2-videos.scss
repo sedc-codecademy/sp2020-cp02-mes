@@ -1,18 +1,19 @@
 .videos-whole-container {
   display: flex;
   flex-direction: row;
+  min-height: 73vh;
 }
 
 .videos_line_container {
   flex-direction: column;
   //position: fixed;   ///dodadeno
   position: sticky;
-  
-
+  top: 130px;
+  margin-top: -60px;
   justify-content: space-evenly;
   border-left: 3px solid $fill;
   box-shadow: 0 0 20px $red;
-  height: 90vh;
+  height: 73vh;
   border-radius: 25%;
   margin-left: 3%;
   width: 3px;
@@ -23,7 +24,7 @@
     height: 100%;
     justify-content: space-evenly;
     li {
-      padding: 5px;
+      padding: 3px;
       margin-left: 5px;
       a {
         &:hover {
@@ -151,14 +152,18 @@
   transform: rotate(-45deg);
 }
 
+@include XL{
+  #videos-overlay iframe {
+    width: 100%;
+    height: 45rem;
+  }
+}
+
 @include laptopL;
 
 
 @include laptop{
   .videos_line_container{
-    border-left: 4px solid $secondary;
-    top: 0;
-    height: 80vh;
     ul {
       li {
         padding: 3px 5px;
