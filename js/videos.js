@@ -6,13 +6,13 @@ $(document).ready(function () {
 
     $('#videos a').click(function () {
         var data = $(this).attr('data');
-        $('#loader').append('<iframe src="https://www.youtube.com/embed/' + data + '" frameborder="0" allowfullscreen></iframe>');
-        $('#overlay').fadeIn(250);
+        $('#videos-loader').append('<iframe src="https://www.youtube.com/embed/' + data + '" frameborder="0" allowfullscreen></iframe>');
+        $('#videos-overlay').fadeIn(250);
     });
 
-    $('#close').click(function () {
-        $('#overlay').fadeOut(250, function () {
-            $('#loader').html('');
+    $('#videos-close').click(function () {
+        $('#videos-overlay').fadeOut(250, function () {
+            $('#videos-loader').html('');
         });
     });
 });
@@ -128,13 +128,13 @@ let reload = function () {
 
     $('#videos a').click(function () {
         var data = $(this).attr('data');
-        $('#loader').append('<iframe src="https://www.youtube.com/embed/' + data + '" frameborder="0" allowfullscreen></iframe>');
-        $('#overlay').fadeIn(250);
+        $('#videos-loader').append('<iframe src="https://www.youtube.com/embed/' + data + '" frameborder="0" allowfullscreen></iframe>');
+        $('#videos-overlay').fadeIn(250);
     });
 
-    $('#close').click(function () {
-        $('#overlay').fadeOut(250, function () {
-            $('#loader').html('');
+    $('#videos-close').click(function () {
+        $('#videos-overlay').fadeOut(250, function () {
+            $('#videos-loader').html('');
         });
     });
 };
