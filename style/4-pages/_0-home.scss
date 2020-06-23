@@ -3,10 +3,21 @@
 
 .firstSectiion {
     padding: 110px 0 0;
-    max-width: 1600px;
+    max-width: 1920px;
     margin: 0 auto;
+    .new_slider {
+        .carousel {
+            height: 85vh;
+            ul {
+                li {
+                    img {
+                        height: 85vh;
+                    }
+                }
+            }
+        }
+    }
 }
-
 
 // ***LATEST NEWS***
 
@@ -14,6 +25,26 @@
 // Sliderot e ist kako vo MEMBERS
 // *******************************.
 
+#news-slider {
+    .list {
+        li {
+            height: 250px;
+            h5 {
+                margin-top: 10px;
+                text-align: center;
+            }
+            img {
+                height: 200px;
+            }
+        }
+    }
+}
+
+.news-slider_main {
+    i {
+        margin-top: 30px;
+    }
+}
 
 // *** WHAT IS ESPORT? ***
 
@@ -113,12 +144,13 @@
 
 .slider-members {
     text-align: center;
+   
     h5 {
         color: $secondary;
     }
     a {
         img {
-            width: 50%;
+            width: 55%;
         }
     }
 }
@@ -129,10 +161,11 @@
     align-items: center;
     .list {
         height: 200px;
+        align-items: center;
         li {
             list-style-type: none;
-            width: 400px;
-            height: 200px;
+            width: 25%;
+            height: 12.5%;
             position: absolute;
             left: 50%;
             margin-left: -200px;
@@ -145,12 +178,12 @@
 
         .polygon {
             li {
-                clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); //za latest news
+                clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); // za latest news
             }
         }
-        
-        .list {           
 
+        .list {
+            overflow-x: hidden;
             .prev {
                 transform: translateX(-90%) scale(0.66);
             }
@@ -302,9 +335,67 @@
 }
 
 // MEDIA QUERY
+@include XL {
+    // ***First Section***
+    .firstSectiion {
+        .new_slider {
+            .carousel {
+                height: 50vh;
+                ul {
+                    li {
+                        img {
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Latest News slider
+  
+    .slider-container {
+        .list {
+            height: 200px;
+            max-width: 1440px;
+        }
+    }
+    #news-slider {
+        .list {
+           
+            li {
+                list-style-type: none;
+                width: 400px;
+                height: 200px;
+                position: absolute;
+                left: 50%;
+                margin-left: -200px;
+                transition: transform 1s, opacity 1s;
+                height: 250px;
 
+                img {
+                    height:200px;
+                }
+            }
+        }
+    }
+}
 @include laptopL {
     // ***First Section***
+    .firstSectiion {
+        .new_slider {
+            .carousel {
+                height: 80vh;
+                ul {
+                    li {
+                        img {
+                            height: 80vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Latest news
 
     // *** OUR MISSION ***
 
@@ -348,17 +439,36 @@
     .firstSectiion {
         .new_slider {
             .carousel {
-                height: 50vh;
+                height: 80vh;
                 ul {
                     li {
                         img {
-                            height: 50vh;
+                            height: 80vh;
                         }
                     }
                 }
             }
         }
     }
+
+    // Latest News slider
+    .slider-container {
+        .list {
+            height: 160px;
+        }
+    }
+    #news-slider {
+        .list {
+            li {
+                height: 190px;
+
+                img {
+                    height: 160px;
+                }
+            }
+        }
+    }
+
     // *** OUR MISSION ***
 
     .ourMission_sub-div {
@@ -396,17 +506,36 @@
     .firstSectiion {
         .new_slider {
             .carousel {
-                height: 40vh;
+                height: 80vh;
                 ul {
                     li {
                         img {
-                            height: 40vh;
+                            height: 80vh;
                         }
                     }
                 }
             }
         }
     }
+    // Latest News slider
+
+    .slider-container {
+        .list {
+            height: 110px;
+        }
+    }
+    #news-slider {
+        .list {
+            li {
+                height: 140px;
+
+                img {
+                    height: 110px;
+                }
+            }
+        }
+    }
+
     // *** WHAT IS ESPORT? ***
 
     .whatIs_icons {
@@ -504,17 +633,40 @@
             }
         }
     }
-    
-// ENDORSED BY
 
-.ednorsedBy_div {
-    
-    a {
-        img {
-            width: 100px;
+    // ENDORSED BY
+
+    .ednorsedBy_div {
+
+        a {
+            img {
+                width: 115px;
+            }
         }
     }
 }
+// Sliders -Latest News & Members
+
+
+.slider-container {
+    .list {
+
+        li {
+            margin-left: -13%;
+        }
+    }
+
+    .slider {
+        width: 100%;
+
+        .polygon {
+            li {
+                clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); // za latest news
+            }
+        }
+
+
+    }
 }
 
 
@@ -523,17 +675,36 @@
     .firstSectiion {
         .new_slider {
             .carousel {
-                height: 30vh;
+                height: 40vh;
                 ul {
                     li {
                         img {
-                            height: 30vh;
+                            height: 40vh;
                         }
                     }
                 }
             }
         }
     }
+    // Latest News slider
+
+    .slider-container {
+        .list {
+            height: 90px;
+        }
+    }
+    #news-slider {
+        .list {
+            li {
+                height: 130px;
+
+                img {
+                    height: 90px;
+                }
+            }
+        }
+    }
+
     // *** OUR MISSION ***
     .becomeAMember__main-div {
 
@@ -556,6 +727,16 @@
             }
             .join_now-btn {
                 font-size: 14px;
+            }
+        }
+    }
+    // ENDORSED BY
+
+    .ednorsedBy_div {
+
+        a {
+            img {
+                width: 75px;
             }
         }
     }
