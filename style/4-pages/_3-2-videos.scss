@@ -10,10 +10,12 @@
   
 
   justify-content: space-evenly;
-  border-left: 5px solid $secondary;
+  border-left: 3px solid $fill;
+  box-shadow: 0 0 20px $red;
   height: 90vh;
-  border-radius: 5px;
+  border-radius: 25%;
   margin-left: 3%;
+  width: 3px;
   
   ul {
     display: flex;
@@ -22,8 +24,8 @@
     justify-content: space-evenly;
     li {
       padding: 5px;
+      margin-left: 5px;
       a {
-        color: $secondary;
         &:hover {
           color: $fill;
           cursor: pointer;
@@ -31,7 +33,7 @@
       }
     }
     .isOdd {
-      margin-left: -110%;
+      margin-left: -50px;
     }
   }
  
