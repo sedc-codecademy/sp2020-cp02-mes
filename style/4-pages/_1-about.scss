@@ -29,9 +29,7 @@
 // ABOUT US
 
 .about__section-wrapper {
-
     img {
-
         width: 100%;
         border: 1px solid $fill;
     }
@@ -180,12 +178,48 @@ a.just-line + ul:before {
     top: -5;
     visibility: hidden;
     z-index: 100;
-    background-image: url('../../img/background/section-background.PNG');
+    background-image: url("../../img/background/section-background.PNG");
     border: 1px solid $fill;
     overflow: hidden;
     padding: 8px;
     width: 231px;
     height: 200px;
+}
+
+// MOBILE STRUCTURE
+.mobile__membersStructure {
+    .mobile__structure__topWrapper{
+        height: 50px;
+        text-align: center;
+        
+    }
+    div {
+        background-color: red;
+        width: 250px;
+        height: 250px;
+        border: 1px solid blue;
+        margin-bottom: 5px;
+       
+    }
+    display: flex;
+    flex-direction: column;
+
+    .mobile__membersStructure__wrapper {
+        display: flex;
+        flex-direction: column;
+        div {
+            height: 1000px;
+        }
+        
+    }
+
+    .mobile__structure__bottomWrapper{
+        display: flex;
+        div {
+            width: 100%;
+        }
+    }
+
 }
 // POPUP TRIALS END HERE!
 
@@ -208,7 +242,6 @@ a.just-line + ul:before {
         }
     }
 }
-
 
 .intOrgCards {
     width: 250px;
@@ -315,10 +348,9 @@ a.just-line + ul:before {
     }
 }
 
-
 // RESPONSIVE
 
-@include laptopL{
+@include laptopL {
     .org-cards {
         padding: 0 30px;
         a {
@@ -333,9 +365,7 @@ a.just-line + ul:before {
     }
 }
 
-@include laptop{
-    
-
+@include laptop {
 }
 
 @include tablet {
@@ -356,20 +386,18 @@ a.just-line + ul:before {
                 }
                 p {
                     text-transform: none;
-                    padding:20px 200px 0 200px;
+                    padding: 20px 200px 0 200px;
                 }
             }
         }
-        .org-cards_last{
+        .org-cards_last {
             padding: 0;
         }
-
     }
     .intOrgCards {
         width: 250px;
         padding-bottom: 10px;
     }
-
 }
 
 @include mobile {
@@ -389,7 +417,6 @@ a.just-line + ul:before {
         }
     }
     .about__intOrg {
-
         .org-cards {
             padding-bottom: 40px;
             a {
@@ -398,11 +425,9 @@ a.just-line + ul:before {
                 }
                 p {
                     text-transform: none;
-                    padding:10px 10px 0 10px;
+                    padding: 10px 10px 0 10px;
                 }
             }
         }
-
     }
-
 }
