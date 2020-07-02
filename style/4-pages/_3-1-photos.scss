@@ -17,6 +17,14 @@
 //     }
 // }
 
+.visibility{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
 .photosWrapper{
   display: flex;
  flex-direction: row;
@@ -47,31 +55,35 @@ margin-bottom: 3%;
 
 .photos_line_container {
   flex-direction: column;
-  // position: fixed;   ///dodadeno
+  //position: fixed;   ///dodadeno
   position: sticky;
-  top: 200px;
+  top: 130px;
+  //margin-top: -60px;
   justify-content: space-evenly;
-  border-left: 5px solid $secondary;
-  height: 65vh;
-  border-radius: 5px;
+  border-left: 3px solid $fill;
+  box-shadow: 0 0 20px $red;
+  height: 73vh;
+  border-radius: 25%;
   margin-left: 3%;
+  width: 3px;
+  
   ul {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
     li {
-      padding: 5px;
+      padding: 3px;
+      margin-left: 5px;
       a {
-        color: $secondary;
         &:hover {
           color: $fill;
           cursor: pointer;
         }
       }
     }
-    .isOdd{
-      margin-left: -110%;
+    .isOdd {
+      margin-left: -50px;
     }
   }
 }
@@ -96,6 +108,7 @@ margin-bottom: 3%;
 
 @include tablet{
   .photosContainer{
+    margin-right: -18%;
     &__thumbnail{
       width: 40%;
       height: 18%;
@@ -118,17 +131,24 @@ margin-bottom: 3%;
 }
 
 @include mobile{
+  .photosContanier__title{
+    margin-left: 30%;
+  }
   .photosContainer{
     flex-direction: column;
+    margin-right: -20%;
     &__thumbnail{
-      width: 100%;
+      width: 80%;
       height: 18%;
       min-width: 70%;
+      
     }
   }
   .photos_line_container{
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-right: 5%;
     height: 65vh;
+    top: 250px;
     ul{
       li{
         padding: 3px;

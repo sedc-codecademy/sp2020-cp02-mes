@@ -2811,6 +2811,14 @@ a.just-line + ul:before, button.just-line + ul:before {
   }
 }
 
+.visibility {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .photosWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2860,14 +2868,17 @@ a.just-line + ul:before, button.just-line + ul:before {
           flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: 200px;
+  top: 130px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  border-left: 5px solid #E3E3E3;
-  height: 65vh;
-  border-radius: 5px;
+  border-left: 3px solid #931621;
+  -webkit-box-shadow: 0 0 20px #EE2E31;
+          box-shadow: 0 0 20px #EE2E31;
+  height: 73vh;
+  border-radius: 25%;
   margin-left: 3%;
+  width: 3px;
 }
 
 .photos_line_container ul {
@@ -2885,11 +2896,8 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 .photos_line_container ul li {
-  padding: 5px;
-}
-
-.photos_line_container ul li a, .photos_line_container ul li button {
-  color: #E3E3E3;
+  padding: 3px;
+  margin-left: 5px;
 }
 
 .photos_line_container ul li a:hover, .photos_line_container ul li button:hover {
@@ -2898,7 +2906,7 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 .photos_line_container ul .isOdd {
-  margin-left: -110%;
+  margin-left: -50px;
 }
 
 @media (max-width: 1024px) {
@@ -2922,6 +2930,9 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 @media (max-width: 768px) {
+  .photosContainer {
+    margin-right: -18%;
+  }
   .photosContainer__thumbnail {
     width: 40%;
     height: 18%;
@@ -2939,20 +2950,26 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 @media (max-width: 425px) {
+  .photosContanier__title {
+    margin-left: 30%;
+  }
   .photosContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: -20%;
   }
   .photosContainer__thumbnail {
-    width: 100%;
+    width: 80%;
     height: 18%;
     min-width: 70%;
   }
   .photos_line_container {
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-right: 5%;
     height: 65vh;
+    top: 250px;
   }
   .photos_line_container ul li {
     padding: 3px;
@@ -3522,25 +3539,96 @@ a.just-line + ul:before, button.just-line + ul:before {
   padding-bottom: 30px;
 }
 
-.regulations div {
+.regulations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.regulations div p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  margin: 5px;
+.regulations__slides {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0 100%);
+  width: 100%;
+  cursor: pointer;
+}
+
+.regulations h5 {
+  margin-top: 3%;
+}
+
+#regulations__modal {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  overflow: auto;
+  display: none;
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+#regulations__modal img {
+  margin: 100px auto;
+  display: block;
+  width: 50%;
+}
+
+#regulations__modal #title {
+  margin: auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+  color: #931621;
+  padding: 10px 0;
+  height: 150px;
+  font-size: 30px;
+  font-family: "Fjalla One";
+  text-shadow: 2px 2px 5px #11151C;
+}
+
+#regulations__modal #close i {
+  position: absolute;
+  top: 7%;
+  left: 90%;
+  color: #931621;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .btnl {
