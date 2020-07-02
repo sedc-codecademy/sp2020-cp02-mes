@@ -26,10 +26,14 @@ body {
     padding-top: 130px; // samo na prvata sekcija na page-ot za da se skokne headerot!
 }
 
+.pd-top85{
+    padding-top: 85px;
+}
+
 .container {
     padding-left: 20px; // 0 40
     padding-right: 20px;
-    max-width: 1440px; // 1440
+    max-width: 1400px; // 1440
     margin: 0 auto;
     width: 100%;
 }
