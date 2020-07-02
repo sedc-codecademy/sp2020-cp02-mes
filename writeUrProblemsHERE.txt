@@ -1,4 +1,31 @@
 *********************************************************************************************************************
+
+ZA DO SABOTA(04 juli 2020)!!! 
+
+1.Structure da se napravi povekje prostor od tretiot do poslediot red 
+
+2.Edna sekcija current i past [done]
+
+3.novi max-witdh na site sekcii
+
+4.searchot da se popravi na site page-ovi
+
+5.fact sheet so DRAG
+
+6.Da se linkuvaat site a tagovi(header) i da se stavi ./ segde kade shto e potrebno
+
+7.validacija so parsly
+
+9.responsive site page-ovi ****VIDI PODOLE****
+
+10.da se sredi competitions ****VIDI PODOLE****
+
+11.animacijata da bide samo na prva poseta na sajtot
+
+
+
+
+*********************************************************************************************************************
 Virtuelen mono sostanok (17.06.2020) 
 
 1.Responsive na site strani so MIXIN(vidi ./style/0-helpers/_mixin.scss -> MEDIA QUERY)
