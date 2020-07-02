@@ -2065,6 +2065,7 @@ a.just-line + ul:before, button.just-line + ul:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
 }
 
 .mobile__membersStructure .mobile__structure__topWrapper {
@@ -2078,6 +2079,11 @@ a.just-line + ul:before, button.just-line + ul:before {
   height: 250px;
   border: 1px solid blue;
   margin-bottom: 5px;
+}
+
+.mobile__membersStructure img {
+  width: 50px;
+  height: 50px;
 }
 
 .mobile__membersStructure .mobile__membersStructure__wrapper {
@@ -2301,6 +2307,29 @@ a.just-line + ul:before, button.just-line + ul:before {
   .about__intOrg .org-cards a p, .about__intOrg .org-cards button p {
     text-transform: none;
     padding: 10px 10px 0 10px;
+  }
+  .documentation-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .documentation-btn a, .documentation-btn button {
+    margin-bottom: 5px;
+    width: 160px;
+    text-align: center;
+    border: 1px solid #931621;
+  }
+  .tree {
+    display: none;
+  }
+  .strucure__section {
+    height: auto;
   }
 }
 
