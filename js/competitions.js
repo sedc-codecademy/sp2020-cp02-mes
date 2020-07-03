@@ -45,56 +45,39 @@ dota.addEventListener("click", function(){
 
 
 $(document).on("click", ".game img", function () {
-    if (!$(this).hasClass("selectedGame")) {
+    if (!$(this).hasClass("selectedGame") || $(this).hasClass("selectedGame")) {
         $("img.selectedGame").removeClass("selectedGame");
         $(this).addClass("selectedGame");
-
-        let close = document.querySelector("#close");
-        let modal = document.querySelector("#regulations__modal");
 
         let selectedGame = document.querySelector(".selectedGame + h5").textContent; 
 
         switch(selectedGame){
             case "Dota 2":
                 openModal("./img/dota2Rules.png", "Dota 2 rulles and regulations");
-                close.onclick = function() { 
-                    modal.style.display = "none";
-                }
+                closeModal();
             break;
             case "CS GO":
                 openModal("./img/dota2Rules.png", "CS Go rules and regulations");
-                close.onclick = function() { 
-                    modal.style.display = "none";
-                }
+                closeModal();
             break;
             case "PES":
                 openModal("./img/dota2Rules.png", "Pes rules and regulations");
-                close.onclick = function() { 
-                    modal.style.display = "none";
-                }
+                closeModal();
             break;
             case "GAME":
                 openModal("./img/dota2Rules.png", "Game rules and regulations");
-                close.onclick = function() { 
-                    modal.style.display = "none";
-                }
+                closeModal();
             break;
             case "GAME2":
                 openModal("./img/dota2Rules.png", "Game 2 rules and regulations");
-                close.onclick = function() { 
-                    modal.style.display = "none";
-                }
+                closeModal();
             break;
             case "GAME6":
                 openModal("./img/dota2Rules.png", "Game 6 rules and regulations");
-                close.onclick = function() { 
-                    modal.style.display = "none";
-                }
+                closeModal();
             break;
         }
-
     }
-
 });       
 
 
@@ -109,7 +92,18 @@ function openModal(imgSrc, imgTitle){
     title.innerHTML = imgTitle;
 }
 
+function closeModal(){
+    let close = document.querySelector("#close");
+    let modal = document.querySelector("#regulations__modal");
 
+    close.onclick = function() { 
+        modal.style.display = "none";
+    }
+
+    modal.onclick = function() { 
+        modal.style.display = "none";
+    }
+}
 
 
 

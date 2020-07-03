@@ -15,7 +15,7 @@
 
     .slider_news{
         width: 200px;
-        height: 100px;
+        height: 150px;
         background-color: $fill;
         clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
     }
@@ -24,7 +24,7 @@
         display: flex;
         flex-direction: column;
         padding-left: 30px;
-        height: 150px;
+        //height: 150px;
         justify-content: space-between;
 
         .btn-div{
@@ -138,19 +138,26 @@
 }
 
 @include tablet{
+    .news-feed{
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
     .container-news{
         .articles-news{
-            img{
-                width: 100px;
-            }
             .article{
                 padding-top: 20px;
                 align-items: center;
                 p{
                     padding-top: 2px;
+                    width: 200px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 .article-right{
-                    padding-left: 15px;
+                    padding-left: 50px;
                     .subtitle{
                         font-size: 14px;
                     }
@@ -162,6 +169,9 @@
                             display: flex;
                             justify-content: center;
                         }
+                    }
+                    h5{
+                        padding-bottom: 3px;
                     }
                     
                 }
@@ -187,7 +197,7 @@
             }
         }
         .fix-sidebar-news{
-            padding: 10px;
+            display: none;
         }
         .container-openNews{
             img{
@@ -212,13 +222,20 @@
         padding: 130px 20px 30px 20px;
         justify-content: center;
         .news-feed{
+            .sub__nav_news_container{
+                padding-right: 30px;
+            }
             .sub__nav_news{
-                width: 380px;
+                width: 320px;
                 display: flex;
                 justify-content: space-between;
                 ul li {
                     padding: 5px;
                     margin: 5px;
+
+                    a{
+                        font-size: 14px;
+                    }
                 }
                 .news-feed1{
                     margin: 5px;
@@ -227,7 +244,7 @@
             }
             .articles-news{
                 margin: 0;
-                padding: 20px 10px;
+                //padding: 20px 10px;
                 width: 380px;
                 p{
                     display: none;
