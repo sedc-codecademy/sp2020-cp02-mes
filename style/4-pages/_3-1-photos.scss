@@ -33,16 +33,16 @@
 .photosContainer{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
   margin-left: 10%;
   overflow: auto;
 
   &__thumbnail{
-    width: 19%;
+    width: 19.5%;
     height: 18%;
     min-width: 17%;
-    margin-bottom: 20px;
-    padding: 0 10px;
+    padding: 10px 10px;
     cursor: pointer;
   }
  
@@ -88,6 +88,22 @@ margin-bottom: 3%;
   }
 }
 
+
+@include laptopL{
+  .photos_line_container{
+    margin-left: 10%;
+  }
+  .photosContainer{
+    margin-left: 5%;
+    &__thumbnail{
+      width: 22%;
+      height: 18%;
+      min-width: 23%;
+    }
+  }
+}
+
+
 @include laptop{
 .photos_line_container{
   margin-left: 10%;
@@ -100,24 +116,15 @@ margin-bottom: 3%;
       min-width: 19%;
     }
   }
-  .photosContanier__title{
-    justify-content: flex-start;;
-    margin-left: 37%;
-  }
 }
 
 @include tablet{
   .photosContainer{
-    margin-right: -18%;
     &__thumbnail{
-      width: 40%;
+      width: 48%;
       height: 18%;
       min-width: 17%;
     }
-  }
-  .photosContanier__title{
-    justify-content: flex-start;;
-    margin-left: 32%;
   }
   .photos_line_container{
     ul{
@@ -131,30 +138,22 @@ margin-bottom: 3%;
 }
 
 @include mobile{
-  .photosContanier__title{
-    margin-left: 30%;
-  }
   .photosContainer{
     flex-direction: column;
-    margin-right: -20%;
     &__thumbnail{
-      width: 80%;
+      width: 100%;
       height: 18%;
       min-width: 70%;
-      
     }
   }
   .photos_line_container{
     margin-left: 15%;
     margin-right: 5%;
     height: 65vh;
-    top: 250px;
+    top: 200px;
     ul{
       li{
         padding: 3px;
-      }
-      a{
-        font-size: 16px;
       }
     }
   }
