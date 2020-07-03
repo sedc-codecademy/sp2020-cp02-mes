@@ -2066,20 +2066,41 @@ a.just-line + ul:before, button.just-line + ul:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 650px;
   display: none;
 }
 
 .mobile__membersStructure .mobile__structure__topWrapper {
-  height: 50px;
+  height: 80px;
   text-align: center;
+  background: none;
+  border: none;
 }
 
 .mobile__membersStructure div {
-  background-color: red;
+  font-family: "Roboto";
+  background: #E3E3E3;
   width: 250px;
-  height: 250px;
-  border: 1px solid blue;
+  height: 270px;
+  border: 1px solid #931621;
   margin-bottom: 5px;
+  text-align: center;
+}
+
+.mobile__membersStructure div h6, .mobile__membersStructure div p {
+  color: #666;
+}
+
+.mobile__membersStructure div p {
+  font-size: 10px;
+}
+
+.mobile__membersStructure div .president {
+  height: auto;
+}
+
+.mobile__membersStructure a, .mobile__membersStructure button {
+  height: 80px;
 }
 
 .mobile__membersStructure img {
@@ -2091,24 +2112,25 @@ a.just-line + ul:before, button.just-line + ul:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: none;
+  border: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.mobile__membersStructure .mobile__membersStructure__wrapper div {
-  height: 1000px;
-}
-
 .mobile__membersStructure .mobile__structure__bottomWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: none;
+  border: none;
 }
 
 .mobile__membersStructure .mobile__structure__bottomWrapper div {
   width: 100%;
+  height: 100%;
 }
 
 .org-cards {
@@ -2288,9 +2310,6 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 @media (max-width: 425px) {
-  .about__aboutUs {
-    height: 50vh;
-  }
   .about__aboutUs .hideElements {
     display: none;
   }
@@ -2329,6 +2348,9 @@ a.just-line + ul:before, button.just-line + ul:before {
   }
   .tree {
     display: none;
+  }
+  .mobile__membersStructure {
+    display: block !important;
   }
   .strucure__section {
     height: auto;
