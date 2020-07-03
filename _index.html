@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeSF</title>
+    <link rel="icon" type="image/png" href="./img/e-sport Macedonia - LOGO.png" />
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+
+
+    <div class="loader hidden">
+        <img src="./img/animations/MKD_eSports_LogoGIF_Black.gif" alt="loading...">        
+    </div>
+
+
+
+    <script>
+        //***LOADER***
+
+document.addEventListener("load", function(){
+    const load = document.querySelector(".loader");
+
+    loader.className += " hidden";
+
+   
+})
+
+    function loaderEnd(){
+
+        window.location.href = "./0-homepage.html";
+    }
+
+    setTimeout(function(){ 
+        loaderEnd(); }, 2000);
+
+//    window.onload = loaderEnd(); ova da se razgleda
+
+    </script>
+</body>
+</html>
