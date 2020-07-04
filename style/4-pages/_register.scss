@@ -26,6 +26,11 @@
         display: flex;
         justify-content: flex-end;
     }
+    input[type = "email"], [type = "password"], [type = "text"], [type = "date"]{
+        padding-left: 10px;
+        font-family: $FjallaOne;
+        color: $fill;
+    }
 
     ::placeholder {
         font-family: $FjallaOne;
