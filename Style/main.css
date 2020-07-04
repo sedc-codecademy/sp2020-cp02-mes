@@ -1857,6 +1857,11 @@ footer .iframe__map {
   }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .pd__bottom30 {
   padding-bottom: 30px;
 }
@@ -2034,12 +2039,20 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 /* When clicking outer div, make inner div visible */
-.clickToShowInfo:active .info {
+.clickToShowInfo:hover .info {
+  visibility: visible;
+}
+
+.clickToShowInfo:hover .leftInfo {
   visibility: visible;
 }
 
 /* And hold by staying visible on hover */
 .info:active {
+  visibility: visible;
+}
+
+.leftInfo:active {
   visibility: visible;
 }
 
@@ -2050,15 +2063,32 @@ a.just-line + ul:before, button.just-line + ul:before {
   top: -5;
   visibility: hidden;
   z-index: 100;
-  background-image: url("../../img/background/section-background.PNG");
+  background-image: url("../../img/background/section-background.PNG") !important;
   border: 1px solid #931621;
   overflow: hidden;
   padding: 8px;
+  margin-top: 20px;
+  width: 231px;
+  height: 200px;
+}
+
+.leftInfo {
+  position: absolute;
+  right: -0.5px;
+  top: -5;
+  visibility: hidden;
+  z-index: 100;
+  background-image: url("../../img/background/section-background.PNG") !important;
+  border: 1px solid #931621;
+  overflow: hidden;
+  padding: 8px;
+  margin-top: 20px;
   width: 231px;
   height: 200px;
 }
 
 .mobile__membersStructure {
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2097,10 +2127,6 @@ a.just-line + ul:before, button.just-line + ul:before {
 
 .mobile__membersStructure div .president {
   height: auto;
-}
-
-.mobile__membersStructure a, .mobile__membersStructure button {
-  height: 80px;
 }
 
 .mobile__membersStructure img {
@@ -2307,6 +2333,52 @@ a.just-line + ul:before, button.just-line + ul:before {
     width: 250px;
     padding-bottom: 10px;
   }
+  .about__aboutUs .hideElements {
+    display: none;
+  }
+  .about__aboutUs .about__aboutUs__infoWrapper {
+    width: 100%;
+  }
+  .about__aboutUs p {
+    text-align: center;
+  }
+  .tree {
+    display: none;
+  }
+  .mobile__membersStructure {
+    display: block !important;
+  }
+  .strucure__section {
+    height: auto;
+  }
+  .info {
+    margin: 0;
+    width: 250px !important;
+    height: 173px !important;
+  }
+  .leftInfo {
+    margin: 0;
+    width: 250px !important;
+    height: 173px !important;
+    padding-left: 100px !important;
+  }
+  .documentation-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .documentation-btn a, .documentation-btn button {
+    margin-bottom: 5px;
+    width: 160px;
+    text-align: center;
+    border: 1px solid #931621;
+  }
 }
 
 @media (max-width: 425px) {
@@ -2354,6 +2426,17 @@ a.just-line + ul:before, button.just-line + ul:before {
   }
   .strucure__section {
     height: auto;
+  }
+  .info {
+    margin: 0;
+    width: 250px !important;
+    height: 173px !important;
+  }
+  .leftInfo {
+    margin: 0;
+    width: 250px !important;
+    height: 173px !important;
+    padding-left: 100px !important;
   }
 }
 
@@ -4166,6 +4249,12 @@ small b {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.register__form input[type="email"], .register__form [type="password"], .register__form [type="text"], .register__form [type="date"] {
+  padding-left: 10px;
+  font-family: "Fjalla One";
+  color: #931621;
 }
 
 .register__form ::-webkit-input-placeholder {
