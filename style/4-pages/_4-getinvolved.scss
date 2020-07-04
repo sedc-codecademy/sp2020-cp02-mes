@@ -84,7 +84,11 @@
 
 @include tablet {
     // VOLUNTEER
-
+    .goFoundMe__main-div{
+        h5{
+            text-align: center;
+        }
+    }
     .volunteer_div {
         margin: 20px 0;
         a {
