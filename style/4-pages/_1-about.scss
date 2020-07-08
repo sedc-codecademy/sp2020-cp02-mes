@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 // PADDINGS
@@ -40,6 +40,35 @@
     div {
         padding: 0 20px;
         width: 50%;
+    }
+}
+.org__list {
+    padding: 15px;
+    li {
+        padding-bottom: 10px;
+        a{
+            padding-left: 20px;
+        }
+        i {
+            font-size: 15px;
+            margin-right: 20px;
+        }
+
+        &:hover{
+            i{
+                animation: rotate_i 2s ease;
+            }
+        }
+
+    }
+}
+
+@keyframes rotate_i {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(90deg);
     }
 }
 
@@ -167,22 +196,22 @@ a.just-line + ul:before {
     font-size: 10px;
 }
 /* When clicking outer div, make inner div visible */
-.clickToShowInfo:hover .info    {
+.clickToShowInfo:hover .info {
     visibility: visible;
 }
 
-.clickToShowInfo:hover .leftInfo    {
+.clickToShowInfo:hover .leftInfo {
     visibility: visible;
 }
 /* And hold by staying visible on hover */
-.info:active  {
+.info:active {
     visibility: visible;
 }
-.leftInfo:active  {
+.leftInfo:active {
     visibility: visible;
 }
 /* General settings for popup */
-.info  {
+.info {
     position: absolute;
     right: -0.5px;
     top: -5;
@@ -197,7 +226,7 @@ a.just-line + ul:before {
     height: 200px;
 }
 
- .leftInfo{
+.leftInfo {
     position: absolute;
     right: -0.5px;
     top: -5;
@@ -215,23 +244,24 @@ a.just-line + ul:before {
 // MOBILE STRUCTURE
 .mobile__membersStructure {
     text-transform: uppercase;
-  
-    .mobile__structure__topWrapper{
+
+    .mobile__structure__topWrapper {
         height: 80px;
         text-align: center;
         background: none;
         border: none;
-       
+
     }
     div {
-        h6, p{
+        h6,
+        p {
             color: #666;
 
         }
-        p{
+        p {
             font-size: 10px;
         }
-        
+
         font-family: $Roboto;
         background: $secondary;
         width: 250px;
@@ -239,9 +269,9 @@ a.just-line + ul:before {
         border: 1px solid $fill;
         margin-bottom: 5px;
         text-align: center;
-       .president{
-           height: auto;
-       }
+        .president {
+            height: auto;
+        }
     }
 
     display: flex;
@@ -259,7 +289,7 @@ a.just-line + ul:before {
         flex-direction: column;
     }
 
-    .mobile__structure__bottomWrapper{
+    .mobile__structure__bottomWrapper {
         display: flex;
         background: none;
         border: none;
@@ -399,8 +429,7 @@ a.just-line + ul:before {
     }
 }
 
-@include laptop {
-}
+@include laptop {}
 
 @include tablet {
     .about__intOrg {
@@ -420,7 +449,7 @@ a.just-line + ul:before {
                 }
                 p {
                     text-transform: none;
-                    padding: 20px 200px 0 200px;
+                    padding: 20px 200px 0;
                 }
             }
         }
@@ -453,7 +482,7 @@ a.just-line + ul:before {
 
     .mobile__membersStructure {
         display: block !important;
-       
+
     }
 
     .strucure__section {
@@ -471,24 +500,22 @@ a.just-line + ul:before {
         width: 250px !important;
         height: 173px !important;
         padding-left: 100px !important;
-       
+
     }
 
-    .documentation-btn{
+    .documentation-btn {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
- 
+
         a {
             margin-bottom: 5px;
-            width: 160px ;
+            width: 160px;
             text-align: center;
             border: 1px solid $fill;
         }
     }
 }
-
-
 
 
 @include mobile {
@@ -516,20 +543,20 @@ a.just-line + ul:before {
                 }
                 p {
                     text-transform: none;
-                    padding: 10px 10px 0 10px;
+                    padding: 10px 10px 0;
                 }
             }
         }
     }
 
-    .documentation-btn{
+    .documentation-btn {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
- 
+
         a {
             margin-bottom: 5px;
-            width: 160px ;
+            width: 160px;
             text-align: center;
             border: 1px solid $fill;
         }
@@ -541,7 +568,7 @@ a.just-line + ul:before {
 
     .mobile__membersStructure {
         display: block !important;
-       
+
     }
 
     .strucure__section {
@@ -559,6 +586,6 @@ a.just-line + ul:before {
         width: 250px !important;
         height: 173px !important;
         padding-left: 100px !important;
-       
+
     }
 }

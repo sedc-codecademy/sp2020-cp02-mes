@@ -144,20 +144,20 @@
 
 .slider-members {
     text-align: center;
-   
-    h5 {
-        color: $secondary;
-    }
+    // h5 {
+    //     // color: $secondary;
+    // }
     a {
         img {
-            width: 55%;
+            width: 25%;
+            
         }
     }
 }
 
 .slider-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     .list {
         height: 200px;

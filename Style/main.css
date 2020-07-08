@@ -1397,21 +1397,17 @@ footer .iframe__map {
   text-align: center;
 }
 
-.slider-members h5 {
-  color: #E3E3E3;
-}
-
 .slider-members a img, .slider-members button img {
-  width: 55%;
+  width: 25%;
 }
 
 .slider-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1919,6 +1915,50 @@ footer .iframe__map {
   width: 50%;
 }
 
+.org__list {
+  padding: 15px;
+}
+
+.org__list li {
+  padding-bottom: 10px;
+}
+
+.org__list li a, .org__list li button {
+  padding-left: 20px;
+}
+
+.org__list li i {
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.org__list li:hover i {
+  -webkit-animation: rotate_i 2s ease;
+          animation: rotate_i 2s ease;
+}
+
+@-webkit-keyframes rotate_i {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate_i {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
 .tree ul {
   padding-top: 20px;
   position: relative;
@@ -2117,7 +2157,8 @@ a.just-line + ul:before, button.just-line + ul:before {
   text-align: center;
 }
 
-.mobile__membersStructure div h6, .mobile__membersStructure div p {
+.mobile__membersStructure div h6,
+.mobile__membersStructure div p {
   color: #666;
 }
 
@@ -2324,7 +2365,7 @@ a.just-line + ul:before, button.just-line + ul:before {
   }
   .about__intOrg .org-cards a p, .about__intOrg .org-cards button p {
     text-transform: none;
-    padding: 20px 200px 0 200px;
+    padding: 20px 200px 0;
   }
   .about__intOrg .org-cards_last {
     padding: 0;
@@ -2399,7 +2440,7 @@ a.just-line + ul:before, button.just-line + ul:before {
   }
   .about__intOrg .org-cards a p, .about__intOrg .org-cards button p {
     text-transform: none;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0;
   }
   .documentation-btn {
     display: -webkit-box;
