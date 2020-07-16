@@ -3,6 +3,7 @@ $white: #fff;
 $btnPaddingScalePlus: 1.2;
 $btnPaddingScaleMinus: .95;
 
+
 .macedonian-league-competitions{
     .mac-league-container{
         box-sizing: border-box;
@@ -12,6 +13,8 @@ $btnPaddingScaleMinus: .95;
         .league-choose{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 350px;
             #leagues{
                 display: flex;
@@ -121,6 +124,8 @@ $btnPaddingScaleMinus: .95;
                 width: 200px;
                 display: flex;
                 justify-content: flex-start;
+                align-items: center;
+                text-align: center;
             }
             img{
                 width: 40px;
@@ -204,35 +209,40 @@ $btnPaddingScaleMinus: .95;
 }
 
 .national-competitions{
-    .competitions-txt{
-        padding-left: 200px;
-        h5, p{
-            padding-bottom: 20px;
-        }
-    }
-}
-.international-competitions{
-    .competitions-txt{
-        padding-left: 200px;
-        h5, p{
-            padding-bottom: 20px;
-        }
+    h5, p{
+        padding-bottom: 30px;
     }
 }
 
+.international-competitions{
+    h5, p{
+        padding-bottom: 30px;
+    }
+}
 
 .regulations{
     display: flex;
     flex-direction: row;
     &__slides{
-        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0 100%);
         width: 100%;
-        height: 50%;
-        cursor: pointer;
     }
     h5{
         margin-top: 3%;
     }
+
+    // &__modal{
+    //     display: none; /* Hidden by default */
+    //     position: fixed; /* Stay in place */
+    //     z-index: 1; /* Sit on top */
+    //     padding-top: 100px; /* Location of the box */
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%; /* Full width */
+    //     height: 100%; /* Full height */
+    //     overflow: auto; /* Enable scroll if needed */
+    //     background-color:  rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+    // }
 }
 
 
@@ -248,11 +258,15 @@ $btnPaddingScaleMinus: .95;
     z-index: 99999;
     overflow: auto;
     display: none;
+    cursor: pointer;
     animation-name: zoom;
     animation-duration: 0.6s;
 
     img{
-        margin: 100px auto;
+        //margin: 100px auto;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
         display: block;
         width: 50%;
     }  
@@ -398,8 +412,146 @@ small{
     }
 }
 
+// NEW
+
+.videos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+  
+.videos a {
+    display: flex;
+    // flex: 1 0 25%;
+    width: 33%; // ova se menuva za responsive
+    min-width: 20%;
+    //margin-bottom: 20px;
+    padding: 0 10px;
+    padding-bottom: 30px;
+    // float: left;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+}
+  
+.videos a:hover {
+    opacity: 0.7;
+}
+  
+.videos a img {
+    width: 100%;
+    height: auto;
+}
+  
+.videos-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: none;
+}
+  
+.videos-overlay {
+    .videos-modal {
+      background: $primary;
+      border-radius: 5px;
+      width: 100%;
+      margin: 100px auto;
+      max-width: 80%;
+      min-height: 30%;
+      position: relative;
+      padding: 30px 20px 15px;
+    }
+}
+
+.videos-overlay iframe {
+    width: 100%;
+    height: 45rem;
+}
+
+.lineContainer{
+    flex-direction: column;
+    //position: fixed;   ///dodadeno
+    position: sticky;
+    //top: 130px;
+    //margin-top: -30px;
+    justify-content: space-evenly;
+    border-left: 3px solid $fill;
+    box-shadow: 0 0 20px $red;
+    height: 65vh;
+    border-radius: 25%;
+    margin-left: 3%;
+    width: 3px;
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    li {
+      padding: 3px;
+      margin-left: 5px;
+      a {
+        &:hover {
+          color: $fill;
+          cursor: pointer;
+        }
+      }
+    }
+    .isOdd {
+      margin-left: -50px;
+    }
+  }
+}
+
+.videosContainer{
+    margin-left: 0;
+    padding-left: 10%;
+}
 
 // mixin
+
+@include laptop{
+    .macedonian-league-competitions{
+        .mac-league-container{
+            display: flex;
+            flex-direction: column;
+            .league-choose{
+                width: 100% ;
+                #league-h5{
+                    display: flex;
+                    justify-content: center;
+                    //width: 728px;
+                    h5{
+                        padding-bottom: 20px;
+                    }
+                }
+                #leagues{
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-content: center;
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .lineContainer{
+        margin-left: 7%;
+    }
+    .videos a {
+        width: 45%;
+    }
+}
+
 
 @include tablet{
     .macedonian-league-competitions{
@@ -407,16 +559,16 @@ small{
             display: flex;
             flex-direction: column;
             .league-choose{
+                width: 100% ;
                 #league-h5{
                     display: flex;
                     justify-content: center;
-                    width: 728px;
                     h5{
                         padding-bottom: 20px;
                     }
                 }
                 #leagues{
-                    width: 728px;
+                    width: 100%;
                     flex-direction: row;
                     justify-content: space-around;
                     align-content: center;
@@ -434,6 +586,12 @@ small{
             }
         }
     }
+    .lineContainer{
+        margin-left: 10%;
+    }
+    .videos a {
+        width: 45%;
+    }
 }
 
 @include mobile{
@@ -441,14 +599,12 @@ small{
         .mac-league-container{
             .league-choose{
                 #league-h5{
-                    width: 385px;
                     justify-content: center;
                 }
-                #leagues{
-                    width: 385px;
+                #leagues {
+                    width: 100%;
                 }
             }
-
             .tablediv{
                 .header-row{
                     th{
@@ -468,7 +624,6 @@ small{
         }
 
         .live-matches{
-            width: 385px;
             .match-info{
                 justify-content: start;
                 #vs{
@@ -515,25 +670,18 @@ small{
             }
         }
     }
-
+    .videosContainer {
+        margin-left: 0;
+        padding-left: 15%;
+    }
+    .lineContainer{
+        margin-left: 14%;
+        a{
+            font-size: 14px;
+        }
+    }
+    .videos a{
+        width: 100%;
+    }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
