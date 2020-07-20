@@ -43,7 +43,7 @@
 //  videos boxes
 
 .videos_items_container {
-  display: flex;
+  //display: flex;
   flex-direction: row;
   width: 100%;
   margin-left: 10%;
@@ -164,6 +164,8 @@
 
 @include laptop{
   .videos_line_container{
+    margin-left: 7%;
+    margin-top: 0;
     ul {
       li {
         padding: 3px 5px;
@@ -171,12 +173,12 @@
     }
 
   }
-
 }
 
 @include tablet{
   .videos_line_container{
-    margin-left: 6%;
+    margin-left: 10%;
+    margin-top: 0;
   }
   #videos a{
     width: 50%;
@@ -186,7 +188,12 @@
 
 @include mobile{
   .videos_line_container{
-  margin-left: 10%;
+    margin-left: 15%;
+    margin-top: 0;
+      a{
+        font-size: 14px;
+      }
+    
   }
   #videos a{
     width: 90%;

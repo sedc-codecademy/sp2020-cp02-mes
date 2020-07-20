@@ -263,12 +263,11 @@ $btnPaddingScaleMinus: .95;
     animation-duration: 0.6s;
 
     img{
-        //margin: 100px auto;
-        margin-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 100px auto auto;
         display: block;
         width: 50%;
+        height: 60rem;
+        overflow: auto;
     }  
 
     #title{
@@ -460,7 +459,7 @@ small{
     .videos-modal {
       background: $primary;
       border-radius: 5px;
-      width: 100%;
+      width: 80%;
       margin: 100px auto;
       max-width: 80%;
       min-height: 30%;
@@ -550,6 +549,29 @@ small{
     .videos a {
         width: 45%;
     }
+    .videos-overlay {
+        .videos-modal{
+            margin: 200px auto;
+            padding: 15px;
+            max-width: 90%;
+        }
+        iframe{
+            height: 30rem;
+        }
+    }
+
+    #regulations__modal{
+        
+        img{
+            margin: 50px auto auto;
+            width: 60%;
+            height: 50rem;
+        }
+
+        #close i{
+            top: 3%;
+        }
+    }
 }
 
 
@@ -591,6 +613,27 @@ small{
     }
     .videos a {
         width: 45%;
+    }
+    .videos-overlay {
+        .videos-modal{
+            margin: 200px auto;
+            padding: 10px;
+            max-width: 90%;
+        }
+        iframe{
+            height: 28rem;
+        }
+    }
+
+    #regulations__modal{
+        img{
+            width: 70%;
+            height: 50rem;
+        }
+
+        #close i{
+            top: 5%;
+        }
     }
 }
 
@@ -683,4 +726,39 @@ small{
     .videos a{
         width: 100%;
     } 
+    .videos-overlay {
+        .videos-modal{
+            margin: 200px auto;
+            width: 90%;
+            padding: 10px;
+            max-width: 90%;
+        }
+        iframe{
+            height: 15rem;
+        }
+    }
+    .videos-class-close{
+        right: -2px;
+        top: -40px;
+    }
+    .videos-class-close:before,
+    .videos-class-close:after
+    {
+        left: 0px;
+    }
+
+    #regulations__modal{
+        img{
+            margin: 100px auto auto;
+            width: 90%;
+            height: 35rem;
+        }
+
+        #title{
+            font-size: 24px;
+        }
+        #close i{
+            top: 1%;
+        }
+    }
 }

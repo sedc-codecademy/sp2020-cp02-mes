@@ -3189,6 +3189,9 @@ a.just-line + ul:before, button.just-line + ul:before {
   .photos_line_container ul li {
     padding: 3px;
   }
+  .photos_line_container ul li a, .photos_line_container ul li button {
+    font-size: 14px;
+  }
 }
 
 .videos-whole-container {
@@ -3252,9 +3255,6 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 .videos_items_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -3367,6 +3367,10 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 @media (max-width: 1024px) {
+  .videos_line_container {
+    margin-left: 7%;
+    margin-top: 0;
+  }
   .videos_line_container ul li {
     padding: 3px 5px;
   }
@@ -3374,7 +3378,8 @@ a.just-line + ul:before, button.just-line + ul:before {
 
 @media (max-width: 768px) {
   .videos_line_container {
-    margin-left: 6%;
+    margin-left: 10%;
+    margin-top: 0;
   }
   #videos a, #videos button {
     width: 50%;
@@ -3383,7 +3388,11 @@ a.just-line + ul:before, button.just-line + ul:before {
 
 @media (max-width: 425px) {
   .videos_line_container {
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-top: 0;
+  }
+  .videos_line_container a, .videos_line_container button {
+    font-size: 14px;
   }
   #videos a, #videos button {
     width: 90%;
@@ -3804,11 +3813,11 @@ a.just-line + ul:before, button.just-line + ul:before {
 }
 
 #regulations__modal img {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 100px auto auto;
   display: block;
   width: 50%;
+  height: 60rem;
+  overflow: auto;
 }
 
 #regulations__modal #title {
@@ -4050,7 +4059,7 @@ small b {
 .videos-overlay .videos-modal {
   background: #11151C;
   border-radius: 5px;
-  width: 100%;
+  width: 80%;
   margin: 100px auto;
   max-width: 80%;
   min-height: 30%;
@@ -4159,6 +4168,22 @@ small b {
   .videos a, .videos button {
     width: 45%;
   }
+  .videos-overlay .videos-modal {
+    margin: 200px auto;
+    padding: 15px;
+    max-width: 90%;
+  }
+  .videos-overlay iframe {
+    height: 30rem;
+  }
+  #regulations__modal img {
+    margin: 50px auto auto;
+    width: 60%;
+    height: 50rem;
+  }
+  #regulations__modal #close i {
+    top: 3%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4207,6 +4232,21 @@ small b {
   }
   .videos a, .videos button {
     width: 45%;
+  }
+  .videos-overlay .videos-modal {
+    margin: 200px auto;
+    padding: 10px;
+    max-width: 90%;
+  }
+  .videos-overlay iframe {
+    height: 28rem;
+  }
+  #regulations__modal img {
+    width: 70%;
+    height: 50rem;
+  }
+  #regulations__modal #close i {
+    top: 5%;
   }
 }
 
@@ -4286,6 +4326,34 @@ small b {
   }
   .videos a, .videos button {
     width: 100%;
+  }
+  .videos-overlay .videos-modal {
+    margin: 200px auto;
+    width: 90%;
+    padding: 10px;
+    max-width: 90%;
+  }
+  .videos-overlay iframe {
+    height: 15rem;
+  }
+  .videos-class-close {
+    right: -2px;
+    top: -40px;
+  }
+  .videos-class-close:before,
+  .videos-class-close:after {
+    left: 0px;
+  }
+  #regulations__modal img {
+    margin: 100px auto auto;
+    width: 90%;
+    height: 35rem;
+  }
+  #regulations__modal #title {
+    font-size: 24px;
+  }
+  #regulations__modal #close i {
+    top: 1%;
   }
 }
 
