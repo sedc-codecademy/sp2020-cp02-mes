@@ -32,12 +32,6 @@
 
 //Mixin for media query
 
-@mixin XL {
-    @media(min-width: 1620px){
-        @content;
-    }
-}
-
 @mixin laptopL {
     @media(max-width: 1440px) {
         @content;

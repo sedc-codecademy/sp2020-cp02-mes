@@ -335,50 +335,8 @@
 }
 
 // MEDIA QUERY
-@include XL {
-    // ***First Section***
-    .firstSectiion {
-        .new_slider {
-            .carousel {
-                height: 50vh;
-                ul {
-                    li {
-                        img {
-                            height: 50vh;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    // Latest News slider
-  
-    .slider-container {
-        .list {
-            height: 200px;
-            max-width: 1440px;
-        }
-    }
-    #news-slider {
-        .list {
-           
-            li {
-                list-style-type: none;
-                width: 400px;
-                height: 200px;
-                position: absolute;
-                left: 50%;
-                margin-left: -200px;
-                transition: transform 1s, opacity 1s;
-                height: 250px;
 
-                img {
-                    height:200px;
-                }
-            }
-        }
-    }
-}
+
 @include laptopL {
     // ***First Section***
     .firstSectiion {
